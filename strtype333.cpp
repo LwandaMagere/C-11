@@ -22,12 +22,12 @@ int main()
 
     // finding the length of a string object and a C-style string
     int len1 = str1.size(); // obtain the length of charr1
-    int len1 = strlen(charr1);
+    int len2 = strlen(charr1);
 
     cout << "The string" << str1 << " contains"
          << len1 << " characters.\n";
     cout << "The string " << charr1 << " contains "
          << len2 << " characters.\n";
-         
+
     return 0;
 }
