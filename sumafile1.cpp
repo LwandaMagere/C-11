@@ -13,12 +13,12 @@ int main()
     ifstream inFile; // object for handlinig file input
 
     cout << "Enter name of data file: ";
-    cin.getline(filename, SIZE);
+    cin.getline(filename, SIZE); /////////////////////////////////////  important
     inFile.open(filename); // associate inFIle with a file
     if (!inFile.is_open()) // failed to open file
     {
         cout << "Could not open the file " << filename << endl;
-        cout << "Program terminatin.\n";
+        cout << "Program terminating.\n";
         exit(EXIT_FAILURE);
     }
     double value;
@@ -30,9 +30,9 @@ int main()
     {
         ++count;
         sum += value;
-        inFIle >> value; // get next value
+        inFile >> value; // get next value
     }
-    if (inFIle.eof())
+    if (inFile.eof())
         cout << "End of file reached.\n";
     else if (inFile.fail())
         cout << "Input terminate by data mismatch.\n";
