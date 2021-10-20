@@ -49,7 +49,7 @@ int main()
     const double * pdb = (*pd)[1](av,3);
     cout << pdb << ": " << *pdb << endl;
     // alternate notation
-    cout << (*(*pd)[2])(av,3) << ": " << *(*(pd)[2])(av,3) << endl;
+    cout << (*(*pd)[2])(av,3) << ": " << *(*(*pd)[2])(av,3) << endl;
     return 0;
 }
 
