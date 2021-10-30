@@ -3,6 +3,7 @@
 #include <cmath>
 #include "coordin.h" // structure templates, function prototypes
 
+
 // convert rectangular to polar coordinates
 polar rect_to_polar(rect xypos)
 {

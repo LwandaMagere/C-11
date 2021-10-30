@@ -1,5 +1,5 @@
 #include <iostream>
-#include "coodin.h" // structure template, function prototypes
+#include "coordin.h" // structure template, function prototypes
 using namespace std;
 
 int main()
