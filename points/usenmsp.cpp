@@ -7,17 +7,24 @@ void another(void);
 
 int main()
 {
+   //using debts::Debt;
+    using namespace debts; // ShowDebt;
+
+    Debt golf = {{"Benny", "Goatsniff"}, 120.0};
+    showDebt(golf);
+    other();
+    another();
     return 0;
 }
 
 void other(void)
 {
     using std::cout;
-    using std::cout;
+    using std::cin;
     using namespace debts;
     Person dg = {"Doodles", "Glister"};
     showPerson(dg);
-    cout << endl;
+    cout << std::endl;
     Debt zippy[3];
     int i;
     for (i = 0; i < 3; i++)
@@ -25,7 +32,7 @@ void other(void)
 
     for (i = 0; i < 3; i++)
         showDebt(zippy[i]);
-    cout << "Total debt: $" << sumDebt(zippy, 3) << endl;
+    cout << "Total debt: $" << sumDebts(zippy, 3) << std::endl;
     return;
 }
 
