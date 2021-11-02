@@ -27,7 +27,7 @@ int main()
                       if (st.isfull())
                         cout << "stack already full\n";
                       else
-                        st.push();
+                        st.push(po);
                       break;
             case 'P':
             case 'p': if (st.isempty())
