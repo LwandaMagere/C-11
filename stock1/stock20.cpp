@@ -27,7 +27,7 @@ Stock::Stock(const std::string & co, long n, double pr)
 
 Stock::~Stock(){}
 
-void Stock::buy(long nun, double price)
+void Stock::buy(long num, double price)
 {
     if (num < 0)
     {
@@ -74,8 +74,8 @@ void Stock::show() const
     using std::cout;
     using std::ios_base;
 
-    ios_base::fmtflags orig = cout.setf(ios_base::fixed, ios_base::flags);
-    std::streamsize prec = cout,precision(3);
+    ios_base::fmtflags orig = cout.setf(ios_base::fixed, ios_base::floatfield);
+    std::streamsize prec = cout.precision(3);
 
     cout << "Company: " << company
         << "Shares: " << shares << '\n';
