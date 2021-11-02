@@ -23,7 +23,7 @@ int main()
     fixing.Show();
     cout << endl;
 
-    total = coding.operator+(fixing);
+    total = coding + fixing;
     cout << "coding.Sum(fixing) = ";
     total.Show();
     cout << endl;
