@@ -13,6 +13,7 @@ Stock::Stock()
 Stock::Stock(const std::string & co, long n, double pr)
 {
     std::cout << "Constructor using " << co << " called\n";
+    std::cout << "Just wrap your mind around it Dado, will you?!\n";
     company = co;
 
     if (n < 0)

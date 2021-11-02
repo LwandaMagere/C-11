@@ -7,7 +7,7 @@
 class Stock
 {
     private:
-        std:string company;
+        std::string company;
         long shares;
         double share_val;
         double total_val;
