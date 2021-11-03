@@ -1,10 +1,10 @@
 // using new and delete with classes
 #include <iostream>
 using std::cout;
-#include "strngbad.h"
+#include "strnbad.h"
 
 void callme1(StringBad &);
-void calleme2(StringBad);
+void callme2(StringBad);
 
 int main()
 {
@@ -40,7 +40,7 @@ void callme1(StringBad & rsb)
     cout << "   \"" << rsb << "\"\n";
 }
 
-calleme2(StringBad sb)
+void callme2(StringBad sb)
 {
     cout << "String passed by value:\n";
     cout << "     \"" << sb << "\"\n";

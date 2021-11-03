@@ -1,5 +1,5 @@
 #include <cstring>
-#include "strngbad.h"
+#include "strnbad.h"
 using std::cout;
 
 int StringBad::num_strings = 0;
