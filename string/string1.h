@@ -21,10 +21,12 @@ class String
         String & operator=(const String &);
         String & operator=(const char *);
         char & operator[](int i);
+        const char & operator[](int i) const;
         friend bool operator<(const String &st, const String &st2);
         friend bool operator>(const String &st1, const String &st2);
         friend bool operator==(const String & st, const String &st2);
         friend ostream & operator<<(ostream & os, const String & st);
+        friend istream & operator>>(istream & is,  String & st2);
         static int HowMany();
 };
 
