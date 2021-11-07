@@ -1,7 +1,7 @@
 // using new and delete with classes
 #include <iostream>
 using std::cout;
-#include "strngbad.h"
+#include "strnbad.h"
 
 void callme1(StringBad &); // pass by reference
 void callme2(StringBad);   // pass by value
@@ -17,7 +17,7 @@ int main()
 
         cout << "headline1: " << headline1 << endl;
         cout << "headline2: " << headline2 << endl;
-        cout << "sport: " << sport << endl;
+        cout << "sport: " << sports << endl;
 
         callme1(headline1);
         cout << "headline1: " << headline1 << endl;
