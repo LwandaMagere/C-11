@@ -53,7 +53,7 @@ String & String::operator=(const String & st)
     return *this;
 }
 
-String String::operator=(const Char * s)
+String & String::operator=(const char * s)
 {
     delete [] str;
     len = std::strlen(s);

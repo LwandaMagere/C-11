@@ -11,10 +11,11 @@ class String
         char * str;
         int len;
         static int num_strings;
-        static const in CINLIM = 80;
+        static const int CINLIM = 80;
     public:
         String(const char * s);
         String();
+        String(const String &);
         ~String();
         int length() const { return len; }
         String & operator=(const String &);
