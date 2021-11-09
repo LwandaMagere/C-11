@@ -19,17 +19,19 @@ typedef Customer Item;
 class Queue
 {
     private:
+
         struct Node 
         { 
             Item item; 
             struct Node * next;
         };
+        
         enum {Q_SIZE = 10};
         Node * front; // pointer to front of the queue
         Node * rear;
         int items;   // current number of items in the queue
         const int qsize; // maximum number of items in Queue
-        
+
         // preemptive definitions to prevent public copying
         Queue(const Queue & q) : qsize(0){}
         Queue & operator=(const Queue & q){return *this;}
