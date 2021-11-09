@@ -19,16 +19,17 @@ typedef Customer Item;
 class Queue
 {
     private:
+        int items; // current number of items in Queue
+        const int qsize; // maximum number of items in Queue
+        enum { Q_SIZE =  10};
         stuct Node 
         {
             Item item;
             struct Node * next;
         };
-        enum { Q_SIZE =  10};
         Node * front;
         Node * rear;
-        int items; // current number of items in Queue
-        const int qsize; // maximum number of items in Queue
+        
         Queue(const Queue & q) : qsize(0){}
         Queue & operator=(const Queue & q) { return *this;}
     public:
