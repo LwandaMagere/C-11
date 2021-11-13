@@ -7,6 +7,7 @@ using std::ostream;
 using std::istream;
 using std::cout;
 using std::cin;
+using std::endl;
 
 class String
 {
