@@ -5,6 +5,8 @@
 #include <iostream>
 using std::ostream;
 using std::istream;
+using std::cout;
+using std::cin;
 
 class String
 {
@@ -12,6 +14,7 @@ class String
         char * str;
         int len;
         static int num_strings;
+        static const int CINLIM = 80;
     public:
         String(const char * s);
         String();
