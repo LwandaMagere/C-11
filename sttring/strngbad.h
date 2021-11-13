@@ -2,7 +2,8 @@
 #include <iostream>
 #ifndef STRNGBAD_H_
 #define STRNGBAD_H_
-
+using std::cout;
+using std::endl;
 class StringBad
 {
     private:
