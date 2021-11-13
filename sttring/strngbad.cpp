@@ -30,7 +30,7 @@ StringBad::~StringBad()
     cout << "\"" << str << "\" object deleted, ";
     --num_strings;
     cout << num_strings << " left\n";
-    default [] str;
+    delete [] str;
 }
 
 std::ostream & operator<<(std::ostream & os, const StringBad & st)
