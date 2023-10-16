@@ -74,3 +74,28 @@
 // console.log(names);
 ////////////////////////////////////////////////////////////
 
+// const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
+
+// // for (let i = 0; i < cars.length; i++) {
+// //     console.log(cars[i]);
+// // }
+
+// cars.forEach(function(ca, inde, arr){
+//     console.log(`${inde} : ${ca}`)
+//     console.log(arr);
+// })
+///////////////////////////////////////////////////////////
+
+// let val  = window.location.href;
+
+// window.location.href = 'http://google.com';
+
+// console.log(val);
+//////////////////////////////////////////////////////////
+
+// let val = document.getElementById('nano').id;
+// console.log(val);
+/////////////////////////////////////////////////////
+
+
+
