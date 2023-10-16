@@ -97,5 +97,28 @@
 // console.log(val);
 /////////////////////////////////////////////////////
 
+// 1. document.getElementById()
+// Selectors for Single Elements
+
+// console.log(document.getElementById('nano'));
+
+// //Get things from the element
+// console.log(document.getElementById('nano').id);
+// console.log(document.getElementById('nano').className);
+
+// // Change Styling
+// document.getElementById('nano').style.background = 'gold';
+
+// // Change Content
+// document.getElementById('nano').textContent = 'Dado';
+// document.getElementById('nano').innerHTML = 'Lenssen';
+// document.getElementById('nano').innerHTML = '<span style = "color:red">Steven</span>';
+
+// 2. document.querySelector()
+
+// console.log(document.querySelector('#nano'));
+// console.log(document.querySelector('.nano2'));
+// console.log(document.querySelector('h1'));
+
 
 
