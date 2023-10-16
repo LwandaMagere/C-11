@@ -97,8 +97,8 @@
 // console.log(val);
 /////////////////////////////////////////////////////
 
-// 1. document.getElementById()
-// Selectors for Single Elements
+// 1.0 document.getElementById()
+// Selectors for Single Elements //////////////////////////////////////////////////////////////////////////////
 
 // console.log(document.getElementById('nano'));
 
@@ -114,11 +114,36 @@
 // document.getElementById('nano').innerHTML = 'Lenssen';
 // document.getElementById('nano').innerHTML = '<span style = "color:red">Steven</span>';
 
-// 2. document.querySelector()
+// 1.1 document.querySelector()
 
 // console.log(document.querySelector('#nano'));
 // console.log(document.querySelector('.nano2'));
 // console.log(document.querySelector('h1'));
 
 
+// Dom Selector for multiple Elements ////////////////////////////////////////////////////////////////////////////////////
+// 2.0 document.getElementsByClassName
 
+// const items = document.getElementsByClassName('colletion-item');
+// console.log(items);
+// console.log(items[0]);
+
+// const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
+// console.log(listItems);
+
+// 2.1 document.getElementsByTagName
+
+// const lis = document.getElementsByTagName('li');
+// console.log(lis);
+// console.log(lis[0]);
+
+// lis[0].style.color = 'red';
+
+// 2.2 document.querySelectorAll
+const items = document.querySelectorAll('ul.collection li.collection-item');
+console.log(items);
+
+items.forEach(function(item, index){
+    item.textContent = `${index}: Hello`;
+})
+console.log(items);
