@@ -75,4 +75,166 @@
 // console.log(numbers2);
 // console.log(val);
 
+//********************************************************************** */
+
+//  OBJECT LITERRAL
+
+// const person = {
+//     firstName: 'Steve',
+//     address: {
+//         city: 'Miami',
+//         state: 'FL'
+//     },
+//     getBirthYear: function() {
+//         return 2023 - this.age;
+//     },
+//     age : 30
+// }
+
+// let val;
+
+// val = person;
+
+// // Get specific value
+// val = person.firstName;
+// val = person['firstName'];
+// val = person.address.city;
+// val = person['address']['city'];
+
+// console.log(val);
+
+// DATE
+
+//********************************************************************** */
+
+// IF STATEMENTS, RELATION AND LOGICAL OPERATORS && || ! TERNARY
+
+// SWITCHES -- Used to validate conditions
+
+
+// FUNCTION DECLARATION
+
+// function hello() {
+//     return 'sasa';
+// }
+
+// console.log(hello);
+
+// // Function Expression -- putting a function as a variable assignment
+// const square = function(x) {
+//     return x * x;
+// }
+// console.log(square(5));
+
+// // Immediately Invokable Function Expression (IIFEs)
+// (function(){
+//     console.log('IIFE ran...');
+// })();
+
+// (function(x){
+//     console.log(x);
+// })(5);
+
+// // PROPERTY METHODS
+
+// const todo = {
+//     add: function toda() {
+//         console.log('Add todo..')
+//     },
+//     add2: function(){
+//         console.log('Kesho');
+//     }
+// }
+// todo.delete = function() {
+//     console.log('delete todo...');
+// }
+
+// todo.add();
+// todo.add2();
+// todo.delete();
+
+//********************************************************************** */
+
+
+// LOOPS AND ITERATION
+
+// General loops (FOR, DO WHILE, WHILE)
+
+// const cars = ['Chevy', 'Toyota', 'Honda', 'Ford'];
+
+// //Foreach It can take three arguments but mostly need one
+// cars.forEach(function(car){
+//     console.log(car);
+// })
+
+// cars.forEach(function(car, index, array){
+//     console.log(`${index} : ${car}`);
+//     console.log(array);
+// })
+
+// // Map
+// const users = [
+//     {id: 1, name: 'Steven'},
+//     {id: 1, name: 'Dado'},
+//     {id: 1, name: 'Lenssen'}
+// ];
+
+// const ids = users.map(function(user){
+//     return user.id;
+// })
+// console.log(ids);
+// console.log(Array.isArray(ids));
+
+// For in loop
+// const user1 = {
+//     firstName: 'Dado',
+//     lastName: 'Steven',
+//     age: 30
+// };
+
+// for(let x in user1) {
+//     console.log(`${x} : ${user1[x]}`);
+// };
+
+//********************************************************************** */
+
+// WINDOW / METHODS / PROPERTIES / OBJECT  -- is the global object environment
+
+// window.console.log(123);
+
+// let val;
+
+// val = window.innerHeight;
+
+// // Scroll Points
+// val = window.scrollX;
+// val = window.scrollY;
+
+// // Location Object
+// val = window.location;
+// val = window.location.hostname;
+// val = window.location.port;
+// val = window.location.href;
+
+//Redirect
+// val = window.location.href = 'http://google.com';
+// window.location.reload();
+
+// History Object
+// window.history.go();
+
+// Navigator Object // deal with browsers
+// val = window.navigator;
+// val = window.navigator.appName;
+// val = window.navigator.appVersion;
+// val = window.navigator.userAgent;
+// val = window.navigator.platform;
+// val = window.navigator.vendor;
+// val = window.navigator.language;
+
+// console.log(val);
+
+//********************************************************************** */
+
+// SCOPE
 
