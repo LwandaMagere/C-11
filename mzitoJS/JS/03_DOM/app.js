@@ -288,12 +288,13 @@
 
 //     a.preventDefault();
 // }
+// ..........................................................................................................
 
 // MOUSE EVENTS
 
-const clearBtn = document.querySelector('.clear-tasks');
-const card = document.querySelector('.card');
-const heading = document.querySelector('h5');
+// const clearBtn = document.querySelector('.clear-tasks');
+// const card = document.querySelector('.card');
+// const heading = document.querySelector('h5');
 
 // Click
 // clearBtn.addEventListener('click', runEvent);
@@ -313,15 +314,60 @@ const heading = document.querySelector('h5');
 // card.addEventListener('mouseout', runEvent); 
 
 // Mouse move
-card.addEventListener('mousemove', runEvent);
+// card.addEventListener('mousemove', runEvent);
 
-// Event handler
+// // Event handler
+// function runEvent(e) {
+//     console.log(`EVENT TYPE: ${e.type}`);
+
+//     heading.textContent = `MouseX: ${e.offsetX} MouseY: ${e.offsetY}`;
+
+//     document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`;
+// }
+
+// ..........................................................................................................
+
+// KEYBOARD INPUT EVENTS
+
+const form = document.querySelector('form');
+const taskInput = document.getElementById('task');
+const heading = document.querySelector('h5');
+
+// Clear input
+// taskInput.value = '';
+
+// form.addEventListener('submit', runEvent);
+
+// Key down
+// taskInput.addEventListener('keydown', runEvent);
+// // Key up
+// taskInput.addEventListener('keyup', runEvent);
+// // Key press
+// taskInput.addEventListener('keypress', runEvent);
+// Focus
+// taskInput.addEventListener('focus', runEvent);
+// Blur
+// taskInput.addEventListener('blur', runEvent);
+// Cut
+// taskInput.addEventListener('cut', runEvent);
+// Paste
+// taskInput.addEventListener('paste', runEvent);
+// Input
+// taskInput.addEventListener('input', runEvent);
+// Change -- use select n disable materialize
+// taskInput.addEventListener('change', runEvent);
+
 function runEvent(e) {
     console.log(`EVENT TYPE: ${e.type}`);
 
-    heading.textContent = `MouseX: ${e.offsetX} MouseY: ${e.offsetY}`;
+    // heading.innerText = e.target.value;
 
-    document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`;
+    // Get input value
+    // console.log(taskInput.value);
+
+    // console.log(e.target.value);
+
+    // e.preventDefault();
 }
 
 
