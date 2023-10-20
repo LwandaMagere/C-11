@@ -256,37 +256,72 @@
 //     e.preventDefault();
 // });
 
-document.querySelector('.clear-tasks').addEventListener('click', onClick);
+// document.querySelector('.clear-tasks').addEventListener('click', onClick);
 
-function onClick(a) {
-    console.log('Clicked...');
+// function onClick(a) {
+//     console.log('Clicked...');
 
-    let val;
-    val = a; // e is the event object
+//     let val;
+//     val = a; // e is the event object
 
-    // Event target element
-    val = a.target;
-    val = a.target.id;
-    val = a.target.className;
-    val = a.target.classList;
+//     // Event target element
+//     val = a.target;
+//     val = a.target.id;
+//     val = a.target.className;
+//     val = a.target.classList;
 
-    // a.target.innerText = 'Hello';
+//     // a.target.innerText = 'Hello';
 
-    //Event Type
-    val = a.type;
-    // TimeStamp
-    val = a.timeStamp;
-    // Coordinates of the events relative to the window
-    val = a.clientY;
-    val = a.clientX;
-     // Coordinates of the events relative to the element
-     val = a.offsetY;
-     val = a.offsetX;
+//     //Event Type
+//     val = a.type;
+//     // TimeStamp
+//     val = a.timeStamp;
+//     // Coordinates of the events relative to the window
+//     val = a.clientY;
+//     val = a.clientX;
+//      // Coordinates of the events relative to the element
+//      val = a.offsetY;
+//      val = a.offsetX;
 
-    console.log(val);
+//     console.log(val);
 
 
-    a.preventDefault();
+//     a.preventDefault();
+// }
+
+// MOUSE EVENTS
+
+const clearBtn = document.querySelector('.clear-tasks');
+const card = document.querySelector('.card');
+const heading = document.querySelector('h5');
+
+// Click
+// clearBtn.addEventListener('click', runEvent);
+// Double click
+// clearBtn.addEventListener('dblclick', runEvent);
+// Mousedown
+// clearBtn.addEventListener('mousedown', runEvent);
+// MouseUp
+// clearBtn.addEventListener('mouseup', runEvent);
+// Mouse enter
+// card.addEventListener('mouseenter', runEvent);
+// // Mouse leave
+// card.addEventListener('mouseleave', runEvent);
+// // Mouse over
+// card.addEventListener('mouseover', runEvent);
+// // Mouse out
+// card.addEventListener('mouseout', runEvent); 
+
+// Mouse move
+card.addEventListener('mousemove', runEvent);
+
+// Event handler
+function runEvent(e) {
+    console.log(`EVENT TYPE: ${e.type}`);
+
+    heading.textContent = `MouseX: ${e.offsetX} MouseY: ${e.offsetY}`;
+
+    document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`;
 }
 
 
