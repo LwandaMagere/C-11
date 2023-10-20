@@ -46,29 +46,68 @@
 // DOM SELECTORS FOR SINGLE ELEMENTS
 
 // 1. document.getElementById()
-console.log(document.getElementById('task-title'));
+// console.log(document.getElementById('task-title'));
 
-// Get things from the element
-console.log(document.getElementById('task-title').id);
+// // Get things from the element
+// console.log(document.getElementById('task-title').id);
 
-// Change styling
-document.getElementById('task-title').style.background = '#333';
-document.getElementById('task-title').style.color = '#fff';
-document.getElementById('task-title').style.padding = '5px';
+// // Change styling
+// document.getElementById('task-title').style.background = '#333';
+// document.getElementById('task-title').style.color = '#fff';
+// document.getElementById('task-title').style.padding = '5px';
 
-// Change content
-document.getElementById('task-title').textContent = 'Task List';
-document.getElementById('task-title').innerText = 'Dado';
-document.getElementById('task-title').innerHTML = '<span style="color:red">Task List</span>';
+// // Change content
+// document.getElementById('task-title').textContent = 'Task List';
+// document.getElementById('task-title').innerText = 'Dado';
+// document.getElementById('task-title').innerHTML = '<span style="color:red">Task List</span>';
 
-// document.querySelector() -- it's much powerful we can select them by anything instead of class or id
+// // 2. document.querySelector() -- it's much powerful we can select them by anything instead of class or id
 
-console.log(document.querySelector('#task-title'));
-console.log(document.querySelector('.card-title'));
-console.log(document.querySelector('h5'));
+// console.log(document.querySelector('#task-title'));
+// console.log(document.querySelector('.card-title'));
+// console.log(document.querySelector('h5'));
 
-document.querySelector('li').style.color = 'red';
-document.querySelector('ul li').style.color = 'blue';
+// document.querySelector('li').style.color = 'red';
+// document.querySelector('ul li').style.color = 'blue';
+
+// DOM SELECTORS FOR MULTIPLE ELEMENTS
+
+// 1. getElementsByClassName()
+
+// const items = document.getElementsByClassName('collection-item');
+
+// console.log(items);
+// console.log(items[0]);
+// items[0].style.color = 'red';
+// items[3].textContent = 'Hello';
+
+// const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
+// console.log(listItems);
+
+// const lis = document.getElementsByTagName('li');
+
+// console.log(lis);
+// console.log(lis[0]);
+// lis[0].style.color = 'red';
+// lis[3].textContent = 'Hello';
+
+// 2. document.querySelectorAll() node list
+
+const items = document.querySelectorAll('ul.collection li.collection-item');
+
+items.forEach(function(item, index){
+    item.textContent = `${index}: Hello`;
+});
+
+const liOdd = document.querySelectorAll('li:nth-child(odd)');
+const liEven = document.querySelectorAll('li:nth-child(even)');
+
+liOdd.forEach(function(li, index){
+    li.style.background = '#ccc';
+})
+
+console.log(items);
+
 
 
 
