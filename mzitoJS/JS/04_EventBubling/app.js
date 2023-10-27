@@ -22,8 +22,25 @@
 
 // delItem.addEventListener('click', deleteItem);
 
-function deleteItem() {
-    console.log('delete item');
-}
+// function deleteItem() {
+//     console.log('delete item');
+// }
+//.......
+// document.body.addEventListener('click', deleteItem);
+
+// function deleteItem(e) {
+//     // if (e.target.className === 'fa fa-remove') {
+//     //     console.log('delete item');
+//     // }
+//     // if(e.target.parentElement.classList.contains('delete-item')) {
+//     //     console.log('delete item');
+//     // }
+//     // if(e.target.parentElement.classList.contains('delete-item')){
+//     //     e.target.parentElement.parentElement.remove();
+//     // }
+// }
+
+// LOCAL STORAGE
+
 
 
