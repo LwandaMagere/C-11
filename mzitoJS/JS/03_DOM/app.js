@@ -31,6 +31,9 @@
 
 // val = document.scripts[2].getAttribute('src');
 
+// console.log(val);
+// ..................................................................................
+
 // let scripts = document.scripts;
 
 // let arrayScrips = Array.from(scripts);
@@ -39,24 +42,28 @@
 //     console.log(script.getAttribute('src'));
 // });
 
-// console.log(val);
+// console.log(scripts)
+// console.log(Array.isArray(scripts));
 
-//................................................................................
+
+
+//...........................................................................................................................
 
 // DOM SELECTORS FOR SINGLE ELEMENTS
 
 // 1. document.getElementById()
+
 // console.log(document.getElementById('task-title'));
 
-// // Get things from the element
+// // Get things from the element ........................................
 // console.log(document.getElementById('task-title').id);
 
-// // Change styling
+// // Change styling...........................................................
 // document.getElementById('task-title').style.background = '#333';
 // document.getElementById('task-title').style.color = '#fff';
 // document.getElementById('task-title').style.padding = '5px';
 
-// // Change content
+// // Change content .......................................................
 // document.getElementById('task-title').textContent = 'Task List';
 // document.getElementById('task-title').innerText = 'Dado';
 // document.getElementById('task-title').innerHTML = '<span style="color:red">Task List</span>';
@@ -78,7 +85,7 @@
 
 // console.log(items);
 // console.log(items[0]);
-// items[0].style.color = 'red';
+// items[2].style.color = 'red';
 // items[3].textContent = 'Hello';
 
 // const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
@@ -108,9 +115,12 @@
 
 // console.log(items);
 
-// ..........................................................................................................
+// getElementById(), querySelector(), getElementsByClassName(), getElementsByClassName(), getElementsByTagName();
+// querySelectorAll()
 
-// Traversing the DOM
+// ..........................................................................................................&&&&&&&&&&&&&&&&&&&&&&&
+
+// TRAVERSING THE DOM
 // let val;
 
 // const list = document.querySelector('ul.collection');
@@ -138,6 +148,7 @@
 // // val = list.children;
 
 // // val = list.children[3].children[0];
+
 // // // first child
 // // val = list.firstChild;
 // // val = list.firstElementChild;

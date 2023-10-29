@@ -37,35 +37,39 @@
 
 // // Get Array length
 // val = numbers.length;
-// // Check if is Array
+
+// // Check if is Array.................................
 // val = Array.isArray(numbers);
-// // Find index of value
+// // Find index of value .........................................
 // val = numbers2.indexOf(74);
 
 // // MUTATING ARRAYS
 
-//     // // Add on to end
+//     // // Add on to end ............................
 //     // numbers2.push(250);
 //     // // Take off from end
 //     // numbers2.pop();
-//     // // Add on to front
+
+//     // // Add on to front ...........................
 //     // numbers2.unshift(120);
 //     // // Take off from front
 //     // numbers2.shift();
-//     // // Reverse
+
+//     // // Reverse .........................................
 //     // numbers.reverse();
-//     // // concat
+
+//     // // concat .............................................
 //     // val  = numbers.concat(numbers2);
 //  // Sorting Arrays
 //  val = fruits.sort();
 //  val = numbers2.sort();
 
-//  // Use the compare function
+//  // Use the compare function .............................................
 //  val = numbers2.sort(function(x,y){
 //     return x - y;
 //  });
 
-//  // Find
+//  // Find ...........................................................
 //  function under50(num) {
 //     return num <  50;
 //  }
@@ -138,7 +142,7 @@
 // // PROPERTY METHODS
 
 // const todo = {
-//     add: function toda() {
+//     add: function todo() {
 //         console.log('Add todo..')
 //     },
 //     add2: function(){
@@ -168,20 +172,20 @@
 // })
 
 // cars.forEach(function(car, index, array){
-//     console.log(`${index} : ${car}`);
+//     // console.log(`${index} : ${car}`);
 //     console.log(array);
 // })
 
 // // Map
 // const users = [
 //     {id: 1, name: 'Steven'},
-//     {id: 1, name: 'Dado'},
-//     {id: 1, name: 'Lenssen'}
+//     {id: 2, name: 'Dado'},
+//     {id: 3, name: 'Lenssen'}
 // ];
 
 // const ids = users.map(function(user){
 //     return user.id;
-// })
+// });
 // console.log(ids);
 // console.log(Array.isArray(ids));
 

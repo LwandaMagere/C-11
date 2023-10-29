@@ -17,29 +17,36 @@
 
     // 1. Primitives
 
-    // // String
+    // // String ......................................
+
     // const name = 'Dado Steven';
     // // Number
     // const age = 32;
-    // // Boolean
+    // // Boolean ......................................
+
     // const hasKids = false;
-    // // Null
+    // // Null ............................................
+
     // const car = null;
-    // // Undefined
+    // // Undefined ......................................
+
     // let test;
-    // // Symbol
+    // // Symbol ........................................
+
     // const sym = Symbol();
 
     // // 2. Reference Type - Objects
 
-    // // Arrays
+    // // Arrays ................................................
+
     // const hobbies = ['movies', 'music'];
     // // Object literal
     // const address = {
     //     city: 'Nairobi',
     //     State: 'Kenya'
     // };
-    // // Dates
+    // // Dates...................................................
+
     // const today = new Date();
 
     // console.log(typeof today);
@@ -49,12 +56,14 @@
 
         // let val;
 
-        // // Number to String
+        // // Number to String ............................
         // val = String(5);
         // val = String(4 + 5);
-        // // Bool to String
+
+        // // Bool to String .....................................
         // val = String(true);
-        // // Date to String
+
+        // // Date to String ...................................
         // val = String(new Date());
         // // Array to String
         // val = String([1,2,3,4]);
@@ -63,7 +72,7 @@
         // val = (44).toString();
         // val = (true).toString();
 
-        // // String to Numbers
+        // // String to Numbers ....................................
         // val = Number('4');
         // val = Number(true);
         // val = Number(null);
@@ -94,16 +103,20 @@
     const tags = 'web design,web development,programming';
 
     let val;
-    // Concatenation
+    // Concatenation ....................................
     val = firstName + ' ' + lastName;
-    // Append
+
+    // Append .........................
     val = 'Lennsen ';
     val += 'Steven';
     // Escaping ***
+
     // Length --- it's a property and not a method
-    // Concat
+
+    // Concat .........................................
     val = firstName.concat('***', lastName);
-    //Change case --- toUpperCase ...
+    //Change case --- toUpperCase ... ....................
+    
     // indexOf
     val = lastName.indexOf('e'); //gives -1 if the character isn't there
     // charAt()
