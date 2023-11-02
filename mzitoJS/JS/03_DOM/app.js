@@ -135,64 +135,179 @@
 
 //  TRAVERSING THE DOM - Parents and children of specific nodes...................
 
-let val;
+// let val;
 
-const list = document.querySelector('ul.collection');
-const listItem = document.querySelector('li.collection-item:first-child');
+// const list = document.querySelector('ul.collection');
+// const listItem = document.querySelector('li.collection-item:first-child');
 
-val = listItem;
-val = list;
+// val = listItem;
+// val = list;
 
-// Get child nodes -- text node are line breaks
-val = list.childNodes;
-val = list.childNodes[0];
-val = list.childNodes[10].nodeName;
-val = list.childNodes[0].nodeType;
+// // Get child nodes -- text node are line breaks
+// val = list.childNodes;
+// val = list.childNodes[0];
+// val = list.childNodes[10].nodeName;
+// val = list.childNodes[0].nodeType;
 
-// 1. Element
-// 2. Attribute (deprecated)
-// 3. Text Node
-// 8. comment
-// 9. Document itself
-// 10. Doctype
+// // 1. Element
+// // 2. Attribute (deprecated)
+// // 3. Text Node
+// // 8. comment
+// // 9. Document itself
+// // 10. Doctype
 
-// Get children element nodes -- returns html collection
-val = list.children;
-val = list.children[0];
-val = list.children[0].textContent = 'Hello';
-// Children of children
-val = list.children[3].children;
-val = list.children[3].children[0];
-val = list.children[3].children[0].id = 'test-link';
+// // Get children element nodes -- returns html collection
+// val = list.children;
+// val = list.children[0];
+// val = list.children[0].textContent = 'Hello';
+// // Children of children
+// val = list.children[3].children;
+// val = list.children[3].children[0];
+// val = list.children[3].children[0].id = 'test-link';
 
-// Fist child
-val = list.firstChild; 
-val = list.firstElementChild; // not dealing with text nodes
+// // Fist child
+// val = list.firstChild; 
+// val = list.firstElementChild; // not dealing with text nodes
 
-// Last child
-val = list.lastChild;
-val = list.lastElementChild;
+// // Last child
+// val = list.lastChild;
+// val = list.lastElementChild;
 
-// Count child elements
-val = list.childElementCount;
+// // Count child elements
+// val = list.childElementCount;
 
-// Get parent node
-val = listItem.parentNode;
-val = listItem.parentElement;
-val = listItem.parentElement.parentElement;
+// // Get parent node
+// val = listItem.parentNode;
+// val = listItem.parentElement;
+// val = listItem.parentElement.parentElement;
 
-//Get next sibling
-val = listItem.nextSibling;
-val = listItem.nextElementSibling;
-val = listItem.nextElementSibling.nextElementSibling;
-val = listItem.nextElementSibling.nextElementSibling.previousElementSibling;
+// //Get next sibling
+// val = listItem.nextSibling;
+// val = listItem.nextElementSibling;
+// val = listItem.nextElementSibling.nextElementSibling;
+// val = listItem.nextElementSibling.nextElementSibling.previousElementSibling;
 
-// Get prev sibling
-val = listItem.previousSibling;
-val = listItem.previousElementSibling;
+// // Get prev sibling
+// val = listItem.previousSibling;
+// val = listItem.previousElementSibling;
 
-console.log(val);
+// console.log(val);
 // ..................................................................................................................
+
+// CREATING ELEMENTS
+
+// let li = document.createElement('li');
+
+// // Add class
+// li.className = 'collection-item';
+
+// // Add attribute
+// li.setAttribute('title', 'New-item');
+
+// // Create text node and append
+// li.appendChild(document.createTextNode('Hello World'));
+
+// // Create new link element
+// const link = document.createElement('a');
+// // Add class
+// link.className = 'delete-item secondary-content';
+// // Add icon html
+// link.innerHTML = '<i class="fa fa-remove"></i>';
+// // Append link into li
+// li.appendChild(link);
+
+
+
+// // Append li as a child to ul
+// document.querySelector('ul.collection').appendChild(li);
+
+// console.log(li);
+
+// REMOVING REPLACING ELEMENTS................................
+
+
+
+// EVENT LISTENERS.........................................
+
+// document.querySelector('.clear-tasks').addEventListener('click',function(e){
+//     console.log('Hello World!');
+
+//     e.preventDefault();
+// });
+
+// document.querySelector('.clear-tasks').addEventListener('click', onClick);
+
+// function onClick(e) {
+//     // console.log('clicked..');
+//     // e.preventDefault();
+
+//     let val;
+//     val = e;
+
+//     // Event target element
+//     val = e.target;
+//     val = e.target.id;
+//     val = e.target.className;
+//     val = e.target.classList;
+//     val = e.target.innerText = 'Hello';
+
+//     // Event type
+//     val = e.type;
+
+//     // Time stamp
+//     val = e.timeStamp;
+
+//     // Coord relative to the window
+//     val = e.clientY;
+//     val = e.clientX;
+
+//       // Coord relative to the element
+//       val = e.clientY;
+//       val = e.clientX;
+
+//     console.log(val);
+
+// }
+
+// MOUSE EVENTS..............................................
+
+// const clearBtn = document.querySelector('.clear-tasks');
+// const card = document.querySelector('.card');
+// const heading = document.querySelector('h5');
+
+// // Click
+// clearBtn.addEventListener('click', runEvent);
+// // Double click
+// clearBtn.addEventListener('dblclick', runEvent);
+// //Mousedown - click and hold
+// clearBtn.addEventListener('mousedown',runEvent);
+// //Mouseup - click and hold
+// clearBtn.addEventListener('mouseup',runEvent);
+// Mouse enter - fire on parent element
+// card.addEventListener('mouseenter',runEvent);
+// // Mouseleave - fire on parent element
+// card.addEventListener('mouseleave',runEvent);
+// // Mouseover 
+// card.addEventListener('mouseover',runEvent);
+// // Mouseout
+// card.addEventListener('mouseout',runEvent);
+// Mousemove
+// card.addEventListener('mousemove',runEvent);
+
+
+
+
+// // Event handler
+// function runEvent(e) {
+//     console.log(`EVENT TYPE: ${e.type}`);
+
+//     heading.textContent = `MouseX: ${e.offsetX} MouseY: ${e.offsetY}`;
+    
+//     document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`;
+// }
+
+// FORMS & INPUT ..................................................
+
 
 
 
