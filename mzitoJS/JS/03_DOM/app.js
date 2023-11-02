@@ -306,7 +306,7 @@
 //     document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`;
 // }
 
-// FORMS & INPUT ..................................................
+// FORMS & INPUT keyboard input events ..................................................
 
 
 
