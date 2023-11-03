@@ -139,7 +139,7 @@
 //     console.log(x);
 // })(5);
 
-// // PROPERTY METHODS
+// PROPERTY METHODS
 
 // const todo = {
 //     add: function todo() {
