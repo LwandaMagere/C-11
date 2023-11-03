@@ -1,6 +1,7 @@
 // Log to console
     // console.log('Hello World!');
     // console.log({a: 1, b: 2});
+    // console.table({a: 1, b: 2})
     // console.error('This is some error');
     // console.warn('This is a warning!');
     // console.clear();
@@ -97,47 +98,47 @@
 
 // ********** 3. STRING METHODS  ***************************
 
-    const firstName = 'Dado';
-    const lastName = 'Steven';
-    const str = 'Hey my name is Steven Dado Lenssen';
-    const tags = 'web design,web development,programming';
+    // const firstName = 'Dado';
+    // const lastName = 'Steven';
+    // const str = 'Hey my name is Steven Dado Lenssen';
+    // const tags = 'web design,web development,programming';
 
-    let val;
-    // Concatenation ....................................
-    val = firstName + ' ' + lastName;
+    // let val;
+    // // Concatenation ....................................
+    // val = firstName + ' ' + lastName;
 
-    // Append .........................
-    val = 'Lennsen ';
-    val += 'Steven';
+    // // Append .........................
+    // val = 'Lennsen ';
+    // val += 'Steven';
     // Escaping ***
 
     // Length --- it's a property and not a method
 
     // Concat .........................................
-    val = firstName.concat('***', lastName);
-    //Change case --- toUpperCase ... ....................
+    // val = firstName.concat('***', lastName);
+    // //Change case --- toUpperCase ... ....................
     
-    // indexOf
-    val = lastName.indexOf('e'); //gives -1 if the character isn't there
-    // charAt()
-    val = lastName.charAt('2');
-    // get last character
-    val = lastName.charAt(lastName.length - 1);
-    // Substring
-    val = lastName.substring(0, 4);
-    // Slice
-    val = lastName.slice(0, 4);
-    val = lastName.slice(-3);
-    // Split
-    val = str.split('');
-    val = str.split(' ');
-    val = str.split('  ');
-    val = tags.split(',');
-    // Replace
-    val = str.replace('Steven', 'Lwanda');
-    val = str.includes('ste');
+    // // indexOf
+    // val = lastName.indexOf('e'); //gives -1 if the character isn't there
+    // // charAt()
+    // val = lastName.charAt('2');
+    // // get last character
+    // val = lastName.charAt(lastName.length - 1);
+    // // Substring
+    // val = lastName.substring(0, 4);
+    // // Slice
+    // val = lastName.slice(0, 4);
+    // val = lastName.slice(-3);
+    // // Split
+    // val = str.split('');
+    // val = str.split(' ');
+    // val = str.split('  ');
+    // val = tags.split(',');
+    // // Replace
+    // val = str.replace('Steven', 'Lwanda');
+    // val = str.includes('ste');
 
-    console.log(val);
+    // console.log(val);
 
 
         
