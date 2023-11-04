@@ -342,6 +342,52 @@
 
 // 1. cardActon.replaceChild(newHead, oldHead);
 // 2. lis[0].remove()
+// 3. list.removeChild(lis[3]);
+
+// 1. val = link.className
+// 2. val = link.classList[]
+// 3. link.classList.add('test'); adding class name
+// 4. link.clasList.remove('test');
+
+// 1. val = link.getAttribute('href')
+// 2. val = link.setAttribute('href', 'http//google.com')
+// 3. val = link.hasAttribute('title')
+// -- link.setAttribute('title' 'Google')
+// 4. link.removeAttribute('title')
+
+// 1. click
+// 2. dblclick
+// 3. mousedown
+// 4. mouseup
+// 5. mouseenter
+// 6. mouseleave
+// 7. mouseover 
+// 8. mouseout
+// 9. mousemove
+// 10. submit
+// 11. keydown
+// 12. keyup
+// 13. keypress
+// 14.focus
+// 15. blur -- click out 
+// 16. cut
+// 17. paste
+// 18. input
+// 19. change
+
+
+// Event target element
+// 1. e.target;
+// 2. e.target.id;
+// 3. e.target.className;
+// 4. e.target.classList;
+// 5. e.target.innerText = 'Hello'
+// 6. e.type;
+// 7. e.timeStamp
+// 8. e.clientY; -window
+// 9. e.clientX;
+// 8. e.offsetY; - relative to element
+// 9. e.offsetX;
 
 
 
