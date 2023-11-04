@@ -389,6 +389,8 @@
 // 8. e.offsetY; - relative to element
 // 9. e.offsetX;
 
+// e.target.parentElement.classList.contains('delete-item')
+
 
 
 
