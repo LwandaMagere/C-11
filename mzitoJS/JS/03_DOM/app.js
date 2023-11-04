@@ -310,6 +310,43 @@
 
 
 
+// NOTES NOTES NOTES EXTRA NOTES
+
+// 1. document.getElementById('task-title').id;
+// 2. document.querySelector('#task-title');
+// 3. document.getElementsByClassName('collection-item') -html colle
+// 4. document.getElementsByTagName('li')
+// 5. document.querySelectorAll(ul.collection) - returns nodes list
+
+// 1. val = list.childNodes - even text nodes
+// 2. val = list.children - html collections, elements only
+// 3. val = list.children[3].children;
+// 4. val = list.firstChild - even text nodes
+// 5. val = list.firstElementChild - element
+// 6. val = list.lastElementChild - return element
+// 7. val = list.childELementCount
+
+// 1. val = list.parentNode;
+// 2. val = list.parentElement;
+// 3. val = list.parentElement.parentElement;
+
+// 1. val = list.nextSibling - text node
+// 2. val = list.nextELementSibling.nextELementSibling
+// 3. val = list.previousSibling
+// 4. val = list.previousElementSibling
+
+// 1. const li = document.createElement('li');
+// 2. li.className = 'collection-item'
+// 3. li.setAttribute('title', 'New item')
+// 4. li.appendChild(document.createTextNode('Helo'))
+
+// 1. cardActon.replaceChild(newHead, oldHead);
+// 2. lis[0].remove()
+
+
+
+
+
 
 
 
