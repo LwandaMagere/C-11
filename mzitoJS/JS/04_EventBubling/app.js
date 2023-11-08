@@ -74,25 +74,36 @@
 //     e.preventDefault();
 // })
 
-document.querySelector('form').addEventListener('submit', function(e) {
-    const task = document.getElementById('task').value;
+// document.querySelector('form').addEventListener('submit', function(e) {
+//     const task = document.getElementById('task').value;
 
-    let tasks;
+//     let tasks;
 
-    if (localStorage.getItem('tasks') === null) {
-        tasks = [];
-    } else {
-        tasks = JSON.parse(localStorage.getItem('tasks'));
-    }
+//     if (localStorage.getItem('tasks') === null) {
+//         tasks = [];
+//     } else {
+//         tasks = JSON.parse(localStorage.getItem('tasks'));
+//     }
 
-    tasks.push(task);
+//     tasks.push(task);
 
-    localStorage.setItem('tasks', JSON.stringify(tasks));
+//     localStorage.setItem('tasks', JSON.stringify(tasks));
 
-    alert('task saved');
+//     alert('task saved');
 
-    e.preventDefault();
-})
+//     e.preventDefault();
+// })
+
+//// NOTES NOTES NOTES EXTRA NOTES
+
+//// e.target.parentElement.classList.contains('delete-item')
+
+// 1. localStorage.seItem('name', 'Dado');
+// 2. sessionStorage.seItem('name', 'Beth');
+// 3. localStoreage.removeItem('name');
+// 4. const name = localStorage.getItem('name');
+// 5. localStorage.clear();
+
 
 
 
