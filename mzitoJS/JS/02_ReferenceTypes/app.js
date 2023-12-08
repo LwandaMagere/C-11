@@ -208,7 +208,11 @@
 
 // let val;
 
+// val = window.outerHeight;
+// val = window.outerWidth;
+
 // val = window.innerHeight;
+// val = window.innerWidth;
 
 // // Scroll Points
 // val = window.scrollX;

@@ -389,6 +389,14 @@
 // 8. e.offsetY; - relative to element
 // 9. e.offsetX;
 
+// 1. DOM Selectors
+// 2. Traversing the DOM
+// 3. Creating ELements
+// 4. Removing and Replacing Elements
+// 5. Event Listeners
+// 6. Mouse Events
+// 7. Key Board Input Events
+
 
 
 
