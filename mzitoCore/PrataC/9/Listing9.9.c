@@ -1,7 +1,7 @@
 /* usehotel.c -- room rate program */
 /* compile with Listing 9.10 */
 #include <stdio.h>
-#include "hotel.h" /* defines constants, declares functions */
+#include "Listing9.11.h" /* defines constants, declares functions */
 
 int main(void) 
 {

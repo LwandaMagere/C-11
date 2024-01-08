@@ -1,6 +1,6 @@
 /* hotel.c -- hotel management functions */
 #include <stdio.h>
-#include "hotel.h"
+#include "Listing9.11.h"
 
 int menu(void)
 {
@@ -8,8 +8,7 @@ int menu(void)
     printf("\n%s%s\n", STARS, STARS);
     printf("Enter the number of the desired hotel:\n");
     printf("1) Fairfield Arms2) Hotel Olympic\n");
-    printf("3) Chertworthy Plaza
-    4) The Stockton\n");
+    printf("3) Chertworthy Plaza 4) The Stockton\n");
     printf("5) quit\n");
     printf("%s%s\n", STARS, STARS);
     while ((status = scanf("%d", &code)) != 1 ||(code < 1 || code > 5))
