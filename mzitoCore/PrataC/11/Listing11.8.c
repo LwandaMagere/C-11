@@ -11,7 +11,7 @@ int main(void)
     // puts("Done.");
 
     puts("Enter strings (empty line to quit):");
-    while (fgets(words, STLEN stdin));
+    while (fgets(words, STLEN, stdin));
         puts("Done");
     
     return 0;
