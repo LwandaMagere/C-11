@@ -13,6 +13,10 @@ int main(void)
     puts("Enter strings (empty line to quit):");
     while (fgets(words, STLEN, stdin));
         puts("Done");
+
+    puts("Enter anything you feel like bana");
+    while (fgets(words, STLEN, stdin));
+        puts("Done");
     
     return 0;
 }
