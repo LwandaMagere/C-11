@@ -18,5 +18,9 @@ int main(void)
     while (fgets(words, STLEN, stdin));
         puts("Done");
     
+    puts("Enter Strings (Empty line to quit):");
+    while (fgets(words, STLEN, stdin));
+        puts("Done ");
+    
     return 0;
 }
