@@ -1,8 +1,8 @@
 // addresses.c -- addresses of strings
 #define MSG "I'm special."
-#include <stdio.h>
-int main()
+int main(void) 
 {
+
     char ar[] = MSG;
     const char *pt = MSG;
     printf("address of \"I'm special\": %p \n", "I'm special");
