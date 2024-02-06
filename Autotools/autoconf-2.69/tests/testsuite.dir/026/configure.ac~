@@ -1,0 +1,5 @@
+AC_INIT
+AC_PROG_CC
+AC_TRY_COMPILE([], [choke me], [echo bogus1],
+	       [AC_TRY_COMPILE([], [return 0;], [echo good], [echo bogus2])])
+AC_OUTPUT

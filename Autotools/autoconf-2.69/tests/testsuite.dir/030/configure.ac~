@@ -1,0 +1,8 @@
+AC_DEFUN([MACRO],
+[AC_REQUIRE([AC_DECL_SYS_SIGLIST])
+AC_CHECK_DECLS([_sys_siglist], [], [], [#include <signal.h>])
+])
+
+AC_INIT
+MACRO
+AC_OUTPUT

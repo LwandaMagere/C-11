@@ -1,0 +1,8 @@
+#                             -*- compilation -*-
+503. autoscan.at:20: testing autoscan ...
+./autoscan.at:44: autoscan
+--- /dev/null	2024-02-06 10:17:41.065138974 +0300
++++ /home/lwanda/Desktop/js_sandbox/Autotools/autoconf-2.69/tests/testsuite.dir/at-groups/503/stderr	2024-02-06 19:55:24.880019891 +0300
+@@ -0,0 +1 @@
++Unescaped left brace in regex is passed through in regex; marked by <-- HERE in m/\${ <-- HERE [^\}]*}/ at /home/lwanda/Desktop/js_sandbox/Autotools/autoconf-2.69/bin/autoscan line 361.
+503. autoscan.at:20: 503. autoscan (autoscan.at:20): FAILED (autoscan.at:44)

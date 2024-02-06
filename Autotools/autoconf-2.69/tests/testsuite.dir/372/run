@@ -1,0 +1,5 @@
+#! /bin/sh
+test "${ZSH_VERSION+set}" = set && alias -g '${1+"$@"}'='"$@"'
+cd '/home/lwanda/Desktop/js_sandbox/Autotools/autoconf-2.69/tests'
+exec ${CONFIG_SHELL-/bin/bash} "/home/lwanda/Desktop/js_sandbox/Autotools/autoconf-2.69/tests/./testsuite" -v -d  372 ${1+"$@"}
+exit 1

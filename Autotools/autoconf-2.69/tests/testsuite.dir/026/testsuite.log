@@ -1,0 +1,10 @@
+#                             -*- compilation -*-
+26. tools.at:931: testing autoupdating macros recursively ...
+./tools.at:944: autoupdate 
+./tools.at:945: grep changequote configure.ac
+--- /dev/null	2024-02-06 10:17:41.065138974 +0300
++++ /home/lwanda/Desktop/js_sandbox/Autotools/autoconf-2.69/tests/testsuite.dir/at-groups/26/stdout	2024-02-06 19:45:43.076006678 +0300
+@@ -0,0 +1 @@
++AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[]], [[choke me]])],[echo bogus1],[_au_m4_changequote([,])AC_TRY_COMPILE([], [return 0;], [echo good], [echo bogus2])])
+./tools.at:945: exit code was 0, expected 1
+26. tools.at:931: 26. autoupdating macros recursively (tools.at:931): expected failure (tools.at:945)

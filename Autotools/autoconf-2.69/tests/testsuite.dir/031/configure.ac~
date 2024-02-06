@@ -1,0 +1,9 @@
+m4_define([MACRO],
+[[#define STRING "hello, world\n"
+]])
+
+AC_INIT
+AC_TRY_COMPILE([#include <stdio.h>
+	       ]MACRO[], [printf (STRING);],
+	       [], [AS_EXIT([1])])
+AC_OUTPUT

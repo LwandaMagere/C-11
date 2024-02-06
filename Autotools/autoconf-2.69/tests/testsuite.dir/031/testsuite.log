@@ -1,0 +1,12 @@
+#                             -*- compilation -*-
+31. tools.at:1061: testing autoupdating with complex quoting ...
+./tools.at:1078: autoupdate 
+stderr:
+./tools.at:1079: autoconf --force 
+./tools.at:1080: grep MACRO configure
+--- /dev/null	2024-02-06 10:17:41.065138974 +0300
++++ /home/lwanda/Desktop/js_sandbox/Autotools/autoconf-2.69/tests/testsuite.dir/at-groups/31/stdout	2024-02-06 19:45:46.508006756 +0300
+@@ -0,0 +1 @@
++	       MACRO
+./tools.at:1080: exit code was 0, expected 1
+31. tools.at:1061: 31. autoupdating with complex quoting (tools.at:1061): expected failure (tools.at:1080)

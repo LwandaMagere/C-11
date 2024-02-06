@@ -1,0 +1,7 @@
+AC_INIT
+AC_PROG_CC
+# temporarily override this macro
+m4_pushdef([AC_MSG_RESULT_UNQUOTED], [:])
+AC_C_BIGENDIAN
+m4_popdef([AC_MSG_RESULT_UNQUOTED])
+AC_OUTPUT
