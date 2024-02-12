@@ -1,7 +1,6 @@
 /* fgets1.c -- using fgets() and fputs() */
 #include <stdio.h>
 #define STLEN 14
-
 int main(void) 
 {
     char words[STLEN];
@@ -16,7 +15,7 @@ int main(void)
     printf("Your string twice (puts(), then fputs()):\n");
     puts(words);
     fputs(words, stdout);
-    puts("Done.");
-    
+    puts("Done");
+
     return 0;
 }
