@@ -7,6 +7,6 @@ int main(void)
     char side_b[] = "Side B";
 
     puts(dont); /* dont is not a string */
-    
+
     return 0;
 }
