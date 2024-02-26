@@ -1,9 +1,13 @@
 /* nono.c -- no! */
 #include <stdio.h>
 void put1(const char * string);
-void put2(const char * string);
+int put2(const char * string);
 int main(void) 
 {
+    put1("If I'd as much money");
+    put1(" as I could spend,\n");
+    printf("I count %d characters.\n", put2("I never would cry old chairs to mend."));
+
     char side_a[] = "Side A";
     char dont[] = {'W', 'O', 'W', '!' };
     char side_b[] = "Side B";
@@ -19,7 +23,7 @@ void put1(const char * string)
         putchar(*string++);
 }
 
-void put2(const char * string) 
+int put2(const char * string) 
 {
     int count = 0;
     while (*string) 
