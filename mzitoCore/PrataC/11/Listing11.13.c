@@ -1,6 +1,7 @@
 /* nono.c -- no! */
 #include <stdio.h>
 void put1(const char * string);
+void put2(const char * string);
 int main(void) 
 {
     char side_a[] = "Side A";
@@ -16,6 +17,19 @@ void put1(const char * string)
 {
     while (*string != '\0')
         putchar(*string++);
+}
+
+void put2(const char * string) 
+{
+    int count = 0;
+    while (*string) 
+    {
+        putchar(*string++);
+        count++;
+    }
+    putchar('\n');
+
+    return count;
 }
 
 /*The char pointer string initially points to the first element of the called argument. Because
