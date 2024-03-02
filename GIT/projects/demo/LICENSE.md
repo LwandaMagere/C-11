@@ -1,4 +1,0 @@
-# LICENSE
-
-Demo license
-sass
