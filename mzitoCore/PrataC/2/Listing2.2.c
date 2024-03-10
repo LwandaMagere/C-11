@@ -1,13 +1,14 @@
+// fathm_ft.c -- converts 2 fathoms to feet
+
 #include <stdio.h>
-
-int main(void)
+int main(void) 
 {
-    int feet, fathom;
+    int feet, fathoms;
 
-    fathom = 2;
-    feet = 6 * fathom;
-    printf("There are %d feet in %d fathoms!\n", feet, fathom);
-    printf("Yes, I said %d feet!\n", 6 * fathom);
+    fathoms = 2;
+    feet = 6 * fathoms;
+    printf("There are %d feet in %d fathoms!\n", feet, fathoms);
+    printf("Yes, I said %d feet!\n", 6 * fathoms);
     
     return 0;
 }
