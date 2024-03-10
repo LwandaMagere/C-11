@@ -1,6 +1,7 @@
+//* two_func.c -- a program using two functions in one file */
 #include <stdio.h>
-void butler();
-int main(void)
+void butler(void);  /* ANSI/ISO C function prototyping */
+int main(void) 
 {
     printf("I will summon the butler function.\n");
     butler();
@@ -9,7 +10,7 @@ int main(void)
     return 0;
 }
 
-void butler()
+void butler(void) 
 {
-    printf("You rang sir?\n");
+    printf("You rang, sir?\n");
 }
