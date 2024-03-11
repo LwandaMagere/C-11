@@ -1,10 +1,10 @@
+/* varwid.c -- uses variable-width output field */
 #include <stdio.h>
-
-int main(void)
+int main(void) 
 {
     unsigned width, precision;
     int number = 256;
-    double weight = 123.5;
+    double weight = 242.5;
 
     printf("Enter a field width:\n");
     scanf("%d", &width);
@@ -12,7 +12,7 @@ int main(void)
     printf("Now enter a width and a precision:\n");
     scanf("%d %d", &width, &precision);
     printf("Weight = %*.*f\n", width, precision, weight);
-    printf("Done\n");
+    printf("Done!\n");
     
     return 0;
 }
