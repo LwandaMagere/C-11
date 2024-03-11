@@ -1,6 +1,6 @@
+/* stringf.c -- string formatting */
 #include <stdio.h>
 #define BLURB "Authentic imitation!"
-
 int main(void)
 {
     printf("[%2s]\n", BLURB);
