@@ -1,12 +1,12 @@
+/* width.c -- field widths */
 #include <stdio.h>
-#define PAGE 959
-
+#define PAGES 959
 int main(void) 
 {
-    printf("*%d*\n", PAGE);
-    printf("*%2d*\n", PAGE);
-    printf("*%10d*\n", PAGE);
-    printf("*%-10d*\n", PAGE);
+    printf("*%d*\n", PAGES);
+    printf("*%2d*", PAGES);
+    printf("*%10d*", PAGES);
+    printf("*%-10d*", PAGES);
     
     return 0;
 }
