@@ -1,3 +1,4 @@
+/* pizza.c -- uses defined constants in a pizza context */
 #include <stdio.h>
 #define PI 3.14159
 int main(void) 
