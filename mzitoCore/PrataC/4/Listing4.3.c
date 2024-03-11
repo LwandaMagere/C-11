@@ -1,6 +1,9 @@
+/* praise2.c */
+// try the %u or %lu specifiers if your implementation
+// does not recognize the %zd specifier
 #include <stdio.h>
-#include <string.h>
-#define PRAISE "You are an extraordinary being"
+#include <string.h>  /* provides strlen() prototype */
+#define PRAISE "You are an extraordinary being."
 int main(void) 
 {
     char name[40];
