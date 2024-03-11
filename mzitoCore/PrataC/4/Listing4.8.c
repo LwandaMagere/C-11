@@ -1,5 +1,5 @@
+// floats.c -- some floating-point combinations
 #include <stdio.h>
-
 int main(void) 
 {
     const double RENT = 3852.99; // const-style constant
