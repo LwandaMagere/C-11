@@ -1,11 +1,13 @@
+/* shoes2.c -- calculates foot lengths for several sizes */
 #include <stdio.h>
 #define ADJUST 7.31
-
-int main()
+int main(void) 
 {
     const double SCALE = 0.333;
     double shoe, foot;
-    printf("Shoe size (men's) foot length\n");
+
+    printf("Shoe size (men's)   foot length\n");
+    shoe = 3.0;
     while (shoe < 18.5) 
     {
         foot = SCALE * shoe + ADJUST;
@@ -13,6 +15,5 @@ int main()
         shoe = shoe + 1.0;
     }
     printf("If the shoe fits, wear it.\n");
-    
     return 0;
 }
