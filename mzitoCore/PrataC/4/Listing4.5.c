@@ -1,7 +1,7 @@
+// defines.c -- uses defined constants from limit.h and float.
 #include <stdio.h>
-#include <limits.h>
-#include <float.h>
-
+#include <limits.h> // integer limits
+#include <float.h>  // floating-point limits
 int main(void) 
 {
     printf("Some number limits for this system:\n");
@@ -12,6 +12,6 @@ int main(void)
     printf("Smallest normal float: %e\n", FLT_MIN);
     printf("float precision = %d digits\n", FLT_DIG);
     printf("float epsilon = %e\n", FLT_EPSILON);
-
+    
     return 0;
 }
