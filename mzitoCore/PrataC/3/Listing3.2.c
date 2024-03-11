@@ -1,5 +1,5 @@
+/* print1.c-displays some properties of printf() */
 #include <stdio.h>
-
 int main(void) 
 {
     int ten = 10;
