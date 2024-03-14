@@ -11,10 +11,10 @@ int main()
     // cout << "guess = " << guess << endl;
     // cout << "debt = " << debt << endl;
 
-    int age(5);
+    int (age)(5);
     int age1{7};
     cout << age << endl;
     cout << age1 << endl;
-    
+
     return 0;
 }
