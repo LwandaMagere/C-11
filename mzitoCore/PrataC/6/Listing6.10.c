@@ -1,14 +1,12 @@
-// sweetie1.c -- a counting loop
+// sweetie2.c -- a counting loop using for
 #include <stdio.h>
-int main(void) 
+int main(void)
 {
     const int NUMBER = 22;
-    int count = 1;
-
-    while (count <= NUMBER) 
-    {
+    int count;
+    
+    for (count = 1; count <= NUMBER; count++)
         printf("Be my Valentine!\n");
-        count++;
-    }
+
     return 0;
 }
