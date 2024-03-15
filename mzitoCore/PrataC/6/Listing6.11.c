@@ -1,12 +1,12 @@
-// sweetie2.c -- a counting loop using for
+/* for_cube.c -- using a for loop to make a table of cubes */
 #include <stdio.h>
-int main(void)
+int main(void) 
 {
-    const int NUMBER = 22;
-    int count;
+    int num;
 
-    for (count = 1; count <= NUMBER; count++)
-        printf("Be my Valentine!\n");
-
+    printf("    n   n cubed\n");
+    for (num = 1; num <= 6; num++)
+        printf("%5d %5d\n", num, num*num*num);
+        
     return 0;
 }
