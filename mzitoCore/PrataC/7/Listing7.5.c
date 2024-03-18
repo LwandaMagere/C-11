@@ -1,11 +1,12 @@
+// divisors.c -- nested ifs display divisors of a number
 #include <stdio.h>
 #include <stdbool.h>
 
-int main(void) 
+int main()
 {
     unsigned long num;
     unsigned long div;
-    bool isPrime;
+    bool isPrime;          // prime flag
 
     printf("Please enter an integer for analysis; ");
     printf("Enter q to quit.\n");
@@ -16,9 +17,11 @@ int main(void)
             if (num % div == 0)
             {
                 if ((div * div) != num)
-                    printf("%lu is divisible by %lu and %lu.\n",num, div, num / div);
+                    printf("%lu is divisible by %lu and %lu.\n",
+                num, div, num / div);
                 else
-                    printf("%lu is divisible by %lu.\n",num, div);
+                    printf("%lu is divisible by %lu.\n",
+                num, div);
                 isPrime= false; // number is not prime
             }
         }
@@ -27,6 +30,7 @@ int main(void)
         printf("Please enter another integer for analysis; ");
         printf("Enter q to quit.\n");
     }
+    printf("Bye.\n");
 
     return 0;
 }
