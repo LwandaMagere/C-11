@@ -44,3 +44,15 @@ void showmenu()
     "3) alibi   4) comfort\n"
     "5) quit\n";
 }
+void report()
+{
+    cout << "It's been an excellent week for business.\n"
+    "Sales are up 120%. Expenses are down 35%.\n";
+}
+
+void comfort()
+{
+    cout << "Your employees think you are the finest CEO\n"
+    "in the industry. The board of directors think\n"
+    "you are the finest CEO in the industry.\n";
+}
