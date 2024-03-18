@@ -11,7 +11,7 @@
 #define BASE2 (BASE1 + (RATE2 * (BREAK2 - BREAK1))) // cost for 468 kwh
 #define BASE3 (BASE1 + BASE2 + (RATE3 *(BREAK3 - BREAK2))) //cost for 720 kwh
 
-int main(void)
+int main(void) 
 {
     double kwh; // kilowatt-hours used
     double bill; // charges
@@ -26,6 +26,5 @@ int main(void)
     else // kwh above 680
         bill = BASE3 + (RATE4 * (kwh - BREAK3));
     printf("The charge for %.1f kwh is $%1.2f.\n", kwh, bill);
-
     return 0;
 }
