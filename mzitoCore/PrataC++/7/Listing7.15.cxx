@@ -26,6 +26,9 @@ void fill(std::array<double, Seasons> * pa)
     {
         cout << "Enter " << Snames[i] << " expenses: ";
         cin >> (*pa)[i];
+        cout << (*pa)[i];
+        // cout << pa;
+        
         
                 
     }
