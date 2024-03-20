@@ -55,3 +55,5 @@ const double * f3(const double ar[], int n)
 {
     return ar+2;
 }
+
+// check pointer notation in this chapter
