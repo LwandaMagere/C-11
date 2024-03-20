@@ -1,0 +1,20 @@
+/* 
+    Typography is the way that text
+    is arranged and presented
+*/
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Times New Romans';
+}
+
+/* input, button {
+    font: inherit;
+} */
+
+p {
+    text-decoration: line-through;
+    text-indent: 2em;
+    line-height: 1.5;
+}
