@@ -1,0 +1,29 @@
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: Roboto, sans-serif;
+}
+
+/* main {
+    opacity: 0.4;
+} */
+
+a {
+    /* text-decoration: none; */
+    /* cursor: not-allowed; */
+    cursor: pointer;
+}
+
+a:visited {
+    color: purple;
+}
+
+ a:hover, a:focus {
+    color: dodgerblue;
+    background-color: gold;
+}
+
+a:active {
+    color: red;
+}
