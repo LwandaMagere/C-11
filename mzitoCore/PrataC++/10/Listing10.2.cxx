@@ -1,6 +1,5 @@
 // stock00.cpp -- implementing the Stock class
 // version 00
-#include <iostream>
 #include "Listing10.1.h"
 
 void Stock::acquire(const std::string & co, long n, double pr) 

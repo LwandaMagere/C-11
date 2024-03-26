@@ -3,6 +3,7 @@
 #ifndef STOCK00_H_
 #define  STOCK00_H_
 
+#include <iostream>
 #include <string>
 
 class Stock
