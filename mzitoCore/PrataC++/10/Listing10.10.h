@@ -3,6 +3,7 @@
 #define STACK_H_
 
 #include <iostream>
+using namespace std;
 
 typedef unsigned long Item;
 
