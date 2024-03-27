@@ -1,0 +1,24 @@
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+ul {
+    list-style-type: square;
+    line-height: 1.6;
+    color: blue;
+}
+
+ul li:nth-child(even) {
+    color: red;
+}
+
+::marker {
+    color: black;
+}
+
