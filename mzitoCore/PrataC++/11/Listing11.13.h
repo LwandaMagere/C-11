@@ -3,6 +3,10 @@
 #define VECTOR_H_
 #include <iostream>
 
+using std::cout;
+using std::endl;
+using std::ostream;
+
 namespace VECTOR 
 {
     class Vector 
@@ -23,6 +27,7 @@ namespace VECTOR
         public:
             Vector();
             Vector(double, double, Mode form = RECT);
+            void reset(double n1, double n2, Mode form = RECT);
             ~Vector();
             double xval() const {return x;} // report x value
             double yval() const {return y;} // report y value
@@ -37,7 +42,7 @@ namespace VECTOR
             Vector operator*(double n) const;
             // friends
             friend Vector operator*(double, const Vector &);
-            friend std::ostream & operator<<(std::ostream & os, const Vector &);
+            friend ostream & operator<<(ostream & os, const Vector &);
     };
 }  // end namespace VECTOR
 
