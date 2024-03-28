@@ -16,7 +16,7 @@ int main()
     unsigned long steps = 0;
     double target;
     double dstep;
-    
+
     cout << "Enter target distance (q to quit): ";
     while (cin >> target) 
     {
@@ -51,3 +51,5 @@ int main()
 
     return 0;
 }
+
+// check oporator-()
