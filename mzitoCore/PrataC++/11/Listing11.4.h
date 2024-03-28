@@ -15,7 +15,7 @@ class Time
         void AddHr(int h);
         void Reset(int h = 0, int m = 0);
         Time operator+(const Time & t) const;
-        void Show() const;
+        void Show() const ;
 };
 
 #endif
