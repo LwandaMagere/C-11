@@ -2,6 +2,8 @@
 #ifndef MYTIMEO_H_
 #define MYTIMEO_H_
 
+#include <iostream>
+
 class Time
 {
     private:
