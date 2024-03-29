@@ -8,7 +8,7 @@ class StringBad
     private:
         char * str;   // pointer to string
         int len;            // length of string
-        static int num_string;  // number of objects
+        static int num_strings;  // number of objects
     public:
         StringBad(const char * s);
         StringBad();
