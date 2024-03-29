@@ -17,8 +17,8 @@ class Stonewt
         void show_lbs() const;
         void show_stn() const;
         // conversion function
-        operator int() const;
-        operator double() const;
+        explicit operator int() const;
+        explicit operator double() const;
     
 };
 
