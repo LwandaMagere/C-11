@@ -27,7 +27,7 @@ int main()
     pc2 = new JustTesting("Heap1", 20);    // place object on heap
 
     cout << "Memory block addresses:\n" << "buffer: "
-         << (void *) buffer << "    heap: " << pc2 << endl;
+         <<  (void *)buffer << "    heap: " << pc2 << endl;
     cout << "Memory contents:\n";
     cout << pc1 << ":       ";
     pc1->Show();
