@@ -96,18 +96,18 @@ class Queue
         struct Node
         {
             Item item;
-            struct Node * next;
+             Node * next;
         };
         enum { Q_SIZE  = 10 };
-        Node * front;       // pointer to front of Queue
-        Node * rear;        // pointer to rear of Queue
+         Node * front;       // pointer to front of Queue
+         Node * rear;        // pointer to rear of Queue
         int items;          // current number of items in Queue
         const int qsize;    // maximum number of items in Queue
 
         // preemptive definitions to prevent public copying
         Queue(const Queue & q) : qsize(0){}
         Queue & operator=(const Queue & q) {return *this;}
-        
+
     public:
         Queue(int qs = Q_SIZE); // create queue with a qs limit
         ~Queue();
