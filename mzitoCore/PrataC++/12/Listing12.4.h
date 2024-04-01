@@ -10,7 +10,7 @@ class String
     private:
         char * str;  // pointer to string
         int len;    // length of string
-        static int num_string;  // number of objects
+        static int num_strings;  // number of objects
         static const int CINLIM = 80;  // cin input limit
     public:
     // constructors and other methods
@@ -18,7 +18,7 @@ class String
         String();
         String(const String &);
         ~String();
-        int length() const; {return len;}
+        int length() const {return len;}
     // overloaded operator methods
         String & operator=(const String &);
         String & operator=(const char *);
