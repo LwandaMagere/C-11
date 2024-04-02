@@ -1,11 +1,11 @@
 /* break.c -- uses break to exit a loop */
 #include <stdio.h>
-int main(void)
+int main(void) 
 {
     float length, width;
 
     printf("Enter the length of the rectangle:\n");
-    while (scanf("%f", &length) == 1)
+    while (scanf("%f", &length) == 1) 
     {
         printf("Length = %0.2f:\n", length);
         printf("Enter its width:\n");
@@ -16,6 +16,6 @@ int main(void)
         printf("Enter the length of the rectangle:\n");
     }
     printf("Done.\n");
-
+    
     return 0;
 }
