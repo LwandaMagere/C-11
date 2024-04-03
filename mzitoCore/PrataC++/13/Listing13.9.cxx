@@ -1,5 +1,5 @@
 // usebrass1.cpp -- testing bank account classes
-// compile with brass.cpp
+// compile with brass.cpp / 13.8
 #include <iostream>
 #include "Listing13.7.h"
 
@@ -24,6 +24,6 @@ int main()
     cout << "Withdrawing $4200 from the Hogg Account:\n";
     Hoggy.Withdraw(4200.00);
     Hoggy.ViewAcct();
-    
+
     return 0;
 }
