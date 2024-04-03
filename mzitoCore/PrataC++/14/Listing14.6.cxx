@@ -41,3 +41,5 @@ void set(Student & sa, int n)
     while (cin.get() != '\n')
         continue;
 }
+
+// Check valarray and stuff like containment
