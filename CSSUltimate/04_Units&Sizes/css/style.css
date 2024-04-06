@@ -1,9 +1,18 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* header {
+    width: 50%;
+} */
+
+  main {
+    width: 50vw;
+    background-color: skyblue;
+    font-size: 2rem;
+ }
 
 h1 {
     border: 2px dashed red;
@@ -15,4 +24,4 @@ h1 {
 p {
     font-size: 2rem;
     width: 40ch;
-}
+}       
