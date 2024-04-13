@@ -1,6 +1,7 @@
 // tabtenn0.h -- a table-tennis base class
 #ifndef TABTENNO_H_
 #define TABTENNO_H_
+#include <iostream>
 using std::string;
 
 class TableTennisPlayer 
@@ -10,10 +11,11 @@ class TableTennisPlayer
         string lastname;
         bool hasTable;
     public:
-        TableTennisPlayer(const string & fn = "none", const string ln = "none", bool ht = false);
+        TableTennisPlayer(const string & fn = "none", const string & ln = "none", bool ht = false);
         void Name() const;
         bool HasTable() const { return hasTable; };
         void ResetTable(bool v) { hasTable = v; };
-        
+
 };
+
 #endif
