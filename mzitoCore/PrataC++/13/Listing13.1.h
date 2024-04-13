@@ -1,20 +1,19 @@
-#ifndef TABTENN0_H_
-#define TABTENN0_H_
-
-#include <string>
-
+// tabtenn0.h -- a table-tennis base class
+#ifndef TABTENNO_H_
+#define TABTENNO_H_
 using std::string;
-class TableTennisPlayer
+
+class TableTennisPlayer 
 {
     private:
         string firstname;
         string lastname;
         bool hasTable;
     public:
-        TableTennisPlayer(const string & fn = "none", const string & ls = "none", bool hasTable = false);
+        TableTennisPlayer(const string & fn = "none", const string ln = "none", bool ht = false);
         void Name() const;
-        bool HasTable() const { return hasTable;}
-        void ResetTable(bool v) {hasTable = v;}
+        bool HasTable() const { return hasTable; };
+        void ResetTable(bool v) { hasTable = v; };
+        
 };
-
 #endif
