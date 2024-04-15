@@ -55,7 +55,7 @@ lacksDMA::lacksDMA(const char * c, const baseDMA & rs) : baseDMA(rs)
 
 std::ostream & operator<<(std::ostream & os, const lacksDMA & ls)
 {
-    os << (const baseDMA &) ls;
+    os << (const baseDMA &) ls; // access base class portion ///////////////////////////////////////////////////////////////////////
     os << "Color: " << ls.color << std::endl;
     return os;
 }
@@ -73,7 +73,7 @@ hasDMA::hasDMA(const char * s, const baseDMA & rs) : baseDMA(rs)
     std::strcpy(style, s);
 }
 
-hasDMA::hasDMA(const hasDMA & hs) : baseDMA(hs) // invoke base class copy constructor
+hasDMA::hasDMA(const hasDMA & hs) : baseDMA(hs) // invoke base class copy constructor /////////////////////////////////////////////
 {
     style = new char[std::strlen(hs.style) + 1];
     std::strcpy(style, hs.style);
@@ -88,7 +88,7 @@ hasDMA & hasDMA::operator=(const hasDMA & hs)
 {
     if (this == &hs)
         return *this;
-    baseDMA::operator=(hs);
+    baseDMA::operator=(hs); // copy base class portion ///////////////////////////////////////////////
     delete [] style;
     std::strcpy(style, hs.style);
     return *this;
@@ -96,7 +96,13 @@ hasDMA & hasDMA::operator=(const hasDMA & hs)
 
 std::ostream & operator<<(std::ostream & os, const hasDMA & hs) 
 {
-    os << (const baseDMA &) hs;
+    os << (const baseDMA &) hs; // call the right friend function that matches the typecast
     os << "Style: " << hs.style << std::endl;
     return os;
 }
+
+ // 1. os << (const baseDMA & ) hs access base class portion for display with a friend function
+
+ // 2. hasDMA::hasDMA(const hasDMA & rs) : baseDMA(rs);  invoke base class copy constructor
+
+// 3. baseDMA::operator=(hs) copy base base class portion
