@@ -29,3 +29,12 @@ int main()
 
     return 0;
 }
+
+void display(const Stonewt & st, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Wow! ";
+        st.show_stn();
+    }
+}
