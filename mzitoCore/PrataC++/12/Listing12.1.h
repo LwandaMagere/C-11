@@ -8,7 +8,7 @@ class StringBad
     private:
         char * str;
         int len;
-        static int num_string;
+        static int num_strings;
     public:
         StringBad(const char *);
         StringBad();
