@@ -71,11 +71,11 @@ char & String::operator[](int i)
     return str[i];
 }
 
-// read-only char access for const String
-const char & String::operator[](int i) const
-{
-    return str[i];
-}
+//read-only char access for const String
+// const char & String::operator[](int i) const
+// {
+//     return str[i];
+// }
 
 // overloaded operator friends
 bool operator<(const String &st1, const String &st2)

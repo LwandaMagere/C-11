@@ -21,7 +21,7 @@ class String
         // overloaded operator methods
         String & operator=(const String &);
         String & operator=(const char *);
-        char & operator[](int i);
+        char & operator[](int );
         const char & operator[](int) const;
         friend bool operator<(const String &st, const String &st2);
         friend bool operator>(const String &st1, const String &st2);
