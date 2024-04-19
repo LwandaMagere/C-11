@@ -66,16 +66,16 @@ String & String::operator=(const char * s)
 }
 
 // read-write char access for non-const String
-char & String::operator[](int i) 
+char  String::operator[](int i) 
 {
     return str[i];
 }
 
 //read-only char access for const String
-// const char & String::operator[](int i) const
-// {
-//     return str[i];
-// }
+const char & String::operator[](int i) const
+{
+    return str[i];
+}
 
 // overloaded operator friends
 bool operator<(const String &st1, const String &st2)
@@ -94,7 +94,7 @@ bool operator==(const String &st1, const String &st2)
 }
 
 // simple String output
-ostream & operator<<(ostream & os, const String & st)
+ostream  operator<<(ostream & os, const String & st)
 {
     os << st.str;
     return os;

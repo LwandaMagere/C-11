@@ -16,7 +16,7 @@ int main()
 
     cout << name << ", please enter up to " << ArSize
          << " short sayings <empty line to quit>:\n";
-    String sayings[ArSize];
+     String sayings[ArSize];
     char temp[MaxLen];  // temporary string storage
     int i;
     for (i = 0; i < ArSize; i++)
