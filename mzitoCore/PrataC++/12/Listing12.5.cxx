@@ -94,7 +94,7 @@ bool operator==(const String &st1, const String &st2)
 }
 
 // simple String output
-ostream  operator<<(ostream & os, const String & st)
+ostream & operator<<(ostream & os, const String & st)
 {
     os << st.str;
     return os;
