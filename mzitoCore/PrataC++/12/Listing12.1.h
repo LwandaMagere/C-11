@@ -17,3 +17,5 @@ class StringBad
 };
 
 #endif
+
+// Comparison Members 648pg
