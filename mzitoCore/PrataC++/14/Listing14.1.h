@@ -10,6 +10,7 @@ class Student
 {
     private:
         typedef std::valarray<double> ArrayDb;
+        
         std::string name; // contained object
         ArrayDb scores; // contained object
         std::ostream & arr_out(std::ostream & os) const;
