@@ -1,8 +1,7 @@
 // stack.cpp -- Stack member functions
 #include "Listing10.10.h"
 
-Stack::Stack()
-// create an empty stack
+Stack::Stack() // create an empty stack
 {
     top = 0;
 }

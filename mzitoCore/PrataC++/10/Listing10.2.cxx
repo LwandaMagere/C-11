@@ -1,13 +1,15 @@
 // stock00.cpp -- implementing the Stock class
 // version 00
 #include "Listing10.1.h"
+#include <iostream>
+using std::cout;
 
 void Stock::acquire(const std::string & co, long n, double pr) 
 {
     company = co;
     if (n < 0)
     {
-        std::cout << "Number of shares can’t be negative; "
+        std::cout << "Number of shares can't be negative; "
                   << company << " shares set to 0.\n";
         shares = 0;
     }
