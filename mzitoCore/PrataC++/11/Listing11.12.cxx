@@ -12,7 +12,7 @@ int main(void)
     Time temp;
 
     cout  << "Aida and Tosca:\n";
-    cout  << aida<<"; " << tosca << endl;
+    cout  << aida <<"; " << tosca << endl;
     temp = aida + tosca; // operator+()
     cout  << "Aida + Tosca: " << temp << endl;
     temp = aida * 1.17; // member operator*()
