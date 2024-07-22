@@ -1,258 +1,222 @@
-// const name = 'Dado Steven';
-// const age = '30';
-// const job = 'Software Engineer';
-// const city = 'Nairobi';
-// let html;
+// const name = 'John';
+// const age = 30;
+// const job = 'Web Developer';
+// const city = 'Miami';
 
-// function hello() {
-//     return 'Hello'
+// Template String (es6)
+
+// function hello(){
+//     return 'Hello';
 // }
 
-// // With Template Strings (es6)
-
 // html = `
-//     <ul> 
-//         <li> Name: ${name}</li>
-//         <li> Age: ${age}</li>
-//         <li> Job: ${job}</li>
-//         <li> City:${city}</li>
-//         <li>${2 + 3}</li>
-//         <li>${hello()}</li>
-//         <li>${age < 30 ? 'over 30' : 'under 30'}</li>
-
-//     </ul>
-// `;
+//         <ul>
+//             <li>Name: ${name}</li>
+//             <li>Age: ${age}</li>
+//             <li>Job: ${job}</li>
+//             <li>City: ${city}</li>
+//             <li>${2 + 2}</li>
+//             <li>${hello()}</li>
+//         </ul>
+//     `
 
 // document.body.innerHTML = html;
 
 //********************************************************************** */
 
-// // Create some Arrays
-// const numbers = [12, 23, 45, 34, 78, 71, 17, 29];
-// const numbers2 = new Array(12, 28, 45, 74, 78, 71, 17, 10);
-// const fruits = ['Apple', 'Banana', 'Mango', 'Pears'];
-// const mixed = ['String', true, undefined, null, {a: 1, b: 2}, new Date(), Symbol()];
+// ARRAYS N ARRAY METHODS
+
+//create some arrays
+// const numbers = [34,45,27,89,46, 33, 25,,98];
+// const numbers2 = new Array(22,67,87,34,71,55);
+// const fruit = ['Apple', 'Mango', 'Banana','Orange'];
+// const mixed = [22, 'Apple', true, undefined, {a:1, b:2}, new Date()];
 
 // let val;
 
-// // Get Array length
+
+// // Get array length
 // val = numbers.length;
 
-// // Check if is Array.................................
+// // Check if is Array
 // val = Array.isArray(numbers);
 
-// // Find index of value .........................................
-// val = numbers2.indexOf(74);
+// // Insert into array
+// numbers[2] = 100;
+
+// //Find index of value
+// val = numbers.indexOf(34);
 
 // // MUTATING ARRAYS
 
-    // Add on to end ............................
-    // numbers2.push(250);
+// // Add on to end
+// numbers.push(250);
 
-    // Take off from end
-    // numbers2.pop();
+// // Add on to front
+// numbers.unshift(120);
 
-    // Add on to front ...........................
-    // numbers2.unshift(120);
-    // Take off from front
-    // numbers2.shift();
+// // Take off from end
+// numbers.pop();
 
-    // Reverse .........................................
-    // numbers.reverse();
+// // Take off from front
+// numbers.shift();
 
-    // concat .............................................
-    // val  = numbers.concat(numbers2);
+// // Splice values
+// numbers.splice(1,1);
 
-//  // Sorting Arrays
-//  val = fruits.sort();
-//  val = numbers2.sort();
+// // Reverse
+// numbers.reverse();
 
-//  // Use the compare function .............................................
-//  val = numbers2.sort(function(x,y){ return x - y; });
+// // Concatenate
+// val = numbers.concat(numbers2);
 
- // Find ...........................................................
-//  function under50(num) {
-//     return num <  50;
-//  }
+// // Sorting array
+// val = fruit.sort();
+// val = numbers.sort();
 
-//  val = numbers2.find(under50);
+// // Use the "compare function"
+// val = numbers.sort(function(x, y){
+//     return x - y;
+// })
 
-// console.log(numbers2);
+// // Reverse sort
+// val = numbers.sort(function(x, y){
+//     return y - x;
+// });
+
+// // Find
+// function under50(num){
+//     return num < 50;
+// }
+
+// val  = numbers.find(under50)
+
+
+// // console.log(numbers);
 // console.log(val);
 
 //********************************************************************** */
 
-//  OBJECT LITERRAL
+            // OBJECT LITERALS
 
 // const person = {
 //     firstName: 'Steve',
+//     lastName: 'Smith',
+//     age: '30',
+//     email: 'steve@gmai.com',
+//     hobbies: ['music', 'sports'],
 //     address: {
-//         city: 'Miami',
-//         state: 'FL'
+//         city: 'Nairobi',
+//         state: 'Florida'
 //     },
 //     getBirthYear: function() {
-//         return 2023 - this.age;
-//     },
-//     age : 30
+//         return 2017 - this.age;
+//     }
 // }
 
 // let val;
 
 // val = person;
-
-    // Get specific value
-// val = person.firstName;
-// val = person['firstName'];
+// val = person.hobbies;
 // val = person.address.city;
-// val = person['address']['city'];
+// val = person.getBirthYear();
 
 // console.log(val);
 
-// DATE
+// const people = [
+//     {name: 'Mike', age: '37'},
+//     {name: 'James', age: 32}
+// ]
 
-// let val;
-// const today = new Date();
-// val = today;
+// for (let i = 0; i < people.length; i++) {
+//     console.log(people[i].name);
+// }
 
 //********************************************************************** */
 
-// IF STATEMENTS, RELATION AND LOGICAL OPERATORS && || ! TERNARY
-
-// SWITCHES -- Used to validate conditions
-
-
-// FUNCTION DECLARATION
-
-// function hello() {
-//     return 'sasa';
-// }
-
-// console.log(hello);
-
-// // Function Expression -- putting a function as a variable assignment
-// const square = function(x) {
-//     return x * x;
-// }
-// console.log(square(5));
-
-// // Immediately Invokable Function Expression (IIFEs)
-
-// (function(){
-//     console.log('IIFE ran...');
-// })();
-
-// (function(x){
-//     console.log(x);
-// })(5);
-
-// PROPERTY METHODS
-
-// const todo = {
-//     add: function todo() {
-//         console.log('Add todo..')
-//     },
-//     add2: function(){
-//         console.log('Kesho');
-//     }
-// }
-// todo.delete = function() {
-//     console.log('delete todo...');
-// }
-
-// todo.add();
-// todo.add2();
-// todo.delete();
+//  DATE N TIME - Check pics
 
 //********************************************************************** */
 
-
-// LOOPS AND ITERATION
-
-// General loops (FOR, DO WHILE, WHILE)
-
-// const cars = ['Chevy', 'Toyota', 'Honda', 'Ford'];
-
-// //Foreach - It can take three arguments but mostly need one
-
-// cars.forEach(function(car){
-//     console.log(car);
-// })
-
-// cars.forEach(function(car, index, array){
-//     console.log(`${index} : ${car}`);
-//     console.log(array);
-// })
-
-// // Map
-
-// const users = [
-//     {id: 1, name: 'Steven'},
-//     {id: 2, name: 'Dado'},
-//     {id: 3, name: 'Lenssen'}
-// ];
-
-// const ids = users.map(function(user){
-//     return user.id;
-// });
-// console.log(ids);
-// console.log(Array.isArray(ids));
-
-// For in loop
-
-// const user1 = {
-//     firstName: 'Dado',
-//     lastName: 'Steven',
-//     age: 30
-// };
-
-// for(let x in user1) {
-//     console.log(`${x} : ${user1[x]}`);
-// };
-
+// IF STATEMENTS COMPARISON OPERATORS
 
 //********************************************************************** */
 
-// WINDOW / METHODS / PROPERTIES / OBJECT  -- is the global object environment
+// FUNCTIONS
+
+//********************************************************************** */
+
+// LOOPS AND ITERATIONS
+
+//********************************************************************** */
+
+// WINDOW METHODS / OBJECTS / PROPERTIES
 
 // window.console.log(123);
 
+// alert
+// window.alert('Hey');
+
+// prompt
+// const input = prompt();
+// alert(input);
+
+// Confirm
+// if (confirm('Are you sure?')) {
+//     console.log('Yes');
+// }
+
 // let val;
 
+// outer height and width
 // val = window.outerHeight;
 // val = window.outerWidth;
 
+// inner height and width
 // val = window.innerHeight;
 // val = window.innerWidth;
 
-// // Scroll Points
-// val = window.scrollX;
+// scroll points
 // val = window.scrollY;
+// val = window.scrollX;
 
-// // Location Object
+// Location Object
 // val = window.location;
 // val = window.location.hostname;
-// val = window.location.port;
-// val = window.location.href;
 
-//Redirect
-// val = window.location.href = 'http://google.com';
+// Redirect
+// window.location.href = 'http://google.com';
+
+// Reload
 // window.location.reload();
 
-// History Object
-// window.history.go();
+// History object
+// window.history.go(-1);
+// val = window.history.length;
 
-// Navigator Object // deal with browsers
-// val = window.navigator;
-// val = window.navigator.appName;
-// val = window.navigator.appVersion;
-// val = window.navigator.userAgent;
-// val = window.navigator.platform;
-// val = window.navigator.vendor;
-// val = window.navigator.language;
+// Navigator Object
+// val =  window.navigator;
 
-// console.log(val);
+// console.log(val)
 
 //********************************************************************** */
 
 // SCOPE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
