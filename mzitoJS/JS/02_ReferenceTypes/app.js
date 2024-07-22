@@ -40,34 +40,35 @@
 
 // // Check if is Array.................................
 // val = Array.isArray(numbers);
+
 // // Find index of value .........................................
 // val = numbers2.indexOf(74);
 
 // // MUTATING ARRAYS
 
-//     // // Add on to end ............................
-//     // numbers2.push(250);
-//     // // Take off from end
-//     // numbers2.pop();
+    // Add on to end ............................
+    // numbers2.push(250);
 
-//     // // Add on to front ...........................
-//     // numbers2.unshift(120);
-//     // // Take off from front
-//     // numbers2.shift();
+    // Take off from end
+    // numbers2.pop();
 
-//     // // Reverse .........................................
-//     // numbers.reverse();
+    // Add on to front ...........................
+    // numbers2.unshift(120);
+    // Take off from front
+    // numbers2.shift();
 
-//     // // concat .............................................
-//     // val  = numbers.concat(numbers2);
+    // Reverse .........................................
+    // numbers.reverse();
+
+    // concat .............................................
+    // val  = numbers.concat(numbers2);
+
 //  // Sorting Arrays
 //  val = fruits.sort();
 //  val = numbers2.sort();
 
 //  // Use the compare function .............................................
-//  val = numbers2.sort(function(x,y){
-//     return x - y;
-//  });
+//  val = numbers2.sort(function(x,y){ return x - y; });
 
  // Find ...........................................................
 //  function under50(num) {
@@ -99,7 +100,7 @@
 
 // val = person;
 
-// // Get specific value
+    // Get specific value
 // val = person.firstName;
 // val = person['firstName'];
 // val = person.address.city;
@@ -108,6 +109,10 @@
 // console.log(val);
 
 // DATE
+
+// let val;
+// const today = new Date();
+// val = today;
 
 //********************************************************************** */
 
@@ -131,6 +136,7 @@
 // console.log(square(5));
 
 // // Immediately Invokable Function Expression (IIFEs)
+
 // (function(){
 //     console.log('IIFE ran...');
 // })();
@@ -166,17 +172,19 @@
 
 // const cars = ['Chevy', 'Toyota', 'Honda', 'Ford'];
 
-// //Foreach It can take three arguments but mostly need one
+// //Foreach - It can take three arguments but mostly need one
+
 // cars.forEach(function(car){
 //     console.log(car);
 // })
 
 // cars.forEach(function(car, index, array){
-//     // console.log(`${index} : ${car}`);
+//     console.log(`${index} : ${car}`);
 //     console.log(array);
 // })
 
 // // Map
+
 // const users = [
 //     {id: 1, name: 'Steven'},
 //     {id: 2, name: 'Dado'},
@@ -190,6 +198,7 @@
 // console.log(Array.isArray(ids));
 
 // For in loop
+
 // const user1 = {
 //     firstName: 'Dado',
 //     lastName: 'Steven',
@@ -199,6 +208,7 @@
 // for(let x in user1) {
 //     console.log(`${x} : ${user1[x]}`);
 // };
+
 
 //********************************************************************** */
 

@@ -1,4 +1,5 @@
-// DOM : The browser gives us a window object and inside that we have a document object ... then root element. Document is a property of window object
+// DOM : The browser gives us a window object and inside that we have a document object ... 
+//then root element. Document is a property of window object
 
 // let val;
 
