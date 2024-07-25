@@ -5,7 +5,7 @@
 
 // val = document;
 // val = document.all;
-// val = document.all[0];
+// val = document.all[];
 // val = document.all.length;
 // val = document.head;
 // val = document.doctype;
@@ -35,7 +35,7 @@
 // let arrayScripts = Array.from(scripts);
 
 // arrayScripts.forEach(function(script){
-//     // console.log(script);
+//     console.log(script);
 //     console.log(script.getAttribute('src'));
 // })
 
@@ -44,7 +44,7 @@
 
 // DOM SELECTORS - This are document object methods that allows us to pull things from the DOM. Selection and manipulation
 
-// Single Element Selector getELementById & querySelector
+// Single Element Selector getELementById & querySelector **********
 
 // getElementById() - Only select by ID ..................................
 
@@ -59,10 +59,16 @@
 // document.getElementById('task-title').style.color = '#fff';
 // document.getElementById('task-title').style.padding = '5px';
 
+
+
 // // Change content
 // document.getElementById('task-title').textContent = 'Task List';
 // document.getElementById('task-title').innerText = 'My Tasks';
 // document.getElementById('task-title').innerHTML = '<span style= "color:red">Task List</span>';
+
+// *** Changing Content, Styling, Getting things
+
+
 
 // document.querySelector() ................................................
 
@@ -81,7 +87,7 @@
 // .............................................................................
 
 
-// DOM Selector for Multiple Elements
+// DOM Selector for Multiple Elements **********
 
 // document.getELementsByClassName()........................................
 
@@ -90,9 +96,12 @@
 // console.log(items[0]);
 // items[0].style.color = 'red';
 // items[3].textContent = 'Hello Steve';
+// console.log(document.getElementsByClassName('collection-item').item(1).style.color = 'red')
 
 // const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
 // console.log(listItems);
+
+
 
 // document.getELementsByTagName() An HTMLCollection is not an Array.............
 
@@ -102,6 +111,8 @@
 // lis[0].style.color = 'red';
 // lis[1].textContent = 'Hello';
 
+
+
 // // Convert HTML Collection into an Array
 // lis = Array.from(lis);
 // lis.reverse();
@@ -110,10 +121,13 @@
 //     console.log(li.className);
 //     li.textContent = `${index} : Hello`;
 // })
-
 // console.log(lis);
 
-// document.querySelectorAll() they are the same as the two above except it returns node list which counts things like text nodes that are spaces, it allows array methods and forEach without conversion................................................ you can still use length wiht an html collection...........................
+
+// document.querySelectorAll() they are the same as the two above except it returns node list 
+// which counts things like text nodes that are spaces,
+// it allows array methods and forEach without conversion,
+// you can still use length with an html collection...........................
 
 // const items = document.querySelectorAll('ul.collection li.collection-item');
 
@@ -311,7 +325,7 @@
 
 
 
-// NOTES NOTES NOTES EXTRA NOTES
+// NOTES NOTES NOTES EXTRA NOTES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ***** %%%%%%%
 
 // 1. document.getElementById('task-title').id;
 // 2. document.querySelector('#task-title');
@@ -397,15 +411,3 @@
 // 5. Event Listeners
 // 6. Mouse Events
 // 7. Key Board Input Events
-
-
-
-
-
-
-
-
-
-
-
-
