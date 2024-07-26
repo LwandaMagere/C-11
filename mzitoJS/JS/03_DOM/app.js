@@ -164,7 +164,7 @@
 // val = list.childNodes[10].nodeName;
 // val = list.childNodes[0].nodeType;
 
-// // 1. Element
+// // 1. Element           -- These numbers pertain to what type of noded these are
 // // 2. Attribute (deprecated)
 // // 3. Text Node
 // // 8. comment
@@ -411,3 +411,4 @@
 // 5. Event Listeners
 // 6. Mouse Events
 // 7. Key Board Input Events
+
