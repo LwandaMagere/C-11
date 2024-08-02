@@ -44,6 +44,27 @@
 //         e.target.parentElement.parentElement.remove()
 //     }
 // }
+
+
+// const delItem = document.querySelector('.delete-item');
+
+// delItem.addEventListener('click', deleteItem);
+
+// document.body.addEventListener('click', deleteItem);
+
+// function deleteItem(e){
+//     console.log('delete item');
+//     console.log(e.target);
+// }
+
+// function deleteItem(e){
+//     if (e.target.className === 'fa fa-remove') {
+//         console.log('delete item');
+//     }
+// }
+
+
+
 //..............................................................................................
 
 // LOCAL SESSION STORAGE - local storage api -- key value pairs -- what you set as a value has to be a string
@@ -107,7 +128,8 @@
 
 
 
-localStorage.setItem('name', 'Dado');
+
+
 
 
 
