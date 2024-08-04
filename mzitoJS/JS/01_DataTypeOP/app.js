@@ -73,6 +73,7 @@
 // val = String(5);
 // val = String(4+4);
 
+
 // // Bool to String
 // val = String(true);
 // val = String(new Date());
@@ -97,59 +98,59 @@
 // // output
 // console.log(val);
 // console.log(typeof val);
-// // console.log(val.length);
+// console.log(val.length);
 // console.log(val.toFixed());
 
 // Type coursion is done by Javascript
 
             // STRINGS
 
-const firstName = 'Dado';
-const lastName = 'Steven';
-const str = 'Hello there my name is Steven';
+// const firstName = 'Dado';
+// const lastName = 'Steven';
+// const str = 'Hello there my name is Steven';
 
-let val;
+// let val;
 
-// Concatenation
-val = firstName + ' ' + lastName;
-console.log(val);
+// // Concatenation
+// val = firstName + ' ' + lastName;
+// console.log(val);
 
-// Append
-val = 'Lwanda ';
-val += 'Magere';
-console.log(val);
+// // Append
+// val = 'Lwanda ';
+// val += 'Magere';
+// console.log(val);
 
-// Length
-val = firstName.length;
-console.log(val);
+// // Length
+// val = firstName.length;
+// console.log(val);
 
-// Concat
-val = firstName.concat(' ', lastName);
-console.log(val);
+// // Concat
+// val = firstName.concat(' ', lastName);
+// console.log(val);
 
-// Change case
-val = firstName.toUpperCase();
-console.log(val);
+// // Change case
+// val = firstName.toUpperCase();
+// console.log(val);
 
-// indexOf()
-val = firstName.indexOf('D');
-val = firstName.lastIndexOf('o');
+// // indexOf()
+// val = firstName.indexOf('D');
+// val = firstName.lastIndexOf('o');
 
-// charAt()
-val = firstName.charAt('2');
+// // charAt()
+// val = firstName.charAt();
 
-//substring
-val = firstName.substring(0, 2);
+// //substring
+// val = firstName.substring(0, 2);
 
-// slice
-val = firstName.slice(0, 2);
+// // slice
+// val = firstName.slice(0, 2);
 
-// split()
-val = str.split(' ');
+// // split()
+// val = str.split(' ');
 
-// replace()
-val = str.replace('Steven', 'Dado');
+// // replace()
+// val = str.replace('Steven', 'Dado');
 
-// includes
-val = str.includes('Hello');
-console.log(val);
+// // includes
+// val = str.includes('Hello');
+// console.log(val);

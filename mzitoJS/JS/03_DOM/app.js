@@ -1,4 +1,6 @@
-// DOM : The browser gives us a window object and inside that we have a document object ... 
+// DOM : Structured representation of an html document
+
+//The browser gives us a window object and inside that we have a document object ... 
 //then root element. Document is a property of window object
 
 // let val;
@@ -383,7 +385,7 @@
 // 11. keydown
 // 12. keyup
 // 13. keypress
-// 14.focus
+// 14. focus
 // 15. blur -- click out 
 // 16. cut
 // 17. paste
@@ -411,4 +413,9 @@
 // 5. Event Listeners
 // 6. Mouse Events
 // 7. Key Board Input Events
+
+let scripts1 = document.scripts
+
+scripts1.foreac
+z
 
