@@ -72,7 +72,7 @@
 
 
 
-// document.querySelector() ................................................
+// document.querySelector() ................................................ we can select by anything
 
 // console.log(document.querySelector('#task-title'));
 // console.log(document.querySelector('.card-title'));
@@ -89,7 +89,7 @@
 // .............................................................................
 
 
-// DOM Selector for Multiple Elements **********
+// DOM Selector for Multiple Elements ********** They return html collection or node lists
 
 // document.getELementsByClassName()........................................
 
@@ -414,8 +414,75 @@
 // 6. Mouse Events
 // 7. Key Board Input Events
 
-let scripts1 = document.scripts
+                                // PART 2 OF THE SAME THING REVISION
 
-scripts1.foreac
-z
+
+
+
+    // What is DOM? - Document Object Model - It is a structured representation of an html document
+
+     // - Tree of nodes/Element created by the browser
+     // - Js can be used to read/write/manipulate the DOM
+     // - Object Oriented Representation - have properties and methods
+
+
+
+
+// val = document;
+// val = document.all; // - gives html collection
+// val = document.all[0];
+// val = document.all.length;
+// val = document.head;
+// val = document.body;
+// val = document.doctype;
+// val = document.domain;
+// val = document.URL;
+// val = document.characterSet;
+// val = document.contentType;
+
+// val = document.links;
+// val = document.links[0].id;
+// val = document.links[0].className;
+// val = document.links[0].classList;
+
+// val = document.scripts;
+// val = document.scripts[2].getAttribute('src');
+
+
+// let scripts =Array.from(document.scripts);
+
+// scripts.forEach(function(script){
+//     console.log(script.getAttribute('src'));
+// });
+
+                                    // DOM SELECTORS - document object methods, allow us to pull things from the dom
+
+        // Single Selectors 
+    
+
+
+
+        // Multiple Selectors  -- html collection or nodelist, html collection not array
+
+
+                        // CREATING ELEMENT
+//-- We can create element and insert into the dom
+
+
+
+
+
+
+
+// target represent the element where the event is happening
+
+
+
+
+
+
+
+
+
+
 
