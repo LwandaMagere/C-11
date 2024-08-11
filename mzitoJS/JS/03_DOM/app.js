@@ -558,35 +558,103 @@ let val;
 /////////////////////////////////////////////////////////////////////// 4. CREATING ELEMENTS
 
 
-// Create element
+     // // Create element
 
-const li = document.createElement('li');
+     // const li = document.createElement('li');
 
-// Add a class
+     // // Add a class
 
-li.className = 'collection-item';
+     // li.className = 'collection-item';
 
-// Add attribute
+     // // Add attribute
 
-li.setAttribute('title', 'New Item');
+     // li.setAttribute('title', 'New Item');
 
-// Create text node and append
+     // // Create text node and append
 
-li.appendChild(document.createTextNode('Hello World!'));
+     // li.appendChild(document.createTextNode('Hello World!'));
 
-// Create new link element
+     // // Create new link element
 
-const link = document.createElement('a');
-link.className = 'delete-item secondary-content';
-link.innerHTML = '<i class="fa fa-remove"></i>'
-li.appendChild(link);
+     // const link = document.createElement('a');
+     // link.className = 'delete-item secondary-content';
+     // link.innerHTML = '<i class="fa fa-remove"></i>'
+     // li.appendChild(link);
 
-// Append li as a child to ul
+     // // Append li as a child to ul
 
-document.querySelector('ul.collection').appendChild(li)
+     // document.querySelector('ul.collection').appendChild(li)
 
 
-console.log(li);
+//////////////////////////////////////////////////////////////////// 5. REPLACE N REMOVE ELEMENTS, HOW TO WORK WITH CLASSES
+
+     // // Replace Element
+
+     // const newHeading = document.createElement('h2');
+     // newHeading.id = 'task-title';
+     // newHeading.appendChild(document.createTextNode('Task List'));
+
+     // const oldHeading = document.getElementById('task-title');
+     // const cardAction = document.querySelector('.card-action');
+     // // Replace
+     // cardAction.replaceChild(newHeading, oldHeading);
+
+     // // Remove Element
+     // const lis = document.querySelectorAll('li');
+     // const list = document.querySelector('ul');
+     // // lis[0].remove();
+
+     // // Remove child element -- they are zero based
+     // // list.removeChild(lis[1]);
+
+     // // Classes and Attributes
+     // const firstLi = document.querySelector('li:first-child');
+     // const link = firstLi.children[0];
+
+     // // Classes
+     // val = link.className;
+     // val = link.classList;
+     // val = link.classList[0];
+     // link.classList.add('test');
+     // link.classList.remove('test');
+     // val = link;
+
+     // // Attribute
+
+     // val = link.getAttribute('href');
+     // val = link.setAttribute('href', 'http://google.com');
+     // val = link.setAttribute('title', 'Google');
+     // val = link.hasAttribute('href');
+     // link.removeAttribute('title');
+
+     // val = link;
+
+
+/////////////////////////////////////////////////////////////////////////// 6. EVENT LISTENERS
+
+     // document.querySelector('.clear-tasks').addEventListener('click', function(e){ 
+          
+     //      console.log(e)
+     //      // console.log('Hello World');
+               // e -- is the event object
+     //      e.preventDefault()
+     // })   // a
+
+     // document.querySelector('.clear-tasks').addEventListener('click', onClick); // b
+
+     // function onClick(e) {
+     //      let val;
+
+     //      val = e;
+             // target -- is the element event happens on
+
+     //      console.log(e);
+     // }
+
+//////////////////////////////////////////////////////////////////////////// 7. MOUSE EVENTS
+//////////////////////////////////////////////////////////////////////////// 8. KEYBOARD INPUT, FORM EVENTS
+
+
 
 
     
