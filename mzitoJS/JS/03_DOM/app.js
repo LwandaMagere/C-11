@@ -414,67 +414,190 @@
 // 6. Mouse Events
 // 7. Key Board Input Events
 
-                                // PART 2 OF THE SAME THING REVISION
+
+
+                                                  // PART 2 THE DOM ANATOMY
+
+//-- What is DOM (Document Object Model) -- It is a structured repesentation of an html document
+
+// -- Tree of nodes/elements created by the browser
+// -- JavaScript can be used to read/write/manipulate the DOM
+// -- Object Oriented Representation -- has set properties and methods
 
 
 
+////////////////////////////////////////////////////// 1. DOCUMENT PROPERTIES (Exermining the Document Object)
+let val;
 
-    // What is DOM? - Document Object Model - It is a structured representation of an html document
+     // val = document; // --- This gives an Html collection
+     // val = document.contentType; // -- This is a html page
+     // val = document.scripts[0].getAttribute('src');
 
-     // - Tree of nodes/Element created by the browser
-     // - Js can be used to read/write/manipulate the DOM
-     // - Object Oriented Representation - have properties and methods
+     // let scripts = document.scripts;
 
+     // let arrayScripts = Array.from(scripts);
 
+     // arrayScripts.forEach(function(script){
+     //      console.log(script.getAttribute('src'));
+     // })
 
+////////////////////////////////////////////////////// 2. DOM SELECTORS
 
-// val = document;
-// val = document.all; // - gives html collection
-// val = document.all[0];
-// val = document.all.length;
-// val = document.head;
-// val = document.body;
-// val = document.doctype;
-// val = document.domain;
-// val = document.URL;
-// val = document.characterSet;
-// val = document.contentType;
+// -- Single selectors will grap the first element
 
-// val = document.links;
-// val = document.links[0].id;
-// val = document.links[0].className;
-// val = document.links[0].classList;
-
-// val = document.scripts;
-// val = document.scripts[2].getAttribute('src');
+// getElementById......
 
 
-// let scripts =Array.from(document.scripts);
+// querySelector
 
-// scripts.forEach(function(script){
-//     console.log(script.getAttribute('src'));
-// });
+     // let taskTitle = document.querySelector('#task-title');
+     // let cardTitle = document.querySelector('.card-title');
+     // let h5 = document.querySelector('h5');
+     // // we can select classes, ids and elements with querySelector
+     // console.log(taskTitle);
+     // console.log(cardTitle);
+     // console.log(h5);
 
-                                    // DOM SELECTORS - document object methods, allow us to pull things from the dom
+// -- Multiple selector
 
-        // Single Selectors 
+
+// getElementsByClassName
+
+     // const items = document.getElementsByClassName('collection-item');
+     // console.log(items);
+     // console.log(items[0]);
+
+     // items[0].style.color = 'red';
+     // items[0].textContent = 'Dado'
+
+// getELementsByTagName
+
+     // let lis = document.getElementsByTagName('li');
+
+     // lis = Array.from(lis);
+
+     // lis.forEach(function(li){
+     //      li.style.color = 'red';
+     // })
+
+// querySelectorAll
+
+     //const items = document.querySelectorAll('ul.collection li.collection-item');
+
+
+////////////////////////////////////////////////////// 3. TRAVERSING  THE DOM
+
+// 1.childNodes -gives node list, textnodes (line breaks). nodeName, nodeType
+// 2.children - giv element nodes and not text
+// 3.firstChild - gives text node then elements
+// 4.firstElementChild - gives element, if u don't want to deal with text nodes
+// 5.lastchild
+// 6.lastElementChild
+// 7.childElementCount
+
+// 8. parentNode/parentElement
+// 9. nextSibling
+// 10. nextElementSibling
+
+// 11.previousSibling
+// 12.previousElementSibling
+
+
+
+     // const list = document.querySelector('ul.collection');
+     // const listItem = document.querySelector('li.collection-item:first-child');
+
+     // val = list;
+     // val = listItem;
+
+// Get child nodes
+
+     // val = list.childNodes
+     // val = list.childNodes[0];
+     // val = list.childNodes[0].nodeName;
+     // val = list.childNodes[0].nodeType;// Element, text node, comment, doc itself, Doctype
+
+// Get the children element nodes
+
+     // val = list.children;
+     // val = list.children[0];
+     // list.children[0].innerText = 'Mastery';
+
+// Get children of children
+
+     //val = list.children[3].children;
+     // val = list.children[3].children[0].id = 'test-link';
+     // val = list.children[3].children[0];
+
+
+
+     // val = list.firstChild;
+     // val = list.firstElementChild;
+     // val = list.lastChild;
+     // val = list.lastElementChild;
+     // val = list.childElementCount;
+
+// Get Parent node
+
+     // val = listItem.parentNode;
+     // val = listItem.parentElement; // the same as the abode
+     // val = listItem.parentElement.parentElement;
+
+// Get next sibling
+
+     // val = listItem.nextSibling // deals with other types of nodes not jst elements e.g text nodes
+     // val = listItem.nextElementSibling.nextElementSibling;
+
+
+// Get previous Sibling
+
+     // val = listItem.previousSibling;
+     // val = listItem.previousElementSibling
+
+
+/////////////////////////////////////////////////////////////////////// 4. CREATING ELEMENTS
+
+
+// Create element
+
+const li = document.createElement('li');
+
+// Add a class
+
+li.className = 'collection-item';
+
+// Add attribute
+
+li.setAttribute('title', 'New Item');
+
+// Create text node and append
+
+li.appendChild(document.createTextNode('Hello World!'));
+
+// Create new link element
+
+const link = document.createElement('a');
+link.className = 'delete-item secondary-content';
+link.innerHTML = '<i class="fa fa-remove"></i>'
+li.appendChild(link);
+
+// Append li as a child to ul
+
+document.querySelector('ul.collection').appendChild(li)
+
+
+console.log(li);
+
+
     
 
 
 
-        // Multiple Selectors  -- html collection or nodelist, html collection not array
-
-
-                        // CREATING ELEMENT
-//-- We can create element and insert into the dom
 
 
 
 
 
-
-
-// target represent the element where the event is happening
 
 
 
