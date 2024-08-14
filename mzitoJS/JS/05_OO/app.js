@@ -1,22 +1,28 @@
-// Person constructor
-// function Person(name) {
-//     this.name = name;
+// Constructor Method
+
+// function Person() {
+//     this.name = "Dado";
 // }
 
-// const brad = new Person('James');
-// const luad = new Person('Luambo');
+// const name = new Person();
+// const John = new Person();
 
-// console.log(luad)
-////////////////////////////////////////////////////////////////////////
+// console.log(name);
+//////////////////////////////////////////////////////////////
+    // function Person(name) {
+    //     this.name;
+    //     console.log(this);
+    // }
 
-// function Person(name) {
-//     this.name = name;
-//     console.log(this);
-// }
+    // const brad = new Person('Steven');
+    // const John = new Person('John');
+    // // console.log(brad);
 
-// const name1 = new Person('Lwanda');
-// const name2 = new Person('Magere');
-//////////////////////////////////////////////////////////////////
+    // console.log(this); // You get the window object
+    // // alert(this)
+    // this.alert(1);
+///////////////////////////////////////////////////////
 
-const getSum2 = new Function('x', 'y', ' return 1 + 1');
-console.log(getSum2());
+
+
+
