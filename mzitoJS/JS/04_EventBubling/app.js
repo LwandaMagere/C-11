@@ -1,4 +1,9 @@
 // EVENT BUBBLING - The bubbling up of events through the DOM..Bubbling up to it's parent
+// EVENT DELAGATION - Is where we put the listener on one of the parents elements n then we use logic
+// inside of the event handler to target the element that we actually want that click for whatever
+// type of the event that is.
+
+
 // document.querySelector('.card-title').addEventListener('click', function(){
 //     console.log('card title');
 // });
@@ -70,7 +75,7 @@
 // LOCAL SESSION STORAGE - local storage api -- key value pairs -- what you set as a value has to be a string
 
 // set local storage item -local storage will stay until cleared manually
-// localStorage.setItem('name', 'Dado');
+// localStorage.setItem('name', 'Dado'); // -- set data in your browser
 
 // set session storage item
 // sessionStorage.setItem('name','Steven');
@@ -124,6 +129,8 @@
 // 3. localStoreage.removeItem('name');
 // 4. const name = localStorage.getItem('name');
 // 5. localStorage.clear();
+
+
 
 
 

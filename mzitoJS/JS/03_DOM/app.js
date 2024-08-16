@@ -241,42 +241,37 @@
 
 /////////////////////////////////////////////////////////////////////// 4. CREATING ELEMENTS
 
-// Create Element
-const li = document.createElement('li');
+     // // Create Element
+     // const li = document.createElement('li');
 
-// Add class Name
-li.className = 'Collection-item';
+     // // Add class Name
+     // li.className = 'Collection-item';
 
-// Add id
-li.id = 'new-item';
+     // // Add id
+     // li.id = 'new-item';
 
-// Add Attribute
-li.setAttribute('title', 'New-Item');
+     // // Add Attribute
+     // li.setAttribute('title', 'New-Item');
 
-// Create text node and append
-li.appendChild(document.createTextNode('Hello World!'));
+     // // Create text node and append
+     // li.appendChild(document.createTextNode('Hello World!'));
 
-// Create new link element
-const link = document.createElement('a');
+     // // Create new link element
+     // const link = document.createElement('a');
 
-// Add class name
-link.className = 'delete-item secondary-content';
+     // // Add class name
+     // link.className = 'delete-item secondary-content';
 
-// Add icon html
-link.innerHTML = '<i class="fa fa-remove"><i/>';
+     // // Add icon html
+     // link.innerHTML = '<i class="fa fa-remove"><i/>';
 
-// Append link into li
-li.appendChild(link);
+     // // Append link into li
+     // li.appendChild(link);
 
-// Append li as child to ul
-document.querySelector('ul.collection').appendChild(li);
+     // // Append li as child to ul
+     // document.querySelector('ul.collection').appendChild(li);
 
-console.log(li);
-
-
-     
-
-    
+     // console.log(li);
 
 //////////////////////////////////////////////////////////////////// 5. REPLACE N REMOVE ELEMENTS, HOW TO WORK WITH CLASSES
 
@@ -321,13 +316,131 @@ console.log(li);
 
      // val = link;
 
+/////////////////////////////////////////////// 6. EVENT LISTENERS -- interacting with the ui
 
-/////////////////////////////////////////////////////////////////////////// 6. EVENT LISTENERS
+     // document.querySelector('.clear-tasks').addEventListener('click', function(e) {
+     //      console.log('Hello World!');
+     //      e.preventDefault(); // prevent default behaviour
+          
+     //      // e -- is the event object
+          
+     // })
 
-     
+     // document.querySelector('.clear-tasks').addEventListener('mouseover', onCLick);
+
+     // function onCLick(e) {
+     //      //console.log('clicked')
+     //      let val;
+     //      val = e;
+      
+     //      // Event target element
+     //      val = e.target;
+     //      val = e.target.id;
+     //      val = e.target.className;
+     //      val = e.target.classList;
+
+     //      e.target.innerText = 'Hello';
+
+     //      // Event type
+     //      val = e.type;
+
+     //      // Timestamp
+     //      val = e.timeStamp;
+
+     //      // Coord to events relative to the window
+     //      val = e.clientY;
+     //      val = e.clientX;
+
+     //       // Coord to events relative to the element itself
+     //       val = e.offsetY;
+     //       val = e.clientX;
+          
+
+     //      console.log(val);
+
+     //      e.preventDefault();
+     // }
 
 //////////////////////////////////////////////////////////////////////////// 7. MOUSE EVENTS
+
+// const clearBtn = document.querySelector('.clear-tasks');
+// const card = document.querySelector('.card');
+// const heading = document.querySelector('h5');
+
+// Click
+// clearBtn.addEventListener('click', runEvent);
+// Double Click
+// clearBtn.addEventListener('dblclick', runEvent);
+// Mouse down
+// clearBtn.addEventListener('mousedown', runEvent);
+// Mouse up
+//clearBtn.addEventListener('mouseup', runEvent);
+// Mouse Enter
+// card.addEventListener('mouseenter', runEvent);
+// Mouse leave
+// card.addEventListener('mouseleave', runEvent);
+// Mouse over
+// card.addEventListener('mouseover', runEvent); // mouseout n over will fire off when u go to another element that is inside of that element
+// Mouse out 
+// card.addEventListener('mouseout', runEvent);
+// Mouse move
+// card.addEventListener('mousemove', runEvent);
+
+
+// Event handler
+// function runEvent(e) {
+//      console.log(`EVENT TYPE: ${e.type}`);
+     
+//      heading.textContent = `MouseX: ${e.offsetX} MouseY: ${e.offsetY}`;
+
+//      document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`;
+// }
+
+
 //////////////////////////////////////////////////////////////////////////// 8. KEYBOARD INPUT, FORM EVENTS
+
+const form = document.querySelector('form');
+const taskInput = document.getElementById('task');
+const heading = document.querySelector('h5');
+
+// Clear input
+// taskInput.value = '';
+
+// form.addEventListener('submit', runEvent);
+
+// key down
+// taskInput.addEventListener('keydown', runEvent);
+
+// key up
+// taskInput.addEventListener('keyup', runEvent);
+
+// Key press
+// taskInput.addEventListener('keypress', runEvent);
+
+// Focus
+// taskInput.addEventListener('focus', runEvent);
+
+// Blur -- when you  put outside of an input
+// taskInput.addEventListener('blur', runEvent);
+
+// Cut
+// taskInput.addEventListener('cut', runEvent);
+
+// paste
+// taskInput.addEventListener('paste', runEvent);
+
+// Input
+taskInput.addEventListener('input', runEvent);
+
+function runEvent(e) {
+     console.log(`EVENT TYPE ${e.type}`);
+     console.log(e.target.value);
+
+     heading.innerText = e.target.value;
+
+     // Get value
+     // console.log(taskInput.value);
+}
 
 
 
@@ -397,7 +510,7 @@ console.log(li);
 // 19. change
 
 
-// Event target element
+// Event target element - represent the element that the event happened on
 // 1. e.target;
 // 2. e.target.id;
 // 3. e.target.className;
