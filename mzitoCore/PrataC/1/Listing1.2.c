@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include <stdio.h>
-int main(void)
+int main(void) 
 {
     printf("Concrete contains gravel and cement.\n");
-    
     return 0;
 }
