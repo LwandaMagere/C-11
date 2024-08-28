@@ -1,8 +1,9 @@
 // stock10.cpp -- Stock class with constructors, destructor added
 #include "Listing10.4.h"
 
-// constructors
-Stock::Stock()  // default constructor
+// constructors (verbose versions)
+Stock::Stock()
+// default constructor
 {
     std::cout << "Default constructor called\n";
     company = "no name";
@@ -26,7 +27,6 @@ Stock::Stock(const std::string & co, long n, double pr)
     share_val = pr;
     set_tot();
 }
-
 // class destructor
 Stock::~Stock() // verbose class destructor
 {
@@ -89,8 +89,7 @@ void Stock::show()
     // set format to #.##
     cout.precision(2);
     cout << " Total Worth: $" << total_val << '\n';
-
-    // reset original format
+    // restore original format
     cout.setf(orig, ios_base::floatfield);
     cout.precision(prec);
 }

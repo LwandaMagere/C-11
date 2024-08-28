@@ -2,6 +2,7 @@
 #ifndef STOCK10_H_
 #define STOCK10_H_
 #include <string>
+#include <iostream>
 
 class Stock
 {
