@@ -4,11 +4,10 @@
 
 const int STKS = 4;
 
-int main()
+int main() 
 {
     // create an array of initialized objects
-    Stock stocks[STKS] = 
-    {
+    Stock stocks[STKS] = {
         Stock("NanoSmart", 12, 20.0),
         Stock("Boffo Objects", 200, 2.0),
         Stock("Monolithic Obelisks", 130, 3.25),
@@ -21,11 +20,12 @@ int main()
         stocks[st].show();
     // set pointer to first element
     const Stock * top = &stocks[0];
-    for (st = 1; st < STKS; st++) 
-        top = &top->topval(stocks[st]);
+    for (st = 1; st < STKS; st++)
+        top = &top->topval(stocks[st]);  // first syntax
+        // top = &(*top).topval(stocks[st]); // another way
+    
     // now top points to the most valuable holding
     std::cout << "\nMost valuable holding:\n";
     top->show();
-    
     return 0;
 }
