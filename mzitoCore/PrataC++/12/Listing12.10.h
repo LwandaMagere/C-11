@@ -22,7 +22,7 @@ class Queue
         struct Node // Node is a nested structure definition local to this class
         { 
             Item item; 
-            Node * next;
+            struct Node * next;
         };
         enum {Q_SIZE = 10};
         Node * front;   // pointer to front of Queue

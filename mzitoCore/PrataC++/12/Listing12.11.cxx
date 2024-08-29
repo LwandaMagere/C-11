@@ -5,61 +5,58 @@
 // Queue methods
 Queue::Queue(int qs) : qsize(qs)
 {
-front = rear = NULL;    // or nullptr
-items = 0;
+    front = rear = NULL;    // or nullptr
+    items = 0;
 }
 
 Queue::~Queue()
 {
-Node * temp;
-while (front != NULL)
-//
-{
-temp = front;
-//
-front = front->next;//
-delete temp;
-//
-}
+    Node * temp;
+    while (front != NULL)
+    {
+        temp = front;
+        front = front->next;//
+        delete temp;
+    }
 }
 
 bool Queue::isempty() const
 {
-return items == 0;
+    return items == 0;
 }
 
 bool Queue::isfull() const
 {
-return items == qsize;
+    return items == qsize;
 }
 
 int Queue::queuecount() const
 {
-return items;
+    return items;
 }
 
 // Add item to queue
 bool Queue::enqueue(const Item & item)
 {
-if (isfull())
-return false;
-Node * add = new Node; // create node
-// on failure, new throws std::bad_alloc exception
-add->item = item;
-// set node pointers
-add->next = NULL;
-// or nullptr;
-items++;
-if (front == NULL)
-// if queue is empty,
-front = add;
-// place item at front
-else
-rear->next = add;
-// else place at rear
-rear = add;
-// have rear point to new node
-return true;
+    if (isfull())
+        return false;
+    Node * add = new Node; // create node
+    // on failure, new throws std::bad_alloc exception
+    add->item = item;
+    // set node pointers
+    add->next = NULL;
+    // or nullptr;
+    items++;
+    if (front == NULL)
+    // if queue is empty,
+    front = add;
+    // place item at front
+    else
+    rear->next = add;
+    // else place at rear
+    rear = add;
+    // have rear point to new node
+    return true;
 }
 
 // Place front item into item variable and remove from queue
