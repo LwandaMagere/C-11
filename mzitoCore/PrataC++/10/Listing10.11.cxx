@@ -21,6 +21,7 @@ bool Stack::push(const Item & item)
     if (top < MAX) 
     {
         items[top++] = item;
+        return true;
     }else 
         return false;
 }

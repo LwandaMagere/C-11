@@ -1,6 +1,10 @@
 // stack.h -- class definition for the stack ADT
 #ifndef STACK_H_
 #define STACK_H_
+#include <iostream>
+
+using std::cout;
+using std::cin;
 
 typedef unsigned long Item;
 
