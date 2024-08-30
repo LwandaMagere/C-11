@@ -1,39 +1,36 @@
 // stack.cpp -- Stack member functions
 #include "Listing10.10.h"
 
-Stack::Stack() // create an empty stack
+Stack::Stack() 
 {
     top = 0;
 }
 
 bool Stack::isempty() const
 {
-    return top == 0;
+   return top == 0;
 }
 
-bool Stack::isfull() const
+bool Stack::isfull() const 
 {
-    return top == MAX;
+   return top == MAX;
 }
 
 bool Stack::push(const Item & item) 
 {
-    if (top < MAX)
+    if (top < MAX) 
     {
         items[top++] = item;
-        return true;
-    }
-    else
+    }else 
         return false;
 }
 
 bool Stack::pop(Item & item) 
 {
-    if (top > 0)
+    if (top > 0) 
     {
         item = items[--top];
         return true;
-    }
-    else 
+    }else  
         return false;
 }
