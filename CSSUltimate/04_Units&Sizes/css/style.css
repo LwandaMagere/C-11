@@ -4,15 +4,11 @@
     box-sizing: border-box;
 }
 
-/* header {
-    width: 50%;
-} */
+body {
+    min-height: 100vh;
+}
 
-  main {
-    width: 50vw;
-    background-color: skyblue;
-    font-size: 2rem;
- }
+
 
 h1 {
     border: 2px dashed red;
@@ -21,7 +17,14 @@ h1 {
     padding: 0.5em;
 }
 
+main {  
+    font-size: 2rem;
+}
+
 p {
     font-size: 2rem;
     width: 40ch;
-}       
+}
+
+/* use rem for font size, it's typicly used */
+/* It's relative to the root which is defined by the browser */

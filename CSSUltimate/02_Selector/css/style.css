@@ -1,6 +1,12 @@
-* {
+/* css reset */
+/* * {
+    font-family: monospace;
+} */
+
+main {
     font-family: monospace;
 }
+
 
 body {
     font-size: 22px;
