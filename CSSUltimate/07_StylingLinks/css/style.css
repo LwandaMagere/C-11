@@ -24,6 +24,8 @@ a:visited {
     background-color: gold;
 }
 
+/* sudo class represent the current state of the element */
 a:active {
     color: red;
 }
+
