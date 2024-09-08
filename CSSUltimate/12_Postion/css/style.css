@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+.outercontainer {
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+
+}
+
+.innercontainer {
+    border: 2px solid #00f;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+    /*position: relative;*/ /* picks the ancestor that is closest to it*/
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+.absolute {
+    background-color: #00f;
+     /*position: static;*/  /*default for all elements*/
+    position: absolute; /* We need to set other values for change eg top,right etc atleaste one*/
+    /* top: 150px; */
+    top: 0;
+    left: -10000px;
+    z-index: 1;
+    
+}
+
+.relative {
+    background-color: #f00;
+    position: relative;
+    top: 300px;
+    left: 100px;
+}
+
+.fixed {
+    background-color: green;
+    position: fixed;
+    top: 100px;
+}
+
+.sticky {
+    background-color: #000;
+    position: sticky;  /*stays until the container leaves*/
+    top: 0;
+}
+
+
+/* absolute positioning need a relative parent */
+
+/* Remember how to make things disappear! */
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+}
+
+.blue {background-color: #00f;}
+.red{background-color: #f00;}
+.green{background-color: green;}
+
+header, footer {
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    
+}
+
+header {
+    position: sticky;
+    font-size: 5rem;
+    top: 0;
+}
+
+footer {
+    background-color: #000;
+    /* position: fixed; */
+    position: sticky;
+    bottom: 0;
+    /* width: 100%; */
+    font-size: 3rem;
+}
+
+a:visited {
+    color: #fff;
+}
+
+.social {
+    background-color: royalblue;
+    color: #fff;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+}
+
