@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    /* grid-auto-flow: row; */
+    /* grid-auto-flow: column; */
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
