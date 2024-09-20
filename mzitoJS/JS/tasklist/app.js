@@ -1,71 +1,40 @@
-//Define UI Vars
+// Define UI Variables
 const form = document.querySelector('#task-form');
 const taskList = document.querySelector('.collection');
 const clearBtn = document.querySelector('.clear-tasks');
 const filter = document.querySelector('#filter');
 const taskInput = document.querySelector('#task');
 
-// Load all event listerners
+// Load all event listeners
 loadEventListeners();
 
-// Load all event listerners definition
+// Load all event listeners
 function loadEventListeners() {
-    // DOM Load event
-    document.addEventListener('DOMContentLoaded',getTasks)
-    // Add task event
+    // Add task events
     form.addEventListener('submit', addTask);
     // Remove task event
     taskList.addEventListener('click', removeTask);
-    // Clear task event
+    // Clear task events
     clearBtn.addEventListener('click', clearTasks);
-    // Filter tasks event
+    // Filter task events
     filter.addEventListener('keyup', filterTasks);
 }
 
-// Get Tasks from local storage
-function getTasks() {
-    let tasks;
-    if(localStorage.getItem('tasks') === null) {
-        tasks = [];
-    } else {
-        tasks = JSON.parse(localStorage.getItem('tasks'))
-    }
-    tasks.forEach(function(task){
-    // Create li element
-    const li = document.createElement('li');
-    // Add class
-    li.className = 'collection-item';
-    // Create text  node and append to li
-     li.appendChild(document.createTextNode(task));
-    //li.textContent = taskInput.value;  // another way I discovered lol
-    // Create new link element
-    const link = document.createElement('a');
-    // Add class
-    link.className = 'delete-item secondary-content';
-    // Add icon html
-    link.innerHTML = '<i class="fa fa-remove"></i>';
-    // Append the link to li
-    li.appendChild(link);
-
-    // Append li to ul
-    taskList.appendChild(li);
-    })
-}
 
 
-// Add Task
+// Add task events
 function addTask(e) {
-    if(taskInput.value === '') {
+    if (taskInput.value === '') {
         alert('Add a task');
     }
 
     // Create li element
     const li = document.createElement('li');
-    // Add class
+    // Add a class
     li.className = 'collection-item';
-    // Create text  node and append to li
-    // li.appendChild(document.createTextNode(taskInput.value));
-    li.textContent = taskInput.value;  // another way I discovered lol
+    // Create text node and append to the li
+    li.appendChild(document.createTextNode(taskInput.value));
+    
     // Create new link element
     const link = document.createElement('a');
     // Add class
@@ -75,92 +44,47 @@ function addTask(e) {
     // Append the link to li
     li.appendChild(link);
 
-    // Append li to ul
+    // Append li to the ul
     taskList.appendChild(li);
-
-    // Store in local storage
-    storeTaskInLocalStorage(taskInput.value);
 
     // Clear input
     taskInput.value = '';
 
+
     e.preventDefault();
 }
 
-// Store in local storage
-function storeTaskInLocalStorage(task){
-    let tasks;
-    if(localStorage.getItem('tasks') === null) {
-        tasks = [];
-    } else {
-        tasks = JSON.parse(localStorage.getItem('tasks'))
-    }
-
-    tasks.push(task);
-
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-}
-
-// //Remove task
+// Remove task event
 function removeTask(e) {
     if(e.target.parentElement.classList.contains('delete-item')) {
-        if(confirm('Are you sure?!')) {
+        if(confirm('Are you sure?')) {
             e.target.parentElement.parentElement.remove();
-
-            // Remove from local storage
-            removeTaskFromLocalStorage(e.target.parentElement.parentElement);
         }
     }
 }
 
-// Remove from local storage
-function removeTaskFromLocalStorage(taskItem) {
-    let tasks;
-    if(localStorage.getItem('tasks') === null) {
-        tasks = [];
-    } else {
-        tasks = JSON.parse(localStorage.getItem('tasks'))
-    }
-
-    tasks.forEach(function(task, index){
-        if(taskItem.textContent === task) {
-            tasks.splice(index, 1);
-        }
-    });
-
-    localStorage.setItem('tasks', JSON.stringify(tasks))
-}
-
-// Clear Tasks
+// Clear tasks
 function clearTasks() {
-    //taskList.innerHTML = '';
+    // taskList.innerHTML = '';  /* Method 1 */
 
-    // Much Faster
+    // Faster
     while(taskList.firstChild) {
         taskList.removeChild(taskList.firstChild);
     }
-
-    // Clear from local storage
-    clearTasksFromLocalStorage();
 }
 
-// Clear from local storage
-function clearTasksFromLocalStorage() {
-    localStorage.clear();
-}
-
-// Filter Tasks
+// Filter task
 function filterTasks(e) {
     const text = e.target.value.toLowerCase();
 
-    document.querySelectorAll('.collection-item').forEach(function(task) {
+    document.querySelectorAll('.collection-item').forEach(function(task){
         const item = task.firstChild.textContent;
         if(item.toLowerCase().indexOf(text) != -1) {
             task.style.display = 'block';
         } else {
             task.style.display = 'none';
         }
-    });
+    })
 }
 
 
