@@ -1,15 +1,18 @@
 // inline.cpp -- using an inline function
 #include <iostream>
+
 // an inline function definition
-inline double square(double x) { return x * x; }
+inline double square(double x){ return x * x;}
+
 int main()
 {
     using namespace std;
 
     double a, b;
     double c = 13.0;
+
     a = square(5.0);
-    b = square(4.5 + 7.5); // can pass expressions
+    b = square(4.5 + 7.5); // can pass expression
     cout << "a = " << a << ", b = " << b << "\n";
     cout << "c = " << c;
     cout << ", c squared = " << square(c++) << "\n";
@@ -17,3 +20,14 @@ int main()
     
     return 0;
 }
+
+// * inline functions
+// * by-reference variable passing
+// * default argument values
+// * function overloading (polymorphism)
+// * template functions
+
+// Inline functions are a C++ enhancement designed to speed up programs.
+
+// Preface the function declaration with the keyword inline .
+// Preface the function definition with the keyword inline .
