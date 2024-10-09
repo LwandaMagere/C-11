@@ -65,6 +65,7 @@ void Show(int a[])
 
 
 
-
+//it’s easy to write a template function that cannot handle certain types.
 //You use templates when you need functions that apply the same algorithm to a variety of types
 //It might be, however, that not all types would use the same algorithm.
+
