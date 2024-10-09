@@ -34,6 +34,16 @@ int main()
 
 // 439pg  The decltype Keyword (C++11) C++11 Trailing Return Type
 
+// template<class T1, class T2>
+// auto gt(T1 x, T2 y) -> decltype(x + y)
+// {
+//     ...
+//     return x + y;
+// }
+
+// Now decltype comes after the parameter declarations, so x and y are in scope and can
+// be used.
+
 
 
 
