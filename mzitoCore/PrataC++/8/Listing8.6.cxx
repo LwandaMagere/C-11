@@ -67,3 +67,19 @@ free_throws & accumulate(free_throws & target, const free_throws & source)
     set_pc(target);
     return target;
 }
+
+// The program begins by initializing several structure objects. Recall that if there are fewer
+// initializers than members, the remaining members (just the percent members in this case)
+// are set to 0.
+
+// accumulate(dup,five) = four;
+
+// This statement—that is, assigning a value to a function call—works because the return
+// value is a reference.
+
+// A function that returns a reference is actually an alias for the referred-to variable.
+
+
+//If the data object is an array, use your only choice: a pointer.
+//If the data object is a structure, use a reference or a pointer.
+//If the data object is a class object, use a reference.

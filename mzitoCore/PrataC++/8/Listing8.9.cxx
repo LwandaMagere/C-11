@@ -35,3 +35,6 @@ char * left(const char * str, int n)
 
     return p;
 }
+
+// Note that only the prototype indicates the default.The function definition is the same as 
+// it would be without default arguments.

@@ -4,18 +4,23 @@
 int main()
 {
     using namespace std;
-    int rats = 101;
-    int & rodents = rats; // rodents is a reference
-    cout << "rats = " << rats;
-    cout << ", rodents = " << rodents << endl;
-    rodents++;
-    cout << "rats = " << rats;
-    cout << ", rodents = " << rodents << endl;
+    // int rats = 101;
+    // int & rodents = rats; // rodents is a reference
+    // cout << "rats = " << rats;
+    // cout << ", rodents = " << rodents << endl;
+    // rodents++;
+    // cout << "rats = " << rats;
+    // cout << ", rodents = " << rodents << endl;
 
-    // some implementations require type casting the following
-    // addresses to type unsigned
-    cout << "rats address = " << &rats;
-    cout << ", rodents address = " << &rodents << endl;
+    // // some implementations require type casting the following
+    // // addresses to type unsigned
+    // cout << "rats address = " << &rats;
+    // cout << ", rodents address = " << &rodents << endl;
+
+    double j = 15.0;
+    double && jref = 2.0* j + 18.5;
+    std::cout << jref << '\n';
+    cout << j << std::endl;
     
     return 0;
 }
