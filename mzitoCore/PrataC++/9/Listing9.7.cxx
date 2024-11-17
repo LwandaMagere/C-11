@@ -18,3 +18,6 @@ int main()
 
     return 0;
 }
+
+// storage class specifiers and cv-qualifiers, provide additional
+// information about storage.

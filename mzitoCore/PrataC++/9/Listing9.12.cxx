@@ -43,3 +43,25 @@ namespace debts
         return total;
     }
 }
+
+/*
+
+You can create an alias for a namespace. For example, suppose you have a namespace
+defined as follows: 
+namespace my_very_favorite_things { ... };
+
+You can make mvft an alias for my_very_favorite_things by using the following
+statement:
+
+namespace mvft = my_very_favorite_things;
+
+You can use this technique to simplify using nested namespaces:
+
+namespace MEF = myth::elements::fire;
+
+using MEF::flame;
+
+
+
+
+*/

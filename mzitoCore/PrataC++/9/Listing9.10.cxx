@@ -54,3 +54,20 @@ int main()
     
     return 0;
 }
+
+// namespace problems
+// declarative region
+// potential scope
+// The portion of the program that can actually see the variable is termed the scope,
+
+/*
+C++ now adds the ability to create named namespaces by defining a new kind of declara-
+tive region, one whose main purpose is to provide an area in which to declare names.
+*/
+
+/*
+Namespaces can be located at the global level or inside 
+other namespaces, but they cannot be placed in a block.
+Thus, a name declared in a namespace has external linkage by
+default (unless it refers to a constant).
+*/

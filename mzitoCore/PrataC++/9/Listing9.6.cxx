@@ -26,3 +26,15 @@ void local() // uses local variable
     cout << "But global warming = " << ::warming;
     cout << " degrees.\n";
 }
+
+/*
+
+When you use it inside a block, static causes a local variable to have 
+static storage duration.This means that even though the variable is known
+within that block, it exists even while the block is inactive.
+
+Also if you initialize a static local variable, the program initializes the variable
+once, when the program starts up. Subsequent calls to the function don’t reinitialize the
+variable the way they do for automatic variables.
+
+*/

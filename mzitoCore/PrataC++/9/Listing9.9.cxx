@@ -38,3 +38,9 @@ void strcount(const char * str)
     cout << count << " characters\n";
     cout << total << " characters total\n";
 }
+
+/*
+extern "C" void spiff(int);   // use C protocol for name look-up
+extern void spoff(int);        // use C++ protocol for name look-up
+extern "C++" void spaff(int); // use C++ protocol for name look-up
+*/
