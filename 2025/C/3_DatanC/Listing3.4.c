@@ -15,3 +15,5 @@ int main(void)
 
     return 0;
 }
+
+/*This example points out that using the wrong specification can produce unexpected results.*/
