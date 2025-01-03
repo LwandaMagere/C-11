@@ -10,6 +10,7 @@ class Stock
         long shares;
         double total_val;
         double share_val;
+        void update(double price);
         void set_tot() {total_val = shares * share_val;}
     public:
         void acquire(const std::string & co, long n, double pr);
