@@ -21,3 +21,39 @@ console.time('Hello');
     console.log("Hello World");
     console.log("Hello World");
 console.timeEnd('Hello');
+console.clear();
+
+// PRIMITIVE TYPES
+
+// String
+const name = 'John Doe';
+console.log(typeof name);
+// Number
+const age = 42;
+console.log(typeof age);
+// Boolean
+const hasKids = true;
+console.log(typeof hasKids);
+// Null
+const car = null;
+console.log(typeof car);
+// Undefined
+let test;
+console.log(typeof test);
+// Symbol
+const sym = Symbol();
+console.log(typeof sym);
+
+// REFERENCE TYPES - Objects
+// Arrays
+const hobbies = ['music', 'footbak', 'singing'];
+console.log(typeof hobbies);
+// Object literal
+const address = {
+    city: 'Boston',
+    state: 'MA'
+};
+console.log(typeof address);
+
+const date = new Date();
+console.log(typeof date);
