@@ -81,27 +81,27 @@
 
 // 3. OBJECT LITERALS ///////////////////////////////
 
-const person = {
-    firstName: 'Steve',
-    lastName: 'Smith',
-    age: 30,
-    email: 'steve@gmail.com',
-    hobbies: ['music', 'sports'],
-    address: {
-        city: 'Nairobi',
-        state: 'Florida'
-    },
-    getBirthYear: function(){
-        return 1987;
-    }
-}
+// const person = {
+//     firstName: 'Steve',
+//     lastName: 'Smith',
+//     age: 30,
+//     email: 'steve@gmail.com',
+//     hobbies: ['music', 'sports'],
+//     address: {
+//         city: 'Nairobi',
+//         state: 'Florida'
+//     },
+//     getBirthYear: function(){
+//         return 1987;
+//     }
+// }
 
-let val;
+// let val;
 
-val = person;
+// val = person;
 
-// Get specific value
-val = person.firstName;
+// // Get specific value
+// val = person.firstName;
 
 
 console.log(val);
