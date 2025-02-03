@@ -104,4 +104,27 @@
 // val = person.firstName;
 
 
-console.log(val);
+// console.log(val);
+
+const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
+
+for (let i = 0; i < cars.length; i++) 
+{
+        console.log(cars[i]);
+}
+
+// FOREACH
+cars.forEach(function(car){
+    console.log(car)
+});
+
+// MAP
+const users = [
+    {id: 1, name: 'John'},
+    {id: 2, name: 'Sara'},
+    {id: 3, name: 'Karen'}
+]
+
+const ids = users.map(function(user){
+    return user.id;
+})
