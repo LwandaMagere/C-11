@@ -107,37 +107,64 @@
 // console.log(val);
 
 
-// 4. LOOP THROUGH ARRAY
-const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
+//// 4. LOOP THROUGH ARRAY
+// const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
 
-for (let i = 0; i < cars.length; i++) 
-{
-        console.log(cars[i]);
-}
+// for (let i = 0; i < cars.length; i++) 
+// {
+//         console.log(cars[i]);
+// }
 
-// FOREACH
-cars.forEach(function(car){
-    console.log(car)
-});
+// // FOREACH
+// cars.forEach(function(car){
+//     console.log(car)
+// });
 
-// MAP
-const users = [
-    {id: 1, name: 'John'},
-    {id: 2, name: 'Sara'},
-    {id: 3, name: 'Karen'}
-]
+// // MAP
+// const users = [
+//     {id: 1, name: 'John'},
+//     {id: 2, name: 'Sara'},
+//     {id: 3, name: 'Karen'}
+// ]
 
-const ids = users.map(function(user){
-    return user.id;
-})
+// const ids = users.map(function(user){
+//     return user.id;
+// })
 
-// FOR IN LOOP
-const user = {
-    firstName: 'John',
-    lastName: 'Doe',
-    age: 40
-}
+// // FOR IN LOOP
+// const user = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     age: 40
+// }
 
-for (let x in user) {
-    console.log(`${x} : ${user[x]}`);
-}
+// for (let x in user) {
+//     console.log(`${x} : ${user[x]}`);
+// }
+
+// WINDOW METHODS / OBJECTS / PROPERTIES
+
+// Alert
+// window.alert('Hello World');
+
+// Prompt
+// const input = prompt();
+// alert(input);
+
+// Confirm
+// if (confirm('Are you sure?')) {
+//     console.log('Yes')
+// }
+
+let val;
+
+// Outer height and Width
+val = window.outerHeight;
+
+// Scroll Points
+val = window.scrollY;
+
+// Location Object
+val = window.location;
+
+console.log(val)
