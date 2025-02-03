@@ -106,6 +106,8 @@
 
 // console.log(val);
 
+
+// 4. LOOP THROUGH ARRAY
 const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
 
 for (let i = 0; i < cars.length; i++) 
@@ -128,3 +130,14 @@ const users = [
 const ids = users.map(function(user){
     return user.id;
 })
+
+// FOR IN LOOP
+const user = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 40
+}
+
+for (let x in user) {
+    console.log(`${x} : ${user[x]}`);
+}
