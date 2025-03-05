@@ -134,5 +134,22 @@ for (let x in user) {
     console.log(`${x} : ${user[x]}`)
 }
 
+// WINDOWS METHODS / OBJECTS / PROPERTIES
+
+// window.console.log(123);
+//  // Alert
+//  window.alert('sasa');
+
+// Prompt
+// const input = prompt();
+// alert(input);
+
+// Confirm
+if (confirm('Are you sure')) {
+    console.log('Yes!');
+} else {
+    console.log('No');
+}
+
 
 
