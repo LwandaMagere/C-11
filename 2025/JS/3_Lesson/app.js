@@ -114,6 +114,92 @@
 //     liEven[i].style.background = '#f4f4f4'
 // }
 
+/* C ***************************************************************************************************** */
+
+// TRAVERSING THE DOM
+// let val;
+
+// const list = document.querySelector('ul.collection');
+// const listItem = document.querySelector('li.collection-item:first-child'); 
+
+// val = listItem;
+// val = list;
+
+// // Get child nodes
+// val = list.childNodes;
+// val = list.childNodes[0];
+// val = list.childNodes[0].nodeName;
+// val = list.childNodes[0].nodeType;
+
+// // Get children Element nodes -- This doesn't give textnodes
+// val = list.children;
+// val = list.children[1];
+// list.children[1].textContent = 'Hello';
+
+// // Children of children
+// val = list.children[3].children;
+// val = list.children[3].children[0].id = 'test-link'
+// val = list.children[3].children[0];
+
+// // First child
+// val = list.firstChild;
+// val = list.firstElementChild;
+
+// // Last child
+// val = list.lastChild;
+// val = list.lastElementChild;
+
+// // count child element
+// val = list.childElementCount;
+
+// // Get parent node
+// val = listItem.parentNode;
+// val = listItem.parentElement;
+// val = listItem.parentElement.parentElement;
+
+// // Get next Sibling
+// val = listItem.nextSibling;
+// val = listItem.nextElementSibling.nextElementSibling;
+
+// // Get previous Sibling
+// val = listItem.previousSibling;
+// val = listItem.previousElementSibling;
+
+// console.log(val);
+
+/* D *********************************************************************** */
+
+// CREATING ELEMENTS ADD INTO IT AND INSERT INTO THE DOM
+
+// Create element
+const li = document.createElement('li');
+
+// Add class
+li.className = 'collection-item';
+
+// Add id
+li.id = 'new-item';
+
+// Add attribute
+li.setAttribute('title', 'New Item');
+
+//Create Text node and Append
+li.appendChild(document.createTextNode('Hello World'));
+
+// Create new link element
+const link = document.createElement('a');
+// Add class
+link.className = 'delete-item secondary-content';
+// Add icon html
+link.innerHTML = '<i class="fa fa-remove"></i>';
+// Append link into li
+li.appendChild(link);
+
+// Append li as child to ul
+document.querySelector('ul.collection').appendChild(li);
+
+console.log(li);
+
 
 
 
