@@ -2,7 +2,7 @@
 
 /* 
 
--A structured representation of an html document
+-A structured representation of an html document.
 -Tree of nodes/elements created by the browser.
 
 -Object Oriented representation
@@ -14,25 +14,35 @@
 
 // val = document;
 // val = document.all;
-// val = document.all[2];
+// val = document.all[42];
 // val = document.all.length;
 // val = document.head;
 // val = document.body;
 // val = document.doctype;
-// val = document.domain;
 // val = document.URL;
+// val = document.domain;
 // val = document.characterSet;
 // val = document.contentType;
-// // val = window.document;
+// val = window.document;
 
 // console.log(val);
 
-//A  ********************************************************************* */
 
+
+
+
+
+
+//A  ********************************************************************* */
 /* DOM SELECTORS FOR SINGLE ELEMENTS */
 
-// 1. document.getElementById()  11111111111111111111111111111111111111111111111111111111111111111111111111111111
 
+
+
+
+
+
+// 1. document.getElementById()  11111111111111111111111111111111111111111111111111111111111111111111111111111111
 // console.log(document.getElementById('task-title'));
 
 // // -- Get things from the element
@@ -46,15 +56,18 @@
 // document.getElementById('task-title').style.padding = '5px';
 // // document.getElementById('task-title').style.display = 'none';
 
+
 // // --Change content
 // document.getElementById('task-title').textContent = 'Task List';
 // document.getElementById('task-title').innerText = 'My Tasks';
 // document.getElementById('task-title').innerHTML = '<span style="color:red">Task List</span>';
 
+
 // 2. document.querySelector() -- you can select any element 22222222222222222222222222222222222222222222222222222222222222222222
 // console.log(document.querySelector('#task-title'));
 // console.log(document.querySelector('.card-title'));
 // console.log(document.querySelector('h5'));
+
 
 // document.querySelector('li').style.color = 'red';
 // document.querySelector('ul li').style.color = 'red';
@@ -64,9 +77,25 @@
 // document.querySelector('li:nth-child(odd)').style.background = '#ccc';
 // document.querySelector('li:nth-child(even)').style.background = '#f4f4'
 
-/*B ************************************************************************************************************* */
 
+
+
+
+
+
+
+
+
+/*B ************************************************************************************************************* */
 // DOM SELECTORS FOR MULTIPLE ELEMENT --Return html collection or nodeList
+
+
+
+
+
+
+
+
 
 // 1. document.getElementsByClassName() 1111111111111111111111111111111111111111111111
 // const items = document.getElementsByClassName('collection-item');
@@ -78,8 +107,7 @@
 // const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
 // console.log(listItems);
 
-
-// 2. document.getElementsByTagName() 222222222222222222222222222222222222222222222222222222
+// 2. document.getElementsByTagName() Html collecton 222222222222222222222222222222222222222222222222222222
 // let lis = document.getElementsByTagName('li');
 // console.log(lis);
 // console.log(lis[0]);
@@ -95,13 +123,14 @@
 //     li.textContent = `${index}:Hello`;
 // })
 
-// 3. document.querySelectorAll() 333333333333333333333333333333333333333333333333333333333333333
+// 3. document.querySelectorAll() NodeList 333333333333333333333333333333333333333333333333333333333333333
 // const items = document.querySelectorAll('ul.collection li.collection-item');
 // console.log(items);
 
 // items.forEach(function(item, index){
 //     item.textContent = `${index}:Hello`
 // })
+
 
 // const liOdd = document.querySelectorAll('li:nth-child(odd)');
 // const liEven = document.querySelectorAll('li:nth-child(even)');
@@ -113,6 +142,15 @@
 // for (let i = 0; i < liEven.length; i++) {
 //     liEven[i].style.background = '#f4f4f4'
 // }
+
+
+
+
+
+
+
+
+
 
 /* C ***************************************************************************************************** */
 
@@ -171,34 +209,34 @@
 
 // CREATING ELEMENTS ADD INTO IT AND INSERT INTO THE DOM
 
-// Create element
-const li = document.createElement('li');
+// // Create element
+// const li = document.createElement('li');
 
-// Add class
-li.className = 'collection-item';
+// // Add class
+// li.className = 'collection-item';
 
-// Add id
-li.id = 'new-item';
+// // Add id
+// li.id = 'new-item';
 
-// Add attribute
-li.setAttribute('title', 'New Item');
+// // Add attribute
+// li.setAttribute('title', 'New Item');
 
-//Create Text node and Append
-li.appendChild(document.createTextNode('Hello World'));
+// //Create Text node and Append
+// li.appendChild(document.createTextNode('Hello World'));
 
-// Create new link element
-const link = document.createElement('a');
-// Add class
-link.className = 'delete-item secondary-content';
-// Add icon html
-link.innerHTML = '<i class="fa fa-remove"></i>';
-// Append link into li
-li.appendChild(link);
+// // Create new link element
+// const link = document.createElement('a');
+// // Add class
+// link.className = 'delete-item secondary-content';
+// // Add icon html
+// link.innerHTML = '<i class="fa fa-remove"></i>';
+// // Append link into li
+// li.appendChild(link);
 
-// Append li as child to ul
-document.querySelector('ul.collection').appendChild(li);
+// // Append li as child to ul
+// document.querySelector('ul.collection').appendChild(li);
 
-console.log(li);
+// console.log(li);
 
 
 
