@@ -42,7 +42,7 @@
 
 
 
-// 1. document.getElementById()  11111111111111111111111111111111111111111111111111111111111111111111111111111111
+// 1. document.getElementById()  11111111111111111111111111111111111111111111111111111111111111
 // console.log(document.getElementById('task-title'));
 
 // // -- Get things from the element
@@ -54,7 +54,7 @@
 // document.getElementById('task-title').style.background = '#333';
 // document.getElementById('task-title').style.color = '#fff';
 // document.getElementById('task-title').style.padding = '5px';
-// // document.getElementById('task-title').style.display = 'none';
+// document.getElementById('task-title').style.display = 'none';
 
 
 // // --Change content
@@ -63,7 +63,7 @@
 // document.getElementById('task-title').innerHTML = '<span style="color:red">Task List</span>';
 
 
-// 2. document.querySelector() -- you can select any element 22222222222222222222222222222222222222222222222222222222222222222222
+// 2. document.querySelector() -- you can select any element 2222222222222222222222222222222
 // console.log(document.querySelector('#task-title'));
 // console.log(document.querySelector('.card-title'));
 // console.log(document.querySelector('h5'));
@@ -76,7 +76,6 @@
 // document.querySelector('li:nth-child(4)').textContent = 'Hello World';
 // document.querySelector('li:nth-child(odd)').style.background = '#ccc';
 // document.querySelector('li:nth-child(even)').style.background = '#f4f4'
-
 
 
 
@@ -118,10 +117,12 @@
 // lis = Array.from(lis);
 // lis.reverse()
 
+
 // lis.forEach(function(li, index){
 //     console.log(li.className);
 //     li.textContent = `${index}:Hello`;
 // })
+
 
 // 3. document.querySelectorAll() NodeList 333333333333333333333333333333333333333333333333333333333333333
 // const items = document.querySelectorAll('ul.collection li.collection-item');
@@ -135,7 +136,7 @@
 // const liOdd = document.querySelectorAll('li:nth-child(odd)');
 // const liEven = document.querySelectorAll('li:nth-child(even)');
 
-// liOdd.forEach(function(li, index){
+// liOdd.forEach(function(li){
 //     li.style.background = '#ccc';
 // })
 
@@ -174,6 +175,7 @@
 // val = list.children[1];
 // list.children[1].textContent = 'Hello';
 
+
 // // Children of children
 // val = list.children[3].children;
 // val = list.children[3].children[0].id = 'test-link'
@@ -189,6 +191,7 @@
 
 // // count child element
 // val = list.childElementCount;
+
 
 // // Get parent node
 // val = listItem.parentNode;
@@ -224,12 +227,16 @@
 // //Create Text node and Append
 // li.appendChild(document.createTextNode('Hello World'));
 
+
 // // Create new link element
 // const link = document.createElement('a');
+
 // // Add class
 // link.className = 'delete-item secondary-content';
+
 // // Add icon html
 // link.innerHTML = '<i class="fa fa-remove"></i>';
+
 // // Append link into li
 // li.appendChild(link);
 
