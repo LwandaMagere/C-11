@@ -1,10 +1,33 @@
-* {
-    font-family: monospace;
+/* Does not cause inheritance but rather selects all elements */
+
+/* * {
+    font-family: 'Courier New', Courier, monospace;
+} */
+
+html {
+    font-size: 22px;
 }
 
 body {
     font-size: 22px;
     border: 3px solid black;
+}
+
+main {
+    font-family: monospace;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+p {
+    color: purple;
+}
+
+p span {
+    text-transform: uppercase;
+    background: gold;
 }
 
 .gray {
@@ -13,13 +36,4 @@ body {
 
 #second {
     font-style: italic;
-}
-
-h1, h2 {
-    color: blue;
-}
-
-p span {
-    text-transform: uppercase;
-    background-color: gold;
 }
