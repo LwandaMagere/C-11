@@ -126,47 +126,54 @@
 // val = Math.floor(Math.random() * 20 + 1);
 // console.log(val);
 
-// STRING
+// STRING  -- remove it from here
 
-const firstName = 'William';
-const lastName = 'Johnson';
-const str = 'Hello there my name is Brad';
+// const firstName = 'William';
+// const lastName = 'Johnson';
+// const str = 'Hello there my name is Brad';
+
+// let val;
+
+// val = firstName + lastName;
+
+// // Concatenation
+// val = firstName + ' ' + lastName;
+// val = firstName.concat(' ', lastName);
+// // Append
+// val = 'Brad ';
+// val += 'Traversy';
+
+// val = firstName.indexOf('l');
+// val = lastName.lastIndexOf('l');
+
+// // charAt
+// val = firstName.charAt('2');
+// // Get last character
+// val = firstName.charAt(firstName.length - 1);
+// // Sub String
+// val = firstName.substring(0, 4);
+// // Slice
+// val = firstName.slice(0, 4);
+// val = firstName.slice(-3);
+
+// // split()
+// val = str.split(' ');
+// // replace
+// val = str.replace('Brad', 'Jack');
+// // includes
+// val = str.includes('Hello');
+
+
+
+// console.log(val);
 
 let val;
 
-val = firstName + lastName;
+const firstName = 'William';
 
-// Concatenation
-val = firstName + ' ' + lastName;
-val = firstName.concat(' ', lastName);
-// Append
-val = 'Brad ';
-val += 'Traversy';
-
-val = firstName.indexOf('l');
-val = lastName.lastIndexOf('l');
-
-// charAt
-val = firstName.charAt('2');
-// Get last character
-val = firstName.charAt(firstName.length - 1);
-// Sub String
-val = firstName.substring(0, 4);
-// Slice
-val = firstName.slice(0, 4);
-val = firstName.slice(-3);
-
-// split()
-val = str.split(' ');
-// replace
-val = str.replace('Brad', 'Jack');
-// includes
-val = str.includes('Hello');
+val = firstName.charAt(firstName.length - 1 );
 
 
 
 console.log(val);
-
-
-
 
