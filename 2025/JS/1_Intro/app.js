@@ -167,13 +167,13 @@
 
 // console.log(val);
 
-let val;
+// let val;
 
-const firstName = 'William';
+// const firstName = 'William';
 
-val = firstName.charAt(firstName.length - 1 );
+// val = firstName.charAt(5);
 
 
 
-console.log(val);
+// console.log(val);
 
