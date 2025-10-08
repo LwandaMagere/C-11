@@ -1,3 +1,15 @@
+/**
+ *  1. DOM
+ *  2. DOM SELECTORS 
+ *  3. TRAVERSING THE DOM
+ *  4. CREATING ELEMENTS ADD INTO IT AND INSERT INTO THE DOM
+ *  5. REMOVING AND REPLACING ELEMENTS
+ *  6. CLASSESS AND ATTRIBUTES
+ *  7. EVENT LISTENERS, THE EVENT OBJECT
+ */
+
+
+
 // 1. WHAT IS THE DOM (Document Object Model) ?
 
 /* 
@@ -6,6 +18,10 @@
 -Tree of nodes/elements created by the browser.
 -Object Oriented representation
 -Javascript can be used to read/write/manipulate the dom
+
+- Properties of the DOM
+-Window object is the global object of the browser environment
+-Document is a property of window object.
 
 */
 
@@ -23,6 +39,22 @@
 // val = document.characterSet;
 // val = document.contentType;
 // val = window.document;
+// val = document.forms;
+// val = document.forms[0];
+// val = document.forms[0].id;
+// val = document.forms[0].method;
+// val = document.forms[0].action;
+// val = document.links;
+// val = document.links[0];
+// val = document.links[0].id;
+// val = document.links[0].className;
+// val = document.links[0].classList;
+// val = document.links[0].classList[0];
+
+// val = document.images;
+// val = document.scripts;
+// val = document.scripts[2].getAttribute('src');
+
 
 // console.log(val);
 
@@ -315,8 +347,19 @@
 // val = link.hasAttribute('href');
 // link.removeAttribute('title');
 
-
 // console.log(val);
+
+
+/**
+ * 1.add('test')
+ * 2.remove('test');
+ * 3.getAttribute('href');
+ * 4.setAttribute('href', 'http://google.com');
+ * 5.hasAttribute('href');
+ * 6.removeAttribute('title');
+ */
+
+////// ***** END 7  ******* /////
 
 
 // 8.EVENT LISTENERS, THE EVENT OBJECT
@@ -333,33 +376,33 @@
 
 //     let val;
 //     val = e;
-//     // console.log(e);
+    // console.log(e);
 
-//     // Event target element
-//     val = e.target;
-//     val = e.target.id;
-//     val = e.target.className;
-//     val = e.target.classList;
+    // Event target element
+    // val = e.target;
+    // val = e.target.id;
+    // val = e.target.className;
+    // val = e.target.classList;
 
-//     e.target.innerText = 'Hello';
+    // e.target.innerText = 'Hello';
 
-//     //Event Type
-//     val = e.type;
+    //Event Type
+    // val = e.type;
 
-//     // Timestamp
-//     val = e.timeStamp;
+    // Timestamp
+    // val = e.timeStamp;
 
-//     // Coord of events relative to the window
-//     val = e.clientY;
-//     val = e.clientX;
+    // Coord of events relative to the window
+    // val = e.clientY;
+    // val = e.clientX;
 
-//     // Coord of events relative to the element
-//     val = offSetY;
-//     val = offSetX;
+    // Coord of events relative to the element
+    // val = offSetY;
+    // val = offSetX;
 
-//     console.log(val);
+    // console.log(val);
 
-//     e.preventDefault();
+    // e.preventDefault();
 // }
 
 
@@ -388,9 +431,6 @@
 // card.addEventListener('mousemove', runEvent);
 
 
-
-
-
 // Event Handler
 // function runEvent(e) {
 //     console.log(`EVENT TYPE: ${e.type}`);
@@ -407,6 +447,7 @@
 // const form = document.querySelector('form');
 // const taskInput = document.getElementById('task');
 // const heading = document.querySelector('h5');
+
 // Clear input
 // taskInput.value = '';
 
@@ -440,7 +481,7 @@
 //     // e.preventDefault();
 // }
 
-////// ***** END ******* /////
+////// ***** END 8 ******* /////
 
 
 
