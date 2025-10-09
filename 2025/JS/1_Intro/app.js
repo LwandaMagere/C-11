@@ -1,6 +1,6 @@
 // alert("Hello World!");
 
-// -- Using the Console
+// -- 1. Using the Console
 
 // Log to console
 // console.log("Hello World!");
@@ -11,11 +11,9 @@
 // console.log([1,2,3,4]);
 // console.log({a:1, b:2});
 // console.table({a:1, b:2});
-
 // console.error('This is some error!');
 // console.clear();
 // console.warn('This is a warning!');
-
 // console.time('Hello');
 //     console.log("Hello World!");
 //     console.log("Hello World!");
@@ -24,15 +22,15 @@
 //     console.log("Hello World!");
 // console.timeEnd('Hello');
 
+///// END 1 /////
 
-// VARIABLES -- let, const
+// 2. VARIABLES -- let, const
 
 // Init a variable
 // let a;
 // console.log(a);
 // a = 'Hello';
 // console.log(a);
-
 // const person = {
 //     name: 'John',
 //     age: 30
@@ -40,12 +38,13 @@
 
 // person.name = 'Sara';
 // console.log(person);
-
 // const numbers = [1,2,3,4,5];
 // numbers.push(6);
 // console.log(numbers);
 
-// DATA TYPES
+///// END 2 /////
+
+// 3. DATA TYPES
 
 // -- Primitive Data types
 // Strings, Numbers, Symbols, Null, Boolean, Undefined
@@ -53,9 +52,7 @@
 // Reference Types
 // Arrays, Object literals, Functions, Dates, anything else
 
-
 // PRIMITIVE TYPES
-
 // String
 // const name = 'John Doe';
 // // Number
@@ -83,7 +80,9 @@
 
 // console.log(typeof today);
 
-// TYPE CONVERSION
+///// END 3 /////
+
+// 4. TYPE CONVERSION
 
 // let val;
 
@@ -111,14 +110,12 @@
 // val = parseInt('100');
 // val = parseFloat('100.30');
 
-
-// // Output
 // console.log(val);
 // console.log(typeof val);
 // // console.log(val.length);
 // console.log(val.toFixed());
 
-// TYPE COERSION -- It happend automatically
+// TYPE COERSION -- It happens automatically
 
 // let val = Math.PI;
 // console.log(val);
@@ -163,17 +160,9 @@
 // // includes
 // val = str.includes('Hello');
 
-
-
 // console.log(val);
 
-// let val;
-
-// const firstName = 'William';
-
-// val = firstName.charAt(5);
+///// END  /////
 
 
-
-// console.log(val);
 
