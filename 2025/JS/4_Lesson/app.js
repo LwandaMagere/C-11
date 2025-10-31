@@ -17,8 +17,10 @@
 //     console.log('card content');
 // })
 
-// document.querySelector('.card').addEventListener('click', function(){
+// document.querySelector('.card').addEventListener('click', function(e){
 //     console.log('card');
+
+//     e.preventDefault();
 // })
 
 // document.querySelector('.col').addEventListener('click', function(){
@@ -29,13 +31,13 @@
 // document.body.addEventListener('click',deleteItem)
 
 // function deleteItem(e) {
-//     // if (e.target.className === 'fa fa-remove') {
-//     //     console.log('delete item')
-//     // }
+//     if (e.target.className === 'fa fa-remove') {
+//         console.log('delete item')
+//     }
 
-//     // if(e.target.parentElement.className === 'delete-item secondary-content') {
-//     //     console.log('delete-item');
-//     // }
+//     if(e.target.parentElement.className === 'delete-item   secondary-content') {
+//         console.log('delete-item');
+//     } 
 
 //     if(e.target.parentElement.classList.contains('delete-item')) {
 //         console.log('delete item');
@@ -50,18 +52,18 @@
 // localStorage.setItem('age', '30');
 
 // Set session storage item
-sessionStorage.setItem('name', 'Beth');
+// sessionStorage.setItem('name', 'Beth');
 
 // Remove from storage
 // localStorage.removeItem('name');
 
 // Get from storage
-const name = localStorage.getItem('name');
-const age = localStorage.getItem('age');
+// const name = localStorage.getItem('name');
+// const age = localStorage.getItem('age');
 
 // clear local storage
-localStorage.clear();
+// localStorage.clear();
 
-console.log(name, age);
+// console.log(name, age);
 
 

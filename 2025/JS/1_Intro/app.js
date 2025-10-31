@@ -1,3 +1,9 @@
+// 1. Using the Console
+// 2. VARIABLES -- let, const
+// 3. DATA TYPES
+// 4. TYPE CONVERSION
+
+
 // alert("Hello World!");
 
 // -- 1. Using the Console
@@ -70,10 +76,11 @@
 
 // // Arrays
 // const hobbies = ['movies', 'music']
+
 // // Object literal
 // const address = {
 //     city: 'Boston',
-//     state: 'MA',
+//     state: 'MA'
 // }
 // const today = new Date();
 // console.log(today);
@@ -95,6 +102,7 @@
 // val = String(new Date());
 // // Array to String
 // val = String([1,2,3,4,5]);
+
 
 // // toString()
 // val = (5).toString();
@@ -123,7 +131,7 @@
 // val = Math.floor(Math.random() * 20 + 1);
 // console.log(val);
 
-// STRING  -- remove it from here
+// STRING 
 
 // const firstName = 'William';
 // const lastName = 'Johnson';

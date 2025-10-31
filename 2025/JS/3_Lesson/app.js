@@ -8,8 +8,6 @@
  *  7. EVENT LISTENERS, THE EVENT OBJECT
  */
 
-
-
 // 1. WHAT IS THE DOM (Document Object Model) ?
 
 /* 
@@ -19,7 +17,7 @@
 -Object Oriented representation
 -Javascript can be used to read/write/manipulate the dom
 
-- Properties of the DOM
+-Properties of the DOM
 -Window object is the global object of the browser environment
 -Document is a property of window object.
 
@@ -103,7 +101,6 @@
 ////// ***** END 2.1 ******* /////
 
 
-
 // 3.DOM SELECTORS FOR MULTIPLE ELEMENT --Return html collection or nodeList
 
 // 3.1 document.getElementsByClassName() HTMLCollection
@@ -149,6 +146,8 @@
 // const liOdd = document.querySelectorAll('li:nth-child(odd)');
 // const liEven = document.querySelectorAll('li:nth-child(even)');
 
+// console.log(liOdd);
+
 // liOdd.forEach(function(li){
 //     li.style.background = '#ccc';
 // })
@@ -183,6 +182,7 @@
 // val = list.childNodes[0];
 // val = list.childNodes[0].nodeName;
 // val = list.childNodes[0].nodeType;
+
 
 // // Get children Element nodes -- This doesn't give textnodes return HTMLCollection
 // val = list.children;
@@ -276,9 +276,9 @@
 // console.log(li);
 
 /**
- * 1.createElement
- * 2.setAttribute
- * 3.createTextNode
+ * 1.createElement('');
+ * 2.setAttribute('title', 'New Item');
+ * 3.createTextNode('Hello World');
  */
 
 ////// ***** END 5  ******* /////
@@ -374,13 +374,13 @@
 // function onClick(e) {
 //     console.log('clicked');
 
-//     let val;
-//     val = e;
+    // let val;
+    // val = e;
     // console.log(e);
 
     // Event target element
     // val = e.target;
-    // val = e.target.id;
+    // val = e.target.id; // doesn't have an id
     // val = e.target.className;
     // val = e.target.classList;
 
@@ -472,16 +472,23 @@
 // function runEvent(e) {
 //     console.log(`EVENT TYPE: ${e.type}`)
 
-//     // console.log(e.target.value)
+//     console.log(e.target.value)
 
-//     // heading.innerText = e.target.value;
-//     //Get input value
-//     // console.log(taskInput.value);
+//     heading.innerText = e.target.value;
+//     // Get input value
+//     console.log(taskInput.value);
 
-//     // e.preventDefault();
+//     e.preventDefault();
 // }
 
 ////// ***** END 8 ******* /////
+
+console.log('hi')
+console.clear();
+
+let val = document.all;
+
+console.log(val[9])
 
 
 

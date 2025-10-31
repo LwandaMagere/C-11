@@ -1,4 +1,11 @@
-// TEMPLATE LITERALS
+// 1. TEMPLATE LITERALS
+// 2.ARRAY METHODS
+// 3.OBJECT LITERALS
+// 4.DATE N TIME
+// 5.IF STATEMENT
+
+
+// 1. TEMPLATE LITERALS
 
 // const name = 'John';
 // const age = 30;
@@ -9,6 +16,7 @@
 // function hello(){
 //     return 'Hello';
 // }
+
 // // With template strings
 // html = `
 //     <ul>
@@ -24,7 +32,7 @@
 
 // document.body.innerHTML = html;
 
-// ARRAY METHODS
+// 2.ARRAY METHODS
 // const numbers = [43, 56, 33, 23, 44, 36, 5];
 // const number2 = new Array(22, 45,33, 76, 54);
 // const fruits = ['apple', 'banana', 'pear','orange'];
@@ -77,12 +85,11 @@
 // val = numbers.find(under50);
 
 
-
 // console.log(numbers);
 // console.log(val);
 
 
-// OBJECT LITERALS
+// 3.OBJECT LITERALS
 // const person = {
 //     firstPerson: 'Steve',
 //     lastName: 'Smith',
@@ -108,8 +115,8 @@
 
 // console.log(val);
 
-// DATE N TIME
+// 4.DATE N TIME
 
-// IF STATEMENT
+// 5.IF STATEMENT
 
 
