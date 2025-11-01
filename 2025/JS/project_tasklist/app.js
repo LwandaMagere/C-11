@@ -1,52 +1,89 @@
-// Define our UI variables
+// Define UI Variables
 const form = document.querySelector('#task-form');
 const taskList = document.querySelector('.collection');
 const clearBtn = document.querySelector('.clear-tasks');
 const filter = document.querySelector('#filter');
 const taskInput = document.querySelector('#task');
 
-// Load all Event Listeners
+// Load all event listeners
 loadEventListeners();
 
-// Load all Event Listeners
+// Load all event listeners
 function loadEventListeners() {
     // Add task event
     form.addEventListener('submit', addTask);
-}
+    // Remove task event
+    taskList.addEventListener('click', removeTask);
+    // Clear task events
+    clearBtn.addEventListener('click', clearTasks);
+    // Filter tasks event
+    filter.addEventListener('keyup', filterTasks);
+};
 
-// Add Tasks
+// Add task
 function addTask(e) {
 
     if(taskInput.value === '') {
-        alert('Add Task');
+        alert('Add a task');
     }
 
     // Create li element
     const li = document.createElement('li');
-    li.className = 'collection-item'
-    // Create text node and append to the li
+    // Add class
+    li.className = 'collection-item';
+    // Create text node and append to li
     li.appendChild(document.createTextNode(taskInput.value));
     // Create new link element
     const link = document.createElement('a');
     // Add class
     link.className = 'delete-item secondary-content';
     // Add icon html
-    link.innerHTML = '<i class="fa fa-remove"></i>'; // It uses innerHTML not appendChild
-    // Append the link to the li
+    link.innerHTML = '<i class="fa fa-remove"></i>';
+    // Append the link to li
     li.appendChild(link);
-    console.log(li);
+
     // Append li to ul
     taskList.appendChild(li);
-
-    // Clear input
+    //Clear input
     taskInput.value = '';
-
 
     e.preventDefault();
 }
 
-/*
+// Remove task
+function removeTask(e) {
+    if(confirm('Are you sure?')) {
+        e.target.parentElement.parentElement.remove();
+    }
+    // console.log(e.target.parentElement);
+    e.preventDefault();
+}
 
- 
- 
- */
+// Clear Tasks
+function clearTasks(e) {
+    // taskList.innerHTML = ''; // method 1
+
+    // Faster
+    while(taskList.firstChild) {
+        taskList.removeChild(taskList.firstChild);
+    }
+
+    e.preventDefault();
+}
+
+// Filter Tasks
+function filterTasks(e) {
+    const text = e.target.value.toLowerCase();
+
+    document.querySelectorAll('.collection-item').forEach(function (task) {
+        const item = task.firstChild.textContent; 
+        if(item.toLowerCase().indexOf(text) != -1){
+            task.style.display = 'block';
+        }else {
+            task.style.display = 'none';
+        }
+    });
+
+    
+    
+}

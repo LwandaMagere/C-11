@@ -483,12 +483,7 @@
 
 ////// ***** END 8 ******* /////
 
-console.log('hi')
-console.clear();
 
-let val = document.all;
-
-console.log(val[9])
 
 
 

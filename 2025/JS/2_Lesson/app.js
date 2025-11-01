@@ -120,3 +120,34 @@
 // 5.IF STATEMENT
 
 
+
+// 6. WINDOW OBJECT
+
+// WINDOW METHODS / OBJECTS / PROPERTIES
+
+// window.console.log(123);
+
+// Alert
+// window.alert(123)
+
+// Prompt
+// const input = prompt()
+// alert(input);
+
+// Confirm
+
+// if (confirm('Are you sure?')) {
+//     console.log('YES')
+// }
+
+let val;
+
+val = window.location;
+val = window.location.hostname;
+val = window.location.href;
+val = window.location.search;
+
+val = window.navigator;
+val = window.navigator.platform;
+
+console.log(val);
