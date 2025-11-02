@@ -140,14 +140,22 @@
 //     console.log('YES')
 // }
 
-let val;
+// let val;
 
-val = window.location;
-val = window.location.hostname;
-val = window.location.href;
-val = window.location.search;
+// val = window.location;
+// val = window.location.hostname;
+// val = window.location.href;
+// val = window.location.search;
 
-val = window.navigator;
-val = window.navigator.platform;
+// val = window.navigator;
+// val = window.navigator.platform;
 
-console.log(val);
+// console.log(val);
+
+
+// Testing indexOf()
+// const name = 'William';
+
+// let val = name.indexOf('');
+
+// console.log(val);
