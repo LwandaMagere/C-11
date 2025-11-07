@@ -1,8 +1,12 @@
-// 1. TEMPLATE LITERALS
+// 1.TEMPLATE LITERALS
 // 2.ARRAY METHODS
 // 3.OBJECT LITERALS
 // 4.DATE N TIME
 // 5.IF STATEMENT
+// 6.FUNCTIONS
+// 7.LOOPS N ITERATIONS
+// 8.WINDOW OBJECT
+// 9.SCOPE
 
 
 // 1. TEMPLATE LITERALS
@@ -117,11 +121,144 @@
 
 // 4.DATE N TIME
 
+// let val;
+// const today = new Date();
+// let birthday = new Date('9-10-1981 11:25:00');
+// birthday = new Date('september 10 1981');
+// birthday = new Date('9/10/1981');
+
+// val = birthday;
+// val = today.getMonth();
+// val = today.getDate();
+// val = today.getDay();
+// val = today.getFullYear();
+// val = today.getHours();
+// val = today.getMinutes();
+// val = today.getSeconds();
+// val = today.getMilliseconds();
+// val = today.getTime();
+
+// birthday.setMonth(2);
+// birthday.setDate(2);
+// birthday.setFullYear(1985);
+// birthday.setHours(3);
+// birthday.setMinutes(30);
+// birthday.setMinutes(25);
+
+// console.log(birthday);
+
 // 5.IF STATEMENT
 
+// const id = 100;
+
+// Equal To
+// if(id === 101) {
+//     console.log('CORRECT');
+// } else {
+//     console.log('INCORRECT');
+// }
+
+// Not Equal To
+// if(id != 100) {
+//     console.log('CORRECT1');
+// } else {
+//     console.log('INCORRECT2');
+// }
+
+// Equal To Value n Type
+// if(id !== 100) {
+//     console.log('CORRECT1');
+// } else {
+//     console.log('INCORRECT2');
+// }
+
+// Test if undefined
+// if(typeof id !== 'undefined') {
+//     console.log(`The id is ${id}`);
+// } else {
+//     console.log('No ID');
+// }
+
+// Greater than or Less Than
+
+// IF ELSE
+
+// LOGICAL OPERATORS
+
+// SWITCH STATEMENTS
+
+// const color = 'yellow';
+
+// switch(color) {
+//     case 'red':
+//         console.log('Color is red');
+//         break;
+//     case 'blue':
+//         console.log('color is blue');
+//         break;
+//     default:
+//         console.log('Color is not red or blue');
+//         break;
+
+// }
+
+// 6. FUNCTIONS 
+//  - function declaration
+//  - function expressions
+//  - IFFEs
+
+// Function Expression
+// const square = function (x  = 3) {
+//     return x*x;
+// }
+// console.log(square());
+
+// Immediately Invokable Function Expression
+// (function(){
+//     console.log('IFees here');
+// })();
+
+// (function(name){
+//     console.log('Hello ' + name );
+// })('Dado');
+
+// 7. LOOPS N ITERATIONS
+// const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
+
+// FOREACH
+// cars.forEach(function(car, index, array) {
+//     console.log(`${index} : ${car}`);
+//     console.log(array);
+// })
+
+// // Map
+// const users = [
+//     {id: 1, name: 'John'},
+//     {id: 2, name: 'Sara'},
+//     {id: 3, name: 'Karen'}
+// ];
+
+// const ids = users.map(function(user){
+//     return user.name;
+// });
+
+// console.log(ids);
+
+// For In loop (often used for objects)
+// const user = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     age: 40
+// }
+
+// for (let x in user) {
+//     // console.log(x);
+//     console.log(`${x} : ${user[x]}`);
+// }
 
 
-// 6. WINDOW OBJECT
+
+// 8. WINDOW OBJECT
 
 // WINDOW METHODS / OBJECTS / PROPERTIES
 
@@ -151,6 +288,36 @@
 // val = window.navigator.platform;
 
 // console.log(val);
+
+// Redirect
+// window.location.href = 'http://google.com';
+// Reload
+// window.location.reload();
+
+// History Object
+// window.history.go(-1);
+// window.history.go(1);
+// let val = window.history.length;
+// console.log(val);
+
+// Navigator Object
+// let val;
+// // val = window.navigator
+// val = window.navigator.vendor;
+// console.log(val);
+
+// 9.SCOPE
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Testing indexOf()
