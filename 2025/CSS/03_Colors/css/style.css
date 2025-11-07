@@ -1,6 +1,25 @@
 body {
     font-size: 22px;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     background-color: papayawhip;
+    color: rgb(255, 0, 0);
+    color: rgb(0,255,0);
+    color: rgb(0,0,255);
+    /* color: rgb(255,255,255); */
+    color: rgb(0,0,0);
 }
+
+p {
+    color: rgba(0,0,0,1); /* 1 is the alpha channel */
+    /* color: rgba(0,0,0,0); */
+    color: rgba(0,0,0,0.5);
+    color: #000000;
+    color: #ffffff;
+    color: #00ff00;
+    color: #0000ff;
+}
+
+/*  legible, contrast, readable. There are many colors than there are color names */
+
+/*color contrast checker*/
