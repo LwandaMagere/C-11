@@ -1,15 +1,17 @@
 /* Does not cause inheritance but rather selects all elements */
-
+/*Universal selector*/
 /* * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
 } */
 
+/* class has more specificity than an element selector. CSS follows what is more specific */
+
 html {
-    font-size: 22px;
+        font-size: 22px;
 }
 
 body {
-    font-size: 22px;
+    
     border: 3px solid black;
 }
 
@@ -27,13 +29,19 @@ p {
 
 p span {
     text-transform: uppercase;
-    background: gold;
+    background-color: gold;
 }
 
 .gray {
     color: gray;
 }
 
-#second {
+/* ids should exist once in an html document, they shld be unique, not good practice to use them in css*/
+#second { 
     font-style: italic;
 }
+
+
+/* DRY dont repeat yourself */
+
+ 
