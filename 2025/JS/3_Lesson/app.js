@@ -484,18 +484,9 @@
 ////// ***** END 8 ******* /////
 
 
-let val;
 
-let scripts = document.scripts;
 
-let A = Array.from(scripts);
 
-A.forEach(function(a, index){
-    // console.log(`${index} : `, a.getAttribute('src'))
-    // console.log(a)
-})
-
-// console.log(scripts);
 
 
 

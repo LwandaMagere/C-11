@@ -1,28 +1,30 @@
-// Define UI Variables
+// Define UI Varibles  1
 const form = document.querySelector('#task-form');
 const taskList = document.querySelector('.collection');
 const clearBtn = document.querySelector('.clear-tasks');
 const filter = document.querySelector('#filter');
 const taskInput = document.querySelector('#task');
 
-// Load all event listeners
+
+// Load All Event Listeners 2
 loadEventListeners();
 
-// Load all event listeners
+// Load All Event Listeners 
 function loadEventListeners() {
-    //DOM Load Event
+    // DOM Load event
     document.addEventListener('DOMContentLoaded', getTasks);
-    // Add task event
+
+    // Add task event 
     form.addEventListener('submit', addTask);
     // Remove task event
     taskList.addEventListener('click', removeTask);
-    // Clear task events
+    // Clear task event
     clearBtn.addEventListener('click', clearTasks);
     // Filter tasks event
     filter.addEventListener('keyup', filterTasks);
-};
+}
 
-// Get task from Local storage 5
+// Get tasks from local storage
 function getTasks() {
     let tasks;
     if(localStorage.getItem('tasks') === null) {
@@ -32,61 +34,60 @@ function getTasks() {
     }
 
     tasks.forEach(function(task) {
-        // Create li element
+         // Create li element (b
         const li = document.createElement('li');
         // Add class
         li.className = 'collection-item';
-        // Create text node and append to li
+        // Create text node and append to the li
         li.appendChild(document.createTextNode(task));
-        // Create new link element
+        // Create link
         const link = document.createElement('a');
-        // Add class
+        // add class
         link.className = 'delete-item secondary-content';
         // Add icon html
         link.innerHTML = '<i class="fa fa-remove"></i>';
-        // Append the link to li
+        // Append link to li
         li.appendChild(link);
 
-        // Append li to ul
+        // Append li to the ul
         taskList.appendChild(li);
-    })
+    });
 }
 
-// Add task 1
+// Add task
 function addTask(e) {
-
     if(taskInput.value === '') {
         alert('Add a task');
-    }
+    } else {
 
-    // Create li element
+    // Create li element (b
     const li = document.createElement('li');
     // Add class
     li.className = 'collection-item';
-    // Create text node and append to li
+    // Create text node and append to the li
     li.appendChild(document.createTextNode(taskInput.value));
-    // Create new link element
+    // Create link
     const link = document.createElement('a');
-    // Add class
+    // add class
     link.className = 'delete-item secondary-content';
     // Add icon html
     link.innerHTML = '<i class="fa fa-remove"></i>';
-    // Append the link to li
+    // Append link to li
     li.appendChild(link);
 
-    // Append li to ul
+    // Append li to the ul
     taskList.appendChild(li);
 
     // Store in local storage
     storeTaskInLocalStorage(taskInput.value);
 
-    //Clear input
+    // Clear Input
     taskInput.value = '';
-
+}
     e.preventDefault();
 }
 
-// Store Task
+// Store in local storage
 function storeTaskInLocalStorage(task) {
     let tasks;
     if(localStorage.getItem('tasks') === null) {
@@ -94,27 +95,42 @@ function storeTaskInLocalStorage(task) {
     } else {
         tasks = JSON.parse(localStorage.getItem('tasks'));
     }
-
+    
     tasks.push(task);
 
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-// Remove task 2
+// Remove task
 function removeTask(e) {
 
-    if(confirm('Are you sure?')) {
-        e.target.parentElement.parentElement.remove();
+    // Method 2
+    if(e.target.parentElement.classList.contains('delete-item')) {
+        if(confirm('Are you sure')) {
 
-        // Remove from local storage
-        removeTaskFromLocalStorge(e.target.parentElement.parentElement);
+            // method 1
+            e.target.parentElement.parentElement.remove();
+
+            // Remove from Local Storage
+            removeTaskFromLocalStorage(e.target.parentElement.parentElement);
+
+            // method 2
+            // taskList.removeChild(taskList.firstChild);
+        }
     }
-    
-    e.preventDefault();
-}
 
-// Remove from local storage 6
-function removeTaskFromLocalStorge(taskItem) {
+     // Method 1
+    // if(e.target.className === 'fa fa-remove') {
+    //     if(confirm('Are you sure?')){
+    //         e.target.parentElement.parentElement.remove(); 
+    //     }
+    // }
+    
+    }
+
+
+//  Remove from local storage
+function removeTaskFromLocalStorage(taskItem) {
     let tasks;
     if(localStorage.getItem('tasks') === null) {
         tasks = [];
@@ -122,45 +138,50 @@ function removeTaskFromLocalStorge(taskItem) {
         tasks = JSON.parse(localStorage.getItem('tasks'));
     }
 
-    tasks.forEach(function(task, index) {
-        if(taskItem.textContent === task) { // textcontent on the DOM compared with textcontent in the localstorage
+    tasks.forEach(function(task, index){
+        if(taskItem.textContent === task) {
             tasks.splice(index, 1);
-        }
-    });
+        } 
 
+        
+    });
     localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-// Clear Tasks 3
+
+// Clear Tasks
 function clearTasks() {
-    // taskList.innerHTML = ''; // method 1
+    //  taskList.innerHTML = '';
 
     // Faster
     while(taskList.firstChild) {
         taskList.removeChild(taskList.firstChild);
     }
 
+    // while(taskList.firstElementChild) {
+    //     taskList.removeChild(taskList.firstElementChild);
+    // }
+
     // Clear from local storage
     clearTasksFromLocalStorage();
 }
 
- // Clear from local storage 7
- function clearTasksFromLocalStorage() {
+// Clear from local storage
+function clearTasksFromLocalStorage() {
     localStorage.clear();
- }
+}
 
-// Filter Tasks 4
+// Filter tasks
 function filterTasks(e) {
-    const text = e.target.value.toLowerCase(); // The input value transformed to lowercase
+    const text =  e.target.value.toLowerCase();
 
-    document.querySelectorAll('.collection-item').forEach(function (task) {
+    document.querySelectorAll('.collection-item').forEach(function(task){
+        const item = task.firstChild.textContent;
 
-        const item = task.firstChild.textContent; // Taking text content from from the browser
-        if(item.toLowerCase().indexOf(text) != -1){ // Transform it to lower case and compare it with text variable
+        if(item.toLowerCase().indexOf(text) != -1) {
             task.style.display = 'block';
-        }else {
-            task.style.display = 'none';
+        } else {
+             task.style.display = 'none';
         }
-    });
- 
+    })
 }
