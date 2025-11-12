@@ -38,6 +38,7 @@
 
 // 2.ARRAY METHODS
 // const numbers = [43, 56, 33, 23, 44, 36, 5];
+
 // const number2 = new Array(22, 45,33, 76, 54);
 // const fruits = ['apple', 'banana', 'pear','orange'];
 // const mixed = [22, 'hello', true,undefined, null,{a:1, b:1}, new Date()];

@@ -139,6 +139,7 @@ function removeTaskFromLocalStorage(taskItem) {
     }
 
     tasks.forEach(function(task, index){
+        
         if(taskItem.textContent === task) {
             tasks.splice(index, 1);
         } 
