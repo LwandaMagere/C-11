@@ -1,4 +1,4 @@
-// 1. Using the Console
+// 1. USING THE CONSOLE
 // 2. VARIABLES -- let, const
 // 3. DATA TYPES
 // 4. TYPE CONVERSION
@@ -53,9 +53,9 @@
 // 3. DATA TYPES
 
 // -- Primitive Data types
-// Strings, Numbers, Symbols, Null, Boolean, Undefined
+// Strings, Numbers, Boolean, Symbols, Null,  Undefined
 
-// Reference Types
+// -- Reference Types
 // Arrays, Object literals, Functions, Dates, anything else
 
 // PRIMITIVE TYPES
@@ -75,13 +75,13 @@
 // // REFERENCE TYPES - Object
 
 // // Arrays
-// const hobbies = ['movies', 'music']
+// const hobbies = ['movies', 'music'];
 
 // // Object literal
 // const address = {
 //     city: 'Boston',
 //     state: 'MA'
-// }
+// };
 // const today = new Date();
 // console.log(today);
 
@@ -133,8 +133,8 @@
 
 // STRING 
 
-// const firstName = 'William';
-// const lastName = 'Johnson';
+// const firstName = 'William ';
+// const lastName = 'Johnsonnn';
 // const str = 'Hello there my name is Brad';
 
 // let val;
@@ -144,12 +144,13 @@
 // // Concatenation
 // val = firstName + ' ' + lastName;
 // val = firstName.concat(' ', lastName);
+
 // // Append
 // val = 'Brad ';
 // val += 'Traversy';
 
 // val = firstName.indexOf('l');
-// val = lastName.lastIndexOf('l');
+// val = lastName.lastIndexOf('n');
 
 // // charAt
 // val = firstName.charAt('2');
@@ -161,6 +162,7 @@
 // val = firstName.slice(0, 4);
 // val = firstName.slice(-3);
 
+
 // // split()
 // val = str.split(' ');
 // // replace
@@ -171,6 +173,10 @@
 // console.log(val);
 
 ///// END  /////
+
+
+
+
 
 
 

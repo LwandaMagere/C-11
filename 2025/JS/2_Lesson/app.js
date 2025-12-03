@@ -21,7 +21,7 @@
 //     return 'Hello';
 // }
 
-// // With template strings
+// With template strings
 // html = `
 //     <ul>
 //         <li>Name: ${name}</li>
@@ -34,7 +34,8 @@
 //     </ul>
 // `
 
-// document.body.innerHTML = html;
+// document.body.innerHTML += html;
+// document.body.style.backgroundColor = 'papayawhip';
 
 // 2.ARRAY METHODS
 // const numbers = [43, 56, 33, 23, 44, 36, 5];
@@ -55,7 +56,6 @@
 // numbers[2] = 100;
 // // Find index value
 // val = numbers.indexOf(36);
-
 
 // Mutating Arrays
 
@@ -95,24 +95,7 @@
 
 
 // 3.OBJECT LITERALS
-// const person = {
-//     firstPerson: 'Steve',
-//     lastName: 'Smith',
-//     age: 30,
-//     email: 'steve@aol.com',
-//     hobbies: ['music','spirt'],
-//     address: {
-//         city: 'Miami',
-//         state: 'FL'
-//     },
-//     getBirthYear: function() {
-//         return 1987
-//     }
-// }
 
-// let val;
-
-// val = person;
 // //Get a specific value
 // val = person.firstPerson;
 // val = person.hobbies[1];
@@ -258,7 +241,6 @@
 // }
 
 
-
 // 8. WINDOW OBJECT
 
 // WINDOW METHODS / OBJECTS / PROPERTIES
@@ -269,11 +251,10 @@
 // window.alert(123)
 
 // Prompt
-// const input = prompt()
+// const input = prompt('Put something')
 // alert(input);
 
 // Confirm
-
 // if (confirm('Are you sure?')) {
 //     console.log('YES')
 // }
@@ -321,9 +302,3 @@
 
 
 
-// Testing indexOf()
-// const name = 'William';
-
-// let val = name.indexOf('');
-
-// console.log(val);

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "company": "123 Designs",
+        "phone": "424-505-6616"
+    },
+
+    {
+        "id": 2 ,
+        "name": "Steven Onyango",
+        "company": "123 Designs",
+        "phone": "474-515-6266"
+    },
+
+    {
+        "id": 3,
+        "name": "Steven Oduor",
+        "company": "123 Designs",
+        "phone": "442-545-6696"
+    }
+]
