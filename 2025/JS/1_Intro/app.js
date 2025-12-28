@@ -6,6 +6,7 @@
 
 // alert("Hello World!");
 
+
 // -- 1. Using the Console
 
 // Log to console
@@ -134,7 +135,7 @@
 // STRING 
 
 // const firstName = 'William ';
-// const lastName = 'Johnsonnn';
+// const lastName = 'Johnson';
 // const str = 'Hello there my name is Brad';
 
 // let val;
@@ -160,7 +161,7 @@
 // val = firstName.substring(0, 4);
 // // Slice
 // val = firstName.slice(0, 4);
-// val = firstName.slice(-3);
+// val = firstName.slice(-5);
 
 
 // // split()

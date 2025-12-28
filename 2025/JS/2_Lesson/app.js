@@ -263,6 +263,7 @@
 
 // val = window.location;
 // val = window.location.hostname;
+// val = window.location.host;
 // val = window.location.href;
 // val = window.location.search;
 
