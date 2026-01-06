@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <inttypes.h> // supports portable types
+#include <inttypes.h> // supports portable types, expanded integer types
 
 int main(void) 
 {
