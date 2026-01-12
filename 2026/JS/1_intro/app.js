@@ -130,7 +130,7 @@
 
 // STRING 
 
-const firstName = 'William ';
+// const firstName = 'William ';
 // const lastName = 'Johnson';
 // const str = 'Hello there my name is Brad';
 
@@ -159,4 +159,13 @@ const firstName = 'William ';
 // val = firstName.slice(0, 4);
 // val = firstName.slice(-6);
 
+// // split()
+// val = str.split(' ');
+// // replace
+// val = str.replace('Brad', 'Jack');
+// // includes
+// val = str.includes('Hello');
 
+// console.log(val);
+
+///// END  /////
