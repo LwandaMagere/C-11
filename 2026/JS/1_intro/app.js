@@ -118,4 +118,45 @@
 // console.log(val);
 // console.log(typeof val);
 // // console.log(val.length);
-console.log(val.toFixed());
+// console.log(val.toFixed());
+
+// TYPE COERSION -- It happens automatically
+
+// let val = Math.PI;
+// console.log(val);
+
+// val = Math.floor(Math.random() * 20 + 1);
+// console.log(val);
+
+// STRING 
+
+const firstName = 'William ';
+// const lastName = 'Johnson';
+// const str = 'Hello there my name is Brad';
+
+// let val;
+
+// val = firstName + lastName;
+
+// // Concatenation
+// val = firstName + ' ' + lastName;
+// val = firstName.concat(' ', lastName);
+
+// // Append
+// val = 'Brad ';
+// val += 'Traversy';
+
+// val = firstName.indexOf('l');
+// val = lastName.lastIndexOf('n');
+
+// // charAt
+// val = firstName.charAt('0');
+// // Get last character
+// val = firstName.charAt(firstName.length - 1);
+// // Sub String
+// val = firstName.substring(0, 4);
+// // Slice
+// val = firstName.slice(0, 4);
+// val = firstName.slice(-6);
+
+
