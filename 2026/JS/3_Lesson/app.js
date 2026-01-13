@@ -270,3 +270,41 @@
 
 ////// ***** END 5  ******* /////
 
+// 6.REMOVING AND REPLACING ELEMENTS
+
+// Replace Element 1
+// const newHeading = document.createElement('h2');
+
+// // Add id
+// newHeading.id = 'task-title';
+
+// //New text node
+// newHeading.appendChild(document.createTextNode('Task List'));
+
+// // Get the old Heading
+// const oldHeading = document.getElementById('task-title');
+// // Parent
+// const cardAction = document.querySelector('.card-action');
+// // Replace
+// cardAction.replaceChild(newHeading, oldHeading);
+
+// console.log(newHeading);
+
+// // Remove Element 2
+// const lis = document.querySelectorAll('li');
+// const list = document.querySelector('ul');
+
+// // Remove list items
+// lis[0].remove();
+
+// // Remove Child element
+// list.removeChild(lis[3]);
+
+/**
+ * 1.replaceChild()
+ * 2.remove()
+ * 3.removeChild()
+ */
+
+////// ***** END 6  ******* /////
+
