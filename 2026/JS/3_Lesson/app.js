@@ -156,3 +156,73 @@
  */
 
 ////// ***** END 3  ******* /////
+
+// 4.TRAVERSING THE DOM
+
+// let val;
+
+// const list = document.querySelector('ul.collection');
+// const listItem = document.querySelector('li.collection-item:first-child');
+
+// val = listItem;
+// val = list;
+
+// // Get child nodes  -- returns NodeList and also gives textnodes
+// val = list.childNodes;
+// val = list.childNodes[0];
+// val = list.childNodes[0].nodeName;
+// val = list.childNodes[0].nodeType;
+
+// // Get children Element nodes -- This doesn't give textnodes return HTMLCollection
+// val = list.children;
+// val = list.children[1];
+// list.children[1].textContent = 'Hello';
+
+// // Children of children
+// val = list.children[3].children;
+// val = list.children[3].children[0].id = 'test-link'
+// val = list.children[3].children[0];
+
+// // First child
+// val = list.firstChild;
+// val = list.firstElementChild;
+
+// // Last child
+// val = list.lastChild;
+// val = list.lastElementChild;
+
+// // count child element
+// val = list.childElementCount;
+
+// // Get parent node
+// val = listItem.parentNode;
+// val = listItem.parentElement;
+// val = listItem.parentElement.parentElement;
+
+// // Get next Sibling
+// val = listItem.nextSibling;
+// val = listItem.nextElementSibling.nextElementSibling;
+
+// // Get previous Sibling
+// val = listItem.previousSibling;
+// val = listItem.previousElementSibling;
+
+// console.log(val);
+
+/**
+ * 1.childNodes
+ * 2.children
+ * 3.firstChild
+ * 4.firstElementChild
+ * 5.lastChild
+ * 6.lastElementChild
+ * 7.parentNode
+ * 8.parentElement
+ * 9.nextSibling
+ * 10.nextElementSibling
+ * 11.previousSibling
+ * 12.previousElementSibling
+ * 13.childElementCount
+ */
+
+////// ***** END 4  ******* /////
