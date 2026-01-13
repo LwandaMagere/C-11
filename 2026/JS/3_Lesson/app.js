@@ -346,3 +346,121 @@
 
 ////// ***** END 7  ******* /////
 
+// 8.EVENT LISTENERS, THE EVENT OBJECT
+
+// document.querySelector('.clear-tasks').addEventListener('click', function(e) {
+//     console.log('Hello World!');
+//     e.preventDefault();
+// });
+
+// document.querySelector('.clear-tasks').addEventListener('click', onClick);
+
+// function onClick(e) {
+//     console.log('clicked');
+
+    // let val;
+    // val = e;
+    // console.log(e);
+
+    // Event target element
+    // val = e.target;
+    // val = e.target.id; // doesn't have an id
+    // val = e.target.className;
+    // val = e.target.classList;
+
+    // e.target.innerText = 'Hello';
+
+    //Event Type
+    // val = e.type;
+
+    // Timestamp
+    // val = e.timeStamp;
+
+    // Coord of events relative to the window
+    // val = e.clientY;
+    // val = e.clientX;
+
+    // Coord of events relative to the element
+    // val = offSetY;
+    // val = offSetX;
+
+    // console.log(val);
+
+    // e.preventDefault();
+// }
+
+// MOUSE EVENTS
+// const clearBtn = document.querySelector('.clear-tasks');
+// const card = document.querySelector('.card');
+// const heading = document.querySelector('h5');
+
+// Click
+// clearBtn.addEventListener('click', runEvent);
+// Double click
+// clearBtn.addEventListener('dblclick', runEvent);
+// Mouse Down
+// clearBtn.addEventListener('mousedown', runEvent);
+// Mouse Up
+// clearBtn.addEventListener('mouseup', runEvent);
+// Mouse Enter
+// card.addEventListener('mouseenter', runEvent);
+// Mouse Leave
+// card.addEventListener('mouseleave', runEvent);
+// Mouse Over
+// card.addEventListener('mouseover', runEvent);
+// Mouse Out
+// card.addEventListener('mouseout', runEvent);
+// Mouse Move
+// card.addEventListener('mousemove', runEvent);
+
+// Event Handler
+// function runEvent(e) {
+//     console.log(`EVENT TYPE: ${e.type}`);
+
+//     heading.textContent = `MouseX: ${e.offsetX} MouseY: ${e.offsetY}`;
+
+//     document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`
+    
+//     e.preventDefault();
+// }
+
+// KEYBOARD INPUT EVENTS
+
+// const form = document.querySelector('form');
+// const taskInput = document.getElementById('task');
+// const heading = document.querySelector('h5');
+
+// Clear input
+// taskInput.value = '';
+
+// form.addEventListener('submit', runEvent);
+
+// Keydown
+// taskInput.addEventListener('keydown', runEvent);
+// Keyup
+// taskInput.addEventListener('keyup', runEvent);
+// Keypress
+// taskInput.addEventListener('keypress', runEvent);
+// Focus
+// taskInput.addEventListener('focus', runEvent);
+// Blur
+// taskInput.addEventListener('blur', runEvent);
+// Cut
+// taskInput.addEventListener('cut', runEvent);
+// Paste
+// taskInput.addEventListener('paste', runEvent);
+
+// function runEvent(e) {
+//     console.log(`EVENT TYPE: ${e.type}`)
+
+//     console.log(e.target.value)
+
+//     heading.innerText = e.target.value;
+//     // Get input value
+//     console.log(taskInput.value);
+
+//     e.preventDefault();
+// }
+
+////// ***** END 8 ******* /////
+
