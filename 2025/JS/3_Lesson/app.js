@@ -279,6 +279,7 @@
  * 1.createElement('');
  * 2.setAttribute('title', 'New Item');
  * 3.createTextNode('Hello World');
+ * 4.appendChild()
  */
 
 ////// ***** END 5  ******* /////

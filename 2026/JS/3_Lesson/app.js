@@ -308,3 +308,41 @@
 
 ////// ***** END 6  ******* /////
 
+// // 7.CLASSESS AND ATTRIBUTES
+
+// const firstLi = document.querySelector('li:first-child');
+// const link = firstLi.children[0];
+
+// let val;
+
+// val = link.className;
+// val = link.classList;
+// val = link.classList[0];
+
+// // Add a class using class list
+// link.classList.add('test');
+// val = link;
+
+// // Remove a class
+// link.classList.remove('test');
+
+// // Attributes
+// val = link.getAttribute('href');
+// val = link.setAttribute('href', 'http://google.com');
+// // Check to see if there is attribute
+// val = link.hasAttribute('href');
+// link.removeAttribute('title');
+
+// console.log(val);
+
+/**
+ * 1.add('test')
+ * 2.remove('test');
+ * 3.getAttribute('href');
+ * 4.setAttribute('href', 'http://google.com');
+ * 5.hasAttribute('href');
+ * 6.removeAttribute('title');
+ */
+
+////// ***** END 7  ******* /////
+
