@@ -95,3 +95,64 @@
 
 
 ////// ***** END 2.1 ******* /////
+
+
+// 3.DOM SELECTORS FOR MULTIPLE ELEMENT --Return html collection or nodeList
+
+// 3.1 document.getElementsByClassName() HTMLCollection
+// const items = document.getElementsByClassName('collection-item');
+// console.log(items);
+// console.log(items[0]);
+// items[0].style.color = 'red'; 
+// items[3].textContent = 'Helo';
+
+// const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
+// console.log(listItems);
+
+// 3.2 document.getElementsByTagName() Html collection 
+// let lis = document.getElementsByTagName('li');
+// console.log(lis);
+// console.log(lis[0]);
+// lis[0].style.color = 'red';
+// lis[3].textContent = 'Hi';
+
+// // Convert HTML collection into an Array
+// lis = Array.from(lis);
+// lis.reverse()
+
+// lis.forEach(function(li, index){
+//     console.log(li.className);
+//     li.textContent = `${index}:Hello`;
+// });
+
+// 3.3 document.querySelectorAll() NodeList
+
+// const items = document.querySelectorAll('ul.collection li.collection-item');
+// console.log(items);
+
+// items.forEach(function(item, index){
+//     item.textContent = `${index}:Hello`
+// });
+
+// const liOdd = document.querySelectorAll('li:nth-child(odd)');
+// const liEven = document.querySelectorAll('li:nth-child(even)');
+
+// console.log(liOdd);
+
+// liOdd.forEach(function(li){
+//     li.style.background = '#ccc';
+// });
+
+// for (let i = 0; i < liEven.length; i++) {
+//     liEven[i].style.background = '#f4f4f4'
+// }
+
+/**
+ * 1.getElementById()
+ * 2.querySelector() 
+ * 3.getElementsByClassName()
+ * 4.getElementsByTagName()
+ * 5.querySelectorAll() -- Nodelist
+ */
+
+////// ***** END 3  ******* /////
