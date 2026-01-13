@@ -1,0 +1,38 @@
+/* Does not cause inheritance but rather selects all elements */
+/*Universal selector*/
+
+/* * {
+    font-family: monospace;
+} */
+
+html {
+    font-size: 22px;
+}
+
+body {
+    border: 3px solid black;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+p {
+    color: purple;
+}
+
+p span {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+.gray {
+    color: gray;
+}
+
+/* ids should exist once in an html document, they shld be unique, not good practice to use them in css*/
+#second { 
+    font-style: italic;
+}
+
+/* DRY dont repeat yourself */
