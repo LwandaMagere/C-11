@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    font-size: 32px;
+    width: 50%;
+    border: 2px dashed red;
+    padding: 0.5em;
+}
+
+p {
+    width: 40ch;
+}
+
+main {
+    width: 50%;
+    background-color: skyblue;
+}
+
