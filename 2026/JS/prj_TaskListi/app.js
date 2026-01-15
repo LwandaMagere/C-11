@@ -72,20 +72,27 @@ function clearTasks() {
     }
 }
 
-// // Filter task events
-// function filterTasks(e) {
-//     const text = e.target.value.toLowerCase();// Don't be confused here. All items have been collected and anything we keyup becomes the first child
+// Filter task events
+function filterTasks(e) {
+    const text = e.target.value.toLowerCase();// Don't be confused here. All items have been collected
 
-//     document.querySelectorAll('.collection-item').forEach(function(task){
-//         const item = task.firstChild.textContent;
-//         if(item.toLocaleLowerCase().indexOf(text) != -1){
-//             task.style.display = 'block';
-//         }else{
-//             task.style.display = 'none';
-//         }
-//     })
+    document.querySelectorAll('.collection-item').forEach(function(task){
+        // const item = task.firstElementChild.textContent;
+        // const item = task.firstChild.textContent;
+        const item = task.textContent;
 
-// }
+
+        console.log(item); // Show all items on console
+
+        if(item.toLocaleLowerCase().indexOf(text) != -1){
+            task.style.display = 'block';
+        }else{
+            task.style.display = 'none';
+        }
+
+    });
+
+}
 
 
 
