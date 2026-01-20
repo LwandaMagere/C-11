@@ -24,7 +24,7 @@ function loadEventListeners() {
 
 // Add task
 function addTask(e) {
-    
+
     if(taskInput.value === '') {
         alert('Add a task');
     }
@@ -47,18 +47,34 @@ function addTask(e) {
     // // Append the li to the ul
     taskList.appendChild(li);
 
+    // Store  in local storage
+    storeTaskInLocalStorage(taskInput.value);
+
     // Clear input
     taskInput.value = '';
 
     e.preventDefault();
 }
 
+// Store in loca storage
+function storeTaskInLocalStorage(task) {
+    let tasks;
+    if(localStorage.getItem('tasks') === null){
+        tasks = [];
+    }else {
+            tasks = JSON.parse(localStorage.getItem('tasks'));
+        }
+    tasks.push(task);
+
+    localStorage.setItem('tasks',JSON.stringify(tasks))
+}
+
 // Remove task
 function removeTask(e) {
    if(e.target.parentElement.classList.contains('delete-item')) {
         if(confirm('Are you sure?')) {
-            e.target.parentElement.parentElement.remove(); 
-        }
+            e.target.parentElement.parentElement.remove();    
+        } 
    }
 
 }
