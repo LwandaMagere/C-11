@@ -293,3 +293,21 @@
 // console.log(val);
 
 // 9.SCOPE
+
+
+
+
+
+
+
+
+
+
+const mixed = [new Date(), true, undefined, {a: 1, b: 2,}];
+let val;
+
+val = Array.isArray(mixed);
+val = mixed.length;
+val = mixed.indexOf(Object);
+
+console.log(val);
