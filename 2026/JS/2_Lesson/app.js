@@ -315,17 +315,32 @@
 
 
 
-const users = [
-    {id: 1, name: 'John'},
-    {id: 2, name: 'Sarah'},
-    {id: 3, name: 'Karen'}
-];
 
-const ids = users.map(function(user){
-    return user.name;
-});
 
-console.log(ids);
+///////////////////////// cruciable
+
+
+// const users = [
+//     {id: 1, name: 'John'},
+//     {id: 2, name: 'Sarah'},
+//     {id: 3, name: 'Karen'}
+// ];
+
+// const ids = users.map(function(user){
+//     return user.name;
+// });
+
+// console.log(ids);
+
+// const user = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     age: 40
+// };
+
+// for (let x in user) {
+//     console.log(x + '  ' +user[x]);
+// }
 
 
 
