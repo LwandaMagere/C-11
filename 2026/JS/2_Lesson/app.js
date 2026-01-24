@@ -164,10 +164,28 @@
 // Greater than or Less Than
 
 // IF ELSE
+// if(typeof id !== undefined) {
+//     console.log('yes');
+// } else {
+//     console.log('NO');
+// }
 
 // LOGICAL OPERATORS
 
 // SWITCH STATEMENTS
+
+// const color = 'red';
+
+// switch(color) {
+//     case 'red':
+//         console.log('Color is red');
+//         break;
+//     case 'blue':
+//         console.log('Color is blue');
+//     default:
+//         console.log('Color is not red or blue');
+//         break;
+// }
 
 // const color = 'yellow';
 
@@ -297,17 +315,24 @@
 
 
 
+const users = [
+    {id: 1, name: 'John'},
+    {id: 2, name: 'Sarah'},
+    {id: 3, name: 'Karen'}
+];
+
+const ids = users.map(function(user){
+    return user.name;
+});
+
+console.log(ids);
 
 
 
 
 
 
-const mixed = [new Date(), true, undefined, {a: 1, b: 2,}];
-let val;
 
-val = Array.isArray(mixed);
-val = mixed.length;
-val = mixed.indexOf(Object);
 
-console.log(val);
+
+
