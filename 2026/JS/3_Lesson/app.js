@@ -150,8 +150,8 @@
 /**
  * 1.getElementById()
  * 2.querySelector() 
- * 3.getElementsByClassName()
- * 4.getElementsByTagName()
+ * 3.getElementsByClassName() -- HTML Collection
+ * 4.getElementsByTagName() -- HTML Collection
  * 5.querySelectorAll() -- Nodelist
  */
 
@@ -463,4 +463,10 @@
 // }
 
 ////// ***** END 8 ******* /////
+
+const items = document.getElementsByClassName('collection-item');
+console.log(items[0]);
+
+
+
 
