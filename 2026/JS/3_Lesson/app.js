@@ -148,8 +148,8 @@
 // }
 
 /**
- * 1.getElementById()
- * 2.querySelector() 
+ * 1.getElementById() -- single selectors
+ * 2.querySelector() -- single seclectors
  * 3.getElementsByClassName() -- HTML Collection
  * 4.getElementsByTagName() -- HTML Collection
  * 5.querySelectorAll() -- Nodelist
@@ -464,8 +464,24 @@
 
 ////// ***** END 8 ******* /////
 
-const items = document.getElementsByClassName('collection-item');
-console.log(items[0]);
+let val;
+
+const list = document.querySelector('ul.collection');
+const listItem = document.querySelectorAll('li.collection-item:first-child');
+
+
+val = list;
+val = listItem;
+
+val = list.children;
+
+let val3 = Array.from(val);
+
+val3.forEach(function(v){
+    console.log(v)
+})
+
+// console.log(val);
 
 
 
