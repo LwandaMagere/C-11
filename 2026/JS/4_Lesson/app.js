@@ -66,6 +66,13 @@
 
 // console.log(name, age);
 
+// local and session storage function
+
+// setItem('name', 'John');
+// removeItem('name');
+// getItem('name');
+// clear();
+
 
 
 
