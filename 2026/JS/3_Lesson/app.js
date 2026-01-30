@@ -381,8 +381,8 @@
     // val = e.clientX;
 
     // Coord of events relative to the element
-    // val = offSetY;
-    // val = offSetX;
+    // val = e.offSetY;
+    // val = e.offSetX;
 
     // console.log(val);
 
@@ -463,6 +463,20 @@
 // }
 
 ////// ***** END 8 ******* /////
+
+
+
+
+
+
+
+
+
+
+
+
+
+// test
 
 let val;
 

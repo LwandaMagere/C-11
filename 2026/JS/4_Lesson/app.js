@@ -2,7 +2,7 @@
 
 /**
  * Event bubbling is the bubbling up of events through the DOM
- * When an event happens on a particular element in t+=      he DOM, it will actually bubble up through its parent.
+ * When an event happens on a particular element in the DOM, it will actually bubble up through its parent.
  * 
  * Event delegation is almost the opposite of event bubbling, it's where we put the listener on one of the parent elements n then we use logic inside the event handler to target the element that we actually want that click for whatever type of event we want
  */
