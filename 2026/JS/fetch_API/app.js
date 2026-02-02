@@ -1,32 +1,37 @@
-// document.getElementById('button1').addEventListener('click', getText);
+// --- Fetch is the newer standard for dealing with http request, it returns promises
 
-// document.getElementById('button2').addEventListener('click', getJson);
+document.getElementById('button1').addEventListener('click', getText);
+
+document.getElementById('button2').addEventListener('click', getJson);
 
 document.getElementById('button3').addEventListener('click', getExternal);
 
 
 // Get local text file data
 function getText() {
-    fetch('test.txt').then(function(res){
+    fetch('test1.txt')
+    .then(function(res) {
         // console.log(res);
-        return res.text(); // returns a promise
-    }).then(function(data) {
-        console.log(data); // returns the text
-        document.getElementById('output').innerHTML = data
+        //console.log(res.text()); // you get a promise
+        return res.text();
+    }).then(function(data){
+        console.log(data);
+        document.getElementById('output').innerHTML = data;
     }).catch(function(err) {
         console.log(err);
     })
 }
 
-// Get local json data
+// Get local json  data
 function getJson() {
     fetch('posts.json').then(function(res) {
         return res.json();
     }).then(function(data) {
         console.log(data);
+
         let output = '';
         data.forEach(function(post) {
-            output += `<li>${post.title}</li>`;
+            output += `<li>${post.title}</li>`
         })
         document.getElementById('output').innerHTML = output;
     }).catch(function(err) {
@@ -34,23 +39,48 @@ function getJson() {
     })
 }
 
+// Get from external api
 function getExternal() {
-    fetch('https://api.github.com/users').then(function(res){
-        // console.log(res);
+    fetch('https://api.github.com/users').then(function(res) {
         return res.json();
-    }).then(function(data){
-        console.log(data)
+    }).then(function(data) {
+        console.log(data);
         let output = '';
-        data.forEach(function(user) {
+        data.forEach(function(user){
             output += `<li>${user.login}</li>`;
         })
-    }).catch(function(err) {
-        console.log(err);
-    })
+        document.getElementById('output').innerHTML = output;
+    }).catch()
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ////////////////////////////  END
 
-const http = new EasyHTTP;
+// const http = new EasyHTTP;
 
 // Get users
 // http.get('https://jsonplaceholder.typicode.com/users');
@@ -61,23 +91,25 @@ const http = new EasyHTTP;
 
 
 // User data
-const data = {
-    name: 'Dado',
-    userName: 'dadosteven',
-    email: 'stevendado.com'
-}
+// const data = {
+//     name: 'Dado',
+//     userName: 'dadosteven',
+//     email: 'stevendado.com'
+// }
 
-// Create a POST
-http.post('https://jsonplaceholder.typicode.com/users', data).then(data => console.log(data))
-                                                      .catch(err => console.log(err));
+// // Create a POST
+// http.post('https://jsonplaceholder.typicode.com/users', data).then(data => console.log(data))
+//                                                       .catch(err => console.log(err));
 
-// Update post
-http.put('https://jsonplaceholder.typicode.com/users/2', data).then(data => console.log(data))
-                                                      .catch(err => console.log(err));  
+// // Update post
+// http.put('https://jsonplaceholder.typicode.com/users/2', data).then(data => console.log(data))
+//                                                       .catch(err => console.log(err));  
 
-// User Delete
-http.delete('https://jsonplaceholder.typicode.com/users/2').then(data => console.log(data))
-                                                      .catch(err => console.log(err)); 
+// // User Delete
+// http.delete('https://jsonplaceholder.typicode.com/users/2').then(data => console.log(data))
+//                                                       .catch(err => console.log(err)); 
+
+
 
 
 
