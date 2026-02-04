@@ -7,51 +7,6 @@ document.getElementById('button2').addEventListener('click', getJson);
 document.getElementById('button3').addEventListener('click', getExternal);
 
 
-// Get local text file data
-function getText() {
-    fetch('test1.txt')
-    .then(function(res) {
-        // console.log(res);
-        //console.log(res.text()); // you get a promise
-        return res.text();
-    }).then(function(data){
-        console.log(data);
-        document.getElementById('output').innerHTML = data;
-    }).catch(function(err) {
-        console.log(err);
-    })
-}
-
-// Get local json  data
-function getJson() {
-    fetch('posts.json').then(function(res) {
-        return res.json();
-    }).then(function(data) {
-        console.log(data);
-
-        let output = '';
-        data.forEach(function(post) {
-            output += `<li>${post.title}</li>`
-        })
-        document.getElementById('output').innerHTML = output;
-    }).catch(function(err) {
-        console.log(err);
-    })
-}
-
-// Get from external api
-function getExternal() {
-    fetch('https://api.github.com/users').then(function(res) {
-        return res.json();
-    }).then(function(data) {
-        console.log(data);
-        let output = '';
-        data.forEach(function(user){
-            output += `<li>${user.login}</li>`;
-        })
-        document.getElementById('output').innerHTML = output;
-    }).catch()
-}
 
 
 
@@ -76,38 +31,10 @@ function getExternal() {
 
 
 
-
-
-////////////////////////////  END
-
-// const http = new EasyHTTP;
-
-// Get users
-// http.get('https://jsonplaceholder.typicode.com/users');
-
-// http.get('https://jsonplaceholder.typicode.com/users').then(data => console.log(data))
-//                                                       .catch(err => console.log(err));
+                                                
 
 
 
-// User data
-// const data = {
-//     name: 'Dado',
-//     userName: 'dadosteven',
-//     email: 'stevendado.com'
-// }
-
-// // Create a POST
-// http.post('https://jsonplaceholder.typicode.com/users', data).then(data => console.log(data))
-//                                                       .catch(err => console.log(err));
-
-// // Update post
-// http.put('https://jsonplaceholder.typicode.com/users/2', data).then(data => console.log(data))
-//                                                       .catch(err => console.log(err));  
-
-// // User Delete
-// http.delete('https://jsonplaceholder.typicode.com/users/2').then(data => console.log(data))
-//                                                       .catch(err => console.log(err)); 
 
 
 
