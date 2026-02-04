@@ -7,5 +7,70 @@
 </head>
 <body>
     <h1>Forms & Input</h1>
+    <hr>
+    <h2>Contact Me</h2>
+    <p>I'd really like to hear from you</p>
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <p>
+                <label for="firstname">First Name:</label>
+                <!--name is identified at the server level-->
+                <input type="text" name="firstname" id="firstname" placeholder="Dado" autocomplete="on" required autofocus>
+            </p>
+
+            <p>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Steven" autocomplete="on" required >
+            </p>
+
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="password"  required >
+            </p>
+
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required >
+            </p>
+
+            <p>
+                <label for="decade">Favorite Decade:</label>
+                <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+            </p>
+
+            <p>
+                <label for="coffee">Favorite Coffee:</label>
+                <select name="coffee" id="coffee" multiple size="5">
+                    <optgroup label="coffees">
+                        <option value="regular coffee">Regular Coffee</option>
+                        <option value="iced coffee">Iced Coffee</option>
+                    </optgroup>
+                    <optgroup label="Espresso drinks">
+                        <option value="latte">Latte</option>
+                        <option value="cappuccino" selected>Cappuccino</option>
+                        <option value="americano" selected>Americano</option>
+                    </optgroup>
+                    <option value="others">Others</option>
+                </select>
+            </p>
+
+
+
+
+            <!-- <p>
+            <label for="coffee">Favorite Coffee</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list">
+            <datalist id="coffee-list">
+                    <option value="coffee">
+                    <option value="latte">
+                    <option value="espresso">
+                    <option value="cortado">
+                    <option value="americano"> 
+                    <option value="others">
+            </datalist>
+            </p> -->
+    </fieldset>
+    </form>
 </body>
 </html>
