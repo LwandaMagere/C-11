@@ -16,17 +16,17 @@ const data = {
 }
 
 // Create a user
-// http.post('posts2.json', data)
+// http.post('https://jsonplaceholder.typicode.com/users', data)
 // .then(data => console.log(data))
 // .catch(err => console.log(err))
 
 // Update Post
-// http.put('posts2.json', data)
+// http.put('https://jsonplaceholder.typicode.com/users/2', data)
 // .then(data => console.log(data))
 // .catch(err => console.log(err))
 
 // Delete user
-http.delete('posts2.json')
+http.delete('https://jsonplaceholder.typicode.com/users/2')
 .then(data => console.log(data))
 .catch(err => console.log(err));
 
